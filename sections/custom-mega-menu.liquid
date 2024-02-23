@@ -101,11 +101,11 @@
     <div class="suggestion-container">
       <h1>Popular Search Terms</h1>
       <ul>
-        <li>AirMini <span>&gt;</span></li>
-        <li>AirSense10 <span>&gt;</span></li>
-          <li>ResMed <span>&gt;</span></li>
-        <li>AirFit <span>&gt;</span></li>
-        <li>CPAP Mask <span>&gt;</span></li>
+        <li>AirMini <span>></span></li>
+        <li>AirSense10 <span>></span></li>
+          <li>ResMed <span>></span></li>
+        <li>AirFit <span>></span></li>
+        <li>CPAP Mask <span>></span></li>
       </ul>
     </div>
     <div class="recommend-cont">
@@ -212,6 +212,7 @@
       $('.outer-div').removeClass("active");
       $(this).find(".outer-div").addClass("active");
       $(this).find('#rotate').css("transform","rotate(180deg)");
+      // $(this).find(".outer-div").slideDown('slow');
       }).mouseleave(function() {
 
       $(this).find('#rotate').css("transform","rotate(0deg)");
@@ -232,7 +233,48 @@
 
   });
 </script>
+<script>
+   $(document).ready(function() {
+  });
 
+  //     $(window).on('scroll',function(){
+  //       $('.main-cont').css("background","white");
+  //       $('.mega-menu .navbar-container ul li a').css('color','grey');
+  //     });
+
+  //     $('.grid-cont').hide();
+  //     $('.navbar-container ul li a').hover( function() {
+  //       $('.caret-icon').css('transform', 'rotate(180deg)');0
+  //       $('.grid-cont').hide();
+  //       $('.navbar-container ul li a').css('color', 'grey');
+  //           var linkValue = $(this).text();
+  //           if(linkValue == 'CPAP Masks'){
+  //             $(this).css('color', 'black');
+  //             $('#CPAP-Masks').slideDown('slow').show();
+  //           }
+  //           else if(linkValue == 'CPAP Machines'){
+  //             $(this).css('color', 'black');
+  //             $('#CPAP-Machines').slideDown('slow').show();
+  //           }
+  //           else if(linkValue == 'CPAP Supplies'){
+  //             $(this).css('color', 'black');
+  //             $('#CPAP-Supplies').slideDown('slow').show();
+  //           }
+  //           else if(linkValue == 'CPAP Accessories'){
+  //             $(this).css('color', 'black');
+  //             $('#CPAP-Accessories').slideDown('slow').show();
+  //           }
+  //           else if(linkValue == 'CPAP Home Sleep Test'){
+  //             $(this).css('color', 'black');
+  //             $('#CPAP-Home-Sleep-Test').slideDown('slow').show();
+  //           }
+  //     });
+  //     $('.grid-cont').mouseleave(function() {
+  //       $(this).slideUp('slow');
+  //       $('.navbar-container ul li a').css('color','grey');
+  // });
+  });
+</script>
 
 {% schema %}
 {
