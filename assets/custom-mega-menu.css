@@ -7,7 +7,6 @@
 .main-cont {
   width: 100%;
   position: fixed;
-  margin-top:163px;
   overflow-y: hidden;
   z-index: 4;
   transition: 0.7s ease;
@@ -139,6 +138,7 @@ svg {
     z-index: 4;
     width: 100%;
     display:none;
+    margin-top: 83px;
 }
 
 .main-search-cont .suggestion-container{
@@ -223,7 +223,7 @@ svg {
 .background-img-container {
   position: relative;
   margin-bottom: -10px;
-  margin-top: -115px;
+  margin-top: 48px;
 }
 
 .background-img-container img {
