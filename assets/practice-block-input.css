@@ -1,0 +1,13 @@
+.radio1{
+  display:flex;
+  width: 100%;
+  background-color: yellow;
+}
+
+.container{
+  width : 50%;
+  height:300px;
+  padding:20px;
+  background-color: green;
+  text-align:center;
+}

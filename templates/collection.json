@@ -1,0 +1,233 @@
+{
+  "sections": {
+    "custom_category_kj3JWK": {
+      "type": "custom-category",
+      "blocks": {
+        "category_eqjRUA": {
+          "type": "category",
+          "disabled": true,
+          "repeater": "{{ collection.metafields.custom.subcategory_meta.value }}",
+          "settings": {
+            "image": "{{ block.repeater.sub_category_image.value }}",
+            "image_link": "{{ block.repeater.sub_category_url.value }}",
+            "category_title": "{{ block.repeater.sub_category_title.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "category_eqjRUA"
+      ],
+      "disabled": true,
+      "settings": {
+        "text": ""
+      }
+    },
+    "featured_collection_AkcgEL": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Women's  Jackets",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "jackets",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_cpRjeK": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Womens Sandals",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "womens-sandals",
+        "products_to_show": 13,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "blob",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 7,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_44q8rF": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_QmdawU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_7Enqyk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "books"
+          }
+        },
+        "featured_collection_N6bHBP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "children-story-books"
+          }
+        },
+        "featured_collection_zLFzeL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dogs"
+          }
+        },
+        "featured_collection_WAphjh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cats"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_QmdawU",
+        "featured_collection_7Enqyk",
+        "featured_collection_N6bHBP",
+        "featured_collection_zLFzeL",
+        "featured_collection_WAphjh"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_T6PPbz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ffyE8E": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b2.webp",
+            "title": "Story Books",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/books"
+          }
+        },
+        "column_h3aGDt": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GfcRkL": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ffyE8E",
+        "column_h3aGDt",
+        "column_GfcRkL"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom_category_kj3JWK",
+    "featured_collection_AkcgEL",
+    "featured_collection_cpRjeK",
+    "banner",
+    "product-grid",
+    "collection_list_44q8rF",
+    "multicolumn_T6PPbz"
+  ]
+}

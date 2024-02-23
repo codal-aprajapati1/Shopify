@@ -1,0 +1,889 @@
+{
+  "current": {
+    "logo": "shopify:\/\/shop_images\/logo.png",
+    "logo_width": 90,
+    "type_header_font": "serif",
+    "heading_scale": 100,
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
+    "page_width": 1400,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "3d-lift",
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 7,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-2",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 6,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "card",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "background-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "background-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 5,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "bottom left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "brand_headline": "",
+    "brand_description": "<p><\/p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": true,
+    "cart_type": "notification",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "",
+    "cart_color_scheme": "background-1",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "custom-section": {
+        "type": "custom-section",
+        "settings": {
+          "text": "Coding with Anil",
+          "color": "#db5151"
+        }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "blocks": {
+          "image_7q3RHK": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo.png",
+              "text": "Signup up to be a CPAP.com VIP for 20% of your order"
+            }
+          },
+          "newsletter_hrVPbb": {
+            "type": "newsletter",
+            "settings": {
+              "heading": "News Letter",
+              "text": ""
+            }
+          },
+          "navigation1_8TfMMX": {
+            "type": "navigation1",
+            "settings": {
+              "linklist": "assistance-resources"
+            }
+          },
+          "navigation2_FafWzq": {
+            "type": "navigation2",
+            "settings": {
+              "linklist": "popular-faqs"
+            }
+          },
+          "navigation_GcDHrQ": {
+            "type": "navigation",
+            "settings": {
+              "linklist": "footer"
+            }
+          },
+          "navigation3_apYg4q": {
+            "type": "navigation3",
+            "settings": {
+              "phone_number": "1-800-2536-5222",
+              "image": "shopify:\/\/shop_images\/65cb4dcd32b6e4000f27615d.png",
+              "linklist": "contact-us"
+            }
+          }
+        },
+        "block_order": [
+          "image_7q3RHK",
+          "newsletter_hrVPbb",
+          "navigation1_8TfMMX",
+          "navigation2_FafWzq",
+          "navigation_GcDHrQ",
+          "navigation3_apYg4q"
+        ],
+        "settings": {
+        }
+      },
+      "custom-mega-menu": {
+        "type": "custom-mega-menu",
+        "blocks": {
+          "text_xqQp9W": {
+            "type": "text",
+            "settings": {
+              "logoimage": "shopify:\/\/shop_images\/logo.png"
+            }
+          },
+          "navbarlinks_Vh8kk7": {
+            "type": "navbarlinks",
+            "settings": {
+              "linklist": "mega-menu"
+            }
+          },
+          "text1_GyDEn6": {
+            "type": "text1",
+            "settings": {
+              "buttontext": "Find My Solution"
+            }
+          },
+          "search_icon_KEKAn9": {
+            "type": "search-icon",
+            "settings": {
+              "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
+            }
+          },
+          "cartimage_knX9B9": {
+            "type": "cartimage",
+            "settings": {
+              "cartimage": "shopify:\/\/shop_images\/cart.png"
+            }
+          },
+          "background_iaNETH": {
+            "type": "background",
+            "settings": {
+              "backgroundimage": "shopify:\/\/shop_images\/library-books.jpg",
+              "imageheading": "Guiding you back to healthy sleep",
+              "imagedescription": "We provide everything you need to confidently manage sleep apnea, from expert guidance to top-rated treatments and world-class support.",
+              "firstbuttontext": "Find My Solution",
+              "firstbuttonurl": "#",
+              "secondbuttontext": "Shop all CPAP Machines",
+              "secondbuttonurl": "#"
+            }
+          },
+          "first_block_ye3ERJ": {
+            "type": "first_block",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/sandal4.jpg",
+              "enter_product_title": "CPAP Starter Packs",
+              "enter_product_description": "Find the perfect machine and mask",
+              "enter_button_text": "Start the Quiz",
+              "enter_button_url": "#"
+            }
+          },
+          "blockdata_K3BQTF": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/w_orange_jacket.jpg",
+              "enter_product_title": "Auto Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "blockdata_WaQ7mE": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/mtc2.jpg",
+              "enter_product_title": "Auto Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "blockdata_cgeXC9": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/cath4_3_3abf260c-a325-4c2e-8677-6387c00f249d.jpg",
+              "enter_product_title": "Auto Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "blockdata_rH8qnK": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/sandal1.jpg",
+              "enter_product_title": "CPAP Masks",
+              "enter_product_description": "CPAP Masks Accessories"
+            }
+          },
+          "blockdata_wzQycn": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Masks",
+              "product_image": "shopify:\/\/shop_images\/sandal2.jpg",
+              "enter_product_title": "Auto Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "first_block_3EBw6M": {
+            "type": "first_block",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/Women_sandles_heels.jpg",
+              "enter_product_title": "CPAP  MAchines",
+              "enter_product_description": "Find the Right Part Right Away",
+              "enter_button_text": "Start the Quiz",
+              "enter_button_url": "#"
+            }
+          },
+          "blockdata_4GzKBk": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/cath5.jpg",
+              "enter_product_title": "CPAP Machines",
+              "enter_product_description": "CPAP Machines Accessories"
+            }
+          },
+          "blockdata_rQ7tHD": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/cath5.jpg",
+              "enter_product_title": "CPAP Machines",
+              "enter_product_description": "CPAP Machines Accessories"
+            }
+          },
+          "blockdata_FrhUbL": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/cath5.jpg",
+              "enter_product_title": "CPAP Machines",
+              "enter_product_description": "CPAP Machines Accessories"
+            }
+          },
+          "blockdata_pcMpgW": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/cath5.jpg",
+              "enter_product_title": "Auto Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "blockdata_NTPWPH": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/w_green_jacket.jpg",
+              "enter_product_title": "Auto  Adjusting CPAP",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "blockdata_AABBKD": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Machines",
+              "product_image": "shopify:\/\/shop_images\/cath4_2_d50b3561-8f68-4f73-ab52-1ae39ac4ec63.jpg",
+              "enter_product_title": "CPAP Machines Finder",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "first_block_KKnpqg": {
+            "type": "first_block",
+            "settings": {
+              "mega_menu_name": "CPAP Supplies",
+              "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+              "enter_product_title": "Replacement Part Finder",
+              "enter_product_description": "Replacement Part Finder Get to Know",
+              "enter_button_text": "Start the Quiz",
+              "enter_button_url": "#"
+            }
+          },
+          "blockdata_YVcMeM": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Supplies",
+              "product_image": "shopify:\/\/shop_images\/db1.jpg",
+              "enter_product_title": "CPAP Custom Supplies",
+              "enter_product_description": "Automatically adjust the pressure throughout the night"
+            }
+          },
+          "first_block_rzxxjX": {
+            "type": "first_block",
+            "settings": {
+              "mega_menu_name": "CPAP Accessories",
+              "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+              "enter_product_title": "CPAP Accessories",
+              "enter_product_description": "Find the perfect CPAP",
+              "enter_button_text": "Learn More",
+              "enter_button_url": "#"
+            }
+          },
+          "blockdata_iYdXM9": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Accessories",
+              "product_image": "shopify:\/\/shop_images\/cath4.webp",
+              "enter_product_title": "CPAP Accessories",
+              "enter_product_description": "Product of CPAP Accessories"
+            }
+          },
+          "blockdata_jBYMVa": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Accessories",
+              "product_image": "shopify:\/\/shop_images\/cath4.webp",
+              "enter_product_title": "CPAP Accessories",
+              "enter_product_description": "Product of CPAP Accessories"
+            }
+          },
+          "blockdata_W79NdW": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Accessories",
+              "product_image": "shopify:\/\/shop_images\/cath4.webp",
+              "enter_product_title": "CPAP Accessories",
+              "enter_product_description": "Product of CPAP Accessories"
+            }
+          },
+          "first_block_tRYFNg": {
+            "type": "first_block",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/tulips-drink-and-books.jpg",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances",
+              "enter_button_text": "",
+              "enter_button_url": ""
+            }
+          },
+          "blockdata_KYiYDR": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_aNTRnq": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_G7aULy": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_qh8EJr": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_BVg9PV": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_xa4NzB": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_TFkznA": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test Appliances"
+            }
+          },
+          "blockdata_HdwT6E": {
+            "type": "blockdata",
+            "settings": {
+              "mega_menu_name": "CPAP Home Sleep Test",
+              "product_image": "shopify:\/\/shop_images\/transparent_heart.png",
+              "enter_product_title": "CPAP Home Sleep Test",
+              "enter_product_description": "CPAP Home Sleep Test appliances"
+            }
+          },
+          "textcontainer_mcefB3": {
+            "type": "textcontainer",
+            "settings": {
+              "question-heading": "Where are you i your sleep apnea journey?",
+              "option1": "I'm not sure if I have sleep apnea",
+              "option1url": "#",
+              "option2": "I was diagnosed with sleep apnea",
+              "option2url": "#",
+              "option3": "I'm looking for the right machine",
+              "option3url": "#",
+              "option4": "I have a CPAP, but I'm having issues",
+              "option4url": "#",
+              "option5": "Already a CPAP customer?",
+              "option5url": "#",
+              "buttontext": "Reorder"
+            }
+          }
+        },
+        "block_order": [
+          "text_xqQp9W",
+          "navbarlinks_Vh8kk7",
+          "text1_GyDEn6",
+          "search_icon_KEKAn9",
+          "cartimage_knX9B9",
+          "background_iaNETH",
+          "first_block_ye3ERJ",
+          "blockdata_K3BQTF",
+          "blockdata_WaQ7mE",
+          "blockdata_cgeXC9",
+          "blockdata_rH8qnK",
+          "blockdata_wzQycn",
+          "first_block_3EBw6M",
+          "blockdata_4GzKBk",
+          "blockdata_rQ7tHD",
+          "blockdata_FrhUbL",
+          "blockdata_pcMpgW",
+          "blockdata_NTPWPH",
+          "blockdata_AABBKD",
+          "first_block_KKnpqg",
+          "blockdata_YVcMeM",
+          "first_block_rzxxjX",
+          "blockdata_iYdXM9",
+          "blockdata_jBYMVa",
+          "blockdata_W79NdW",
+          "first_block_tRYFNg",
+          "blockdata_KYiYDR",
+          "blockdata_aNTRnq",
+          "blockdata_G7aULy",
+          "blockdata_qh8EJr",
+          "blockdata_BVg9PV",
+          "blockdata_xa4NzB",
+          "blockdata_TFkznA",
+          "blockdata_HdwT6E",
+          "textcontainer_mcefB3"
+        ],
+        "settings": {
+          "header": ""
+        }
+      },
+      "custom-product-section": {
+        "type": "custom-product-section",
+        "blocks": {
+          "header_jKjiMm": {
+            "type": "header",
+            "settings": {
+              "pageHeading": "All of your CPAP supplies, all in one place",
+              "pageDescription": "We carry the world's best selection of sleep apnea treatments and accessories from leading manufacturers at the best prices."
+            }
+          }
+        },
+        "block_order": [
+          "header_jKjiMm"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "1793219247286972479": {
+        "type": "shopify:\/\/apps\/searchpie-seo-speed\/blocks\/sb-snippets\/29f6c508-9bb9-4e93-9f98-b637b62f3552",
+        "disabled": false,
+        "settings": {
+          "review_app": "spr"
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#000000",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
+      },
+      "18423266570658624584": {
+        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "6987625696575125306": {
+        "type": "shopify:\/\/apps\/weglot-translate-your-store\/blocks\/weglot\/3097482a-fafe-42ff-bc33-ea19e35c4a20",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "6610233760104865948": {
+        "type": "shopify:\/\/apps\/pushowl\/blocks\/pushowl-app-embed-3d2ff2b5\/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "18228966181090706294": {
+        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": true,
+        "settings": {
+          "storefrontAccessToken": ""
+        }
+      },
+      "11532412952436166569": {
+        "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
+    "color_schemes": {
+      "background-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "background-2": {
+        "settings": {
+          "background": "#f3f3f3",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "inverse": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#c23434",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "accent-1": {
+        "settings": {
+          "background": "#121212",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "accent-2": {
+        "settings": {
+          "background": "#334fb4",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "logo_width": 90,
+      "color_schemes": {
+        "background-1": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "background-2": {
+          "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "inverse": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "accent-1": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "accent-2": {
+          "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        }
+      },
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "background-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "background-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 5,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "brand_headline": "",
+      "brand_description": "<p><\/p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "cart_color_scheme": "background-1",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}

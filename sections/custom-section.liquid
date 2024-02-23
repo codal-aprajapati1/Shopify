@@ -1,0 +1,112 @@
+<p>{{ 'text' | t }}</p>
+{% assign name = "Anil" -%}
+{{ name }}
+{% for block in section.blocks %}
+  {% if block.type == 'paragraph' -%}
+    <p>{{ block.settings.text }}</p>
+  {% elsif block.type == '@app' %}
+    {% render block %}
+  {% endif -%}
+{% endfor %}
+
+<h1 style="color: {{ section.settings.color }}">{{ section.settings.text }}</h1>
+
+{% for block in section.blocks %}
+  {% if block.type == 'social' %}
+    <a href="{{ block.settings.url }}">{{ block.settings.text }}</a>
+  {% endif -%}
+{% endfor %}
+
+Welcome to the custom section
+
+
+
+<!-- defining stylesheet -->
+
+{% stylesheet %}
+  .custom-section{
+    background: grey;
+    padding: 60px 0;
+  }
+{% endstylesheet %}
+
+
+<!-- defining javascript -->
+
+{% javascript %}
+  // alert('hey');  
+{% endjavascript %}
+
+<!-- simply add javascript into the script tag -->
+<script>
+  
+  console.log("{{ section.id }}");
+</script>
+
+
+<!-- Defining section schema -->
+
+{% schema %}
+{
+  "name": "Custom Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "text Color",
+      "default": "#000000"
+    }
+  ],
+  "tag": "header",
+  "class": "custom-section",
+  "limit": 2,
+  "blocks": [
+      {
+        "name": "Social link",
+        "type": "social",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      },
+      {
+        "name": "Paragraph",
+        "type": "paragraph",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+  ],
+  "max_blocks": 3,
+  "locales": {
+    "en": {
+      "text": "Hello"
+    },
+    "es": {
+      "text": "Hola"
+    }
+  },
+  "default":{
+    "settings":{
+      "text":"Coding with Anil"
+    }
+  }
+}
+{% endschema %}

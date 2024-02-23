@@ -1,0 +1,286 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  
+  
+}
+
+.footer-conatiner{
+  background:#610936;
+  
+}
+
+.footer{
+  padding:0 7px;
+  /* max-width:1100px; */
+  /* width: 90%; */
+  color: white;
+}
+
+.upper{
+  padding:10px 5px;
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+  border-bottom: 2px solid grey;
+  color: white;
+  
+}
+
+
+
+.upper .left-cont{
+  width:50%;
+  display:flex;
+  text-align:center;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.logo-cont{
+  width:15%;
+  margin-top:1%;
+  display:flex;
+  align-content:center;
+}
+
+.logo-cont img{
+  width:100%;
+}
+
+.offer-cont{
+  width:50%;
+}
+
+
+.upper .right-cont {
+  width:50%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center
+}
+.upper .right-cont form{
+  margin-right:10%;
+  display:flex;
+  /* justify-content:flex-end; */
+  align-items:center;
+  border-radius:7px
+}
+.upper .right-cont form input{
+  padding:12px;
+  width:300px;
+  border-radius:7px;
+  border-color:transparent;
+  color:black;
+  font-size: 1.5rem;
+}
+.upper .right-cont form button{
+  position:absolute;
+  padding:5px 10px;
+  margin-left:220px;
+  border-radius:7px;
+  border:.5px solid grey;
+  background-color:white;
+  color:black;
+}
+
+.upper .right-cont form button:hover{
+  cursor:pointer;
+}
+
+@media screen and (max-width: 800px){
+  .upper .right-cont form input{
+    width: 200px;
+  }
+  .upper .right-cont form button{
+  margin-left:130px;
+    
+  }
+}
+
+.middle {
+  padding:15px 30px;
+  border-bottom:2px solid grey;
+}
+
+.middle .footer-top{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  font-size:1.1rem;
+  
+}
+.activeList{
+  column-count:2;
+  column-gap:10px;
+  
+}
+
+.item:nth-child(6n){
+  break-after: page;
+}
+
+.left-nav{
+  /* display:flex; */
+}
+.footer-column span img{
+  color:white;
+}
+.footer-column h3{
+  color: white;
+  border-bottom:3px solid white;
+  padding-bottom:1rem;
+}
+.footer-column li {
+  padding-top: 1rem;
+  list-style-type:none;
+}
+.footer-column a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+@media screen and (max-width: 830px){
+  .footer-top .first-col{
+    flex-basis: 100%
+  }
+}
+
+
+
+.bottom{
+  display:flex;
+    flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 10px 8px;
+  font-size:1.2rem;
+  
+}
+
+.bottom .footer-bottom{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-bottom li,a{
+  color: white;
+  list-style-type:none;
+  text-decoration:none;
+  padding-inline:3px;
+}
+
+@media screen and (max-width: 532px){
+  .middle .footer-top{
+    display:block;
+  }
+  .upper{
+    display:block;
+  }
+  .upper .left-cont{
+    width:100%;
+    margin:7px 5px;
+    transition: display 0.3s ease;
+    display:block;
+    text-align:left;
+    
+  }
+  .upper .right-cont{
+    display:flex;
+    width:100%;
+    margin:7px 5px;
+    justify-content:flex-start;
+    
+  }
+  .upper .right-cont form input{
+    width:300px;
+    display:flex;
+    
+  }
+  .upper .right-cont form button{
+  margin-left:223px; 
+  }
+  .bottom{
+    display:block;
+    padding: 15px 30px;
+  }
+  .bottom .footer-bottom{
+   display:block;
+  }
+  .bottom .footer-bottom li{
+    margin: 10px 0;
+    
+  }
+  .offer-cont{
+    width:100%;
+    padding: 11px 0;
+  }
+}
+
+@media screen and (max-width: 401px){
+  .upper .left-cont{
+    transition: display 0.3s ease;
+    display:block;
+    width:100%;
+  }
+  
+ 
+}
+
+
+/* accordian  */
+
+/* Accordion Styles */
+
+
+@media screen and (max-width: 530px) {
+  .accordion {
+  margin-bottom: 20px; /* Adjust spacing between accordion sections */
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 0;
+}
+  .accordion-header::after{
+    content:'\276F';
+    float:right
+  }
+
+.accordion-content {
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; 
+}
+
+.accordion-content.active {
+  max-height: 1000px; /* Adjust to accommodate your content */
+}
+
+.accordion-content li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd; /* Border between accordion items */
+}
+
+/* Remove border-bottom for last item in accordion */
+.accordion-content li:last-child {
+  border-bottom: none;
+}
+  /* Apply accordion styles only when max-width is 530px */
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content.active {
+    max-height: 1000px;
+  }
+}
+
+

@@ -1,0 +1,82 @@
+<style>
+  .container{
+    display:flex;
+    justify-content:center;
+  }
+  .main_cont{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+  }
+  .img_cont{
+    width: 150px;
+    height:150px;
+  }
+  .img_cont img{
+    border-radius:50%;
+    object-fit:contain;
+    border:5px solid grey;
+  }
+  .main_cont a{
+    text-decoration: none;
+    color:black;
+    z-index:999;
+  }
+  
+</style>
+<div class="container">
+  {% for block in section.blocks %}
+    <div class="main_cont">
+      <a href="{{ block.settings.image_link | url }}">
+        <div class="img_cont">
+          <img src="{{ block.settings.image | img_url }}" alt="Girl in a jacket" >
+        </div>
+      </a>
+      <p>{{ block.settings.category_title }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "blocks": [
+      {
+        "name":"Section Block",
+        "type": "category", 
+        "settings": [
+           {
+              "type": "image_picker",
+              "id": "image",
+              "label":"Image"
+           },
+          {
+             "type": "url",
+              "id": "image_link",
+              "label": "Image Link"
+          },
+          {
+            "type": "text",
+            "id": "category_title",
+            "label": "Category_Title"
+          }
+        ]
+       
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Category"
+      }
+    ]
+  }
+{% endschema %}

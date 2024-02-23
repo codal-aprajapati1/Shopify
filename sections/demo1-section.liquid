@@ -1,0 +1,44 @@
+<div class="img_cont">
+{% for block in section.blocks %}
+  <img src="{{ block.settings.image | img_url: "" }} " alt="Girl in a jacket" width="250" height="auto" >
+  
+{% endfor %}
+</div>
+<style>
+  .img_cont{
+    display:flex;
+    
+    
+  }
+</style>
+{% schema %}
+{
+  "name": "Image Blower",
+  "tag": "section",
+  "limit": 2,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [{
+      "name": "Imagepicker"}],
+  "blocks":[
+    {
+      "name": "Image",
+      "type": "image_picker",
+      "limit": 4,
+      "settings": [{
+        "type": "image_picker",
+        "id": "image",
+        "label":"Image"
+        }
+      ]
+
+
+    }
+  ]
+}
+{% endschema %}

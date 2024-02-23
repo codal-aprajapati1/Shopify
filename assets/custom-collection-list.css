@@ -1,0 +1,176 @@
+:root{
+  --black : #000000;
+  --white : #ffffff;
+  --orange : #f56527;
+  --grey : #c2c0be; 
+  --fadeorange : #ffa27a;
+  --bold : 900; 
+  --collection-back:#f0efe6;
+}
+
+{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.main-collection-contianer{
+  margin-top:200px;
+}
+
+.main-collection-contianer .page-heading{
+  text-align:center;
+}
+
+.main-collection-contianer .page-heading h1{
+  font-size:6rem;
+}
+
+main-collection-contianer .page-heading p{
+  font-size:2rem;
+  width:70%;
+  margin-inline:auto;
+}
+
+.main-collection-contianer .sub-container .upper-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-top: 100px;
+}
+
+.main-collection-contianer .sub-container .upper-grid .upper-div{
+  display:flex;
+  flex-basis:300px;
+  min-height:400px;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  background: var(--collection-back);
+  border-radius:14px;
+  transition: 1s ease;
+}
+
+.main-collection-contianer .sub-container .upper-grid .upper-div .image-container{
+  width:50%;
+  height:50%;
+  top:0;
+  border-radius:50%;
+  border:1px solid var(--grey);
+  overflow:hidden;
+}
+
+.main-collection-contianer .sub-container .upper-grid .upper-div .image-container img{
+  object-fit:fill;
+  border-radius:50%;
+  transition: 0.7s ease;
+  
+}
+
+.main-collection-contianer .sub-container .upper-grid .upper-div:hover img{
+  transform: scale(1.3);
+  
+}
+
+.main-collection-contianer .sub-container .upper-grid .upper-div a{
+  text-decoration:none;
+  padding:5px 20px;
+  font-weight:var(--bold);
+  border:none;
+  border-radius:20px;
+  background-color:var(--white);
+  color:var(--black);
+  transition: 0.3s ease;
+}
+
+
+.main-collection-contianer .sub-container .last-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin: 20px 5px;
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div{
+  display:flex;
+  flex-basis:200px;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  background:var(--collection-back);
+  margin: 10px 0;
+  border-radius:14px;
+  border:1px solid var(--grey);
+  transition: 1s ease;
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div:hover , .main-collection-contianer .sub-container .upper-grid .upper-div:hover{
+  border: 1px solid var(--orange);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div .img-container2{
+  width:50%;
+  height:50%;
+  border-radius:50%;
+  border:1px solid var(--grey);
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div .img-container2 img{
+  object-fit:fill;
+  border-radius:50%;
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div a{
+  text-decoration:none;
+  font-weight: var(--bold);
+  padding:5px 20px;
+  border:none;
+  border-radius:20px;
+  background-color:var(--white);
+  color:var(--black);
+  transition: 0.3s ease;
+}
+
+.main-collection-contianer .sub-container .last-grid .each-div a:hover , .main-collection-contianer .sub-container .upper-grid .upper-div a:hover {
+  background-color:var(--fadeorange);
+  border: 1px inset var(--orange);
+}
+
+.main-collection-contianer .sub-container .last-grid .last-div{
+  border-radius:14px;
+  display:flex;
+  flex-basis:200px;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  background:var(--white);
+  margin: 10px 5px;
+  border:1px solid var(--orange);
+  color: var(--orange);
+  transition:1s ease;
+}
+
+.main-collection-contianer .sub-container .last-grid .last-div h2{
+  color:inherit;
+}
+
+
+.main-collection-contianer .sub-container .last-grid .last-div:hover{
+  background:var(--orange);
+  color:var(--white);
+}
+
+.main-collection-contianer .sub-container .last-grid .last-div a{
+  text-decoration:none;
+  padding:5px 20px;
+  border:0.7px solid var(--grey);
+  border-radius:20px;
+  font-weight:900;
+  background-color:var(--white);
+  color:var(--black);
+}
+

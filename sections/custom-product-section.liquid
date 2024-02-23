@@ -1,0 +1,39 @@
+
+{{ 'custom-product-section.css' | asset_url | stylesheet_tag }}
+
+
+
+{% schema %}
+  {
+   	"name": "Product Page",
+    "tag": "section",
+    "class": "products_page",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Products"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "header",
+        "name": "pageheading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "pageHeading",
+            "label": "Enter the Heading of the page"
+          },
+          {
+            "type": "text",
+            "id": "pageDescription",
+            "label": "Enter Page Description"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+

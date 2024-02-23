@@ -1,0 +1,663 @@
+{
+  "sections": {
+    "custom_mega_menu_nPQydY": {
+      "type": "custom-mega-menu",
+      "blocks": {
+        "navbarlinks_eXzqqK": {
+          "type": "navbarlinks",
+          "settings": {
+            "linklist": "mega-menu"
+          }
+        },
+        "cartimage_gXErGC": {
+          "type": "cartimage",
+          "settings": {
+            "cartimage": "shopify:\/\/shop_images\/cart.png"
+          }
+        },
+        "text1_Adw3gn": {
+          "type": "text1",
+          "settings": {
+            "buttontext": "Find My Solution"
+          }
+        },
+        "search_icon_U6gUUy": {
+          "type": "search-icon",
+          "settings": {
+            "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
+          }
+        },
+        "text_9dgJQH": {
+          "type": "text",
+          "settings": {
+            "logoimage": "shopify:\/\/shop_images\/logo.png"
+          }
+        },
+        "first_block_RYdfzg": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "#"
+          }
+        },
+        "first_block_tfXVUd": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/mtc2.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description",
+            "enter_button_text": "Leran More",
+            "enter_button_url": "#"
+          }
+        },
+        "blockdata_GC4QNi": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/w_skyblue_jacket.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description"
+          }
+        },
+        "blockdata_Kc9jAL": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/w_grey_jacket.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description"
+          }
+        },
+        "blockdata_7Y7Xhq": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/w_orange_jacket.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description"
+          }
+        },
+        "blockdata_phkCYb": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/w_black_jacket.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description"
+          }
+        },
+        "blockdata_P9ybpD": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/w_green_jacket.jpg",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines description"
+          }
+        },
+        "first_block_79BYyU": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/Women_sandles_heels.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": ""
+          }
+        },
+        "blockdata_KxMy8m": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal4.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "blockdata_dLDWBY": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal3.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "blockdata_NaJVDQ": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal2.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "blockdata_Cm7fm4": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal1.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "blockdata_wpi8KD": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal1.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "blockdata_QnKGEJ": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/sandal4.jpg",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories description"
+          }
+        },
+        "first_block_eJLFKB": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/cath3.webp",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "#"
+          }
+        },
+        "blockdata_zpXBz8": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/cath4_2_d50b3561-8f68-4f73-ab52-1ae39ac4ec63.jpg",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description"
+          }
+        },
+        "blockdata_9WnwPp": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/cath4_d90379c5-b413-47f0-8aad-a1be3412d6c5.webp",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description"
+          }
+        },
+        "blockdata_AjBxJQ": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/cath5.jpg",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description"
+          }
+        },
+        "blockdata_ELLUxp": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/cath2.webp",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description"
+          }
+        },
+        "blockdata_KbiFpC": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/Cath4_1.jpg",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies description"
+          }
+        },
+        "first_block_wDdmWM": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/Books-Collection-Image.webp",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "#"
+          }
+        },
+        "blockdata_8kEPb9": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_DDMdx8": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_tD7wVA": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_7bFEc4": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_UebpkM": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_QA8bqm": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "blockdata_9VkMip": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/hb1.jpg",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test description"
+          }
+        },
+        "background_6gW9Mt": {
+          "type": "background",
+          "settings": {
+            "backgroundimage": "shopify:\/\/shop_images\/backgroundImage.jpg",
+            "imageheading": "Guiding you back to healthy sleep",
+            "imagedescription": "We provide everything you need to confidently manage sleep apnea, from expert guidance to top-rated treatments and world-class support.",
+            "firstbuttontext": "Find My Solution",
+            "firstbuttonurl": "#",
+            "secondbuttontext": "CPAP All Supplies",
+            "secondbuttonurl": "#"
+          }
+        },
+        "textcontainer_LMfB8V": {
+          "type": "textcontainer",
+          "settings": {
+            "question-heading": "Where are you in your sleep apnea journey?",
+            "option1": "I’m not sure if I have sleep apnea",
+            "option1url": "#",
+            "option2": "I was diagnosed with sleep apnea",
+            "option2url": "#",
+            "option3": "I'm looking for the right machine",
+            "option3url": "#",
+            "option4": "I have a CPAP,  but I’m having issues",
+            "option4url": "#",
+            "option5": "Already a CPAP customer?",
+            "option5url": "#",
+            "buttontext": "Reorder"
+          }
+        },
+        "textsuggestion_qchMJY": {
+          "type": "textsuggestion",
+          "settings": {
+            "question-heading": "Not sure where to start? Tell us where you are in your sleep journey and we will find what you need.",
+            "option1": "I’m not sure if I have sleep apnea",
+            "option1url": "#",
+            "option2": "I was diagnosed with sleep apnea",
+            "option2url": "#",
+            "option3": "I'm looking for the right machine",
+            "option3url": "#",
+            "option4": "I have a CPAP, but I’m having issues",
+            "option4url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "navbarlinks_eXzqqK",
+        "cartimage_gXErGC",
+        "text1_Adw3gn",
+        "search_icon_U6gUUy",
+        "text_9dgJQH",
+        "first_block_RYdfzg",
+        "first_block_tfXVUd",
+        "blockdata_GC4QNi",
+        "blockdata_Kc9jAL",
+        "blockdata_7Y7Xhq",
+        "blockdata_phkCYb",
+        "blockdata_P9ybpD",
+        "first_block_79BYyU",
+        "blockdata_KxMy8m",
+        "blockdata_dLDWBY",
+        "blockdata_NaJVDQ",
+        "blockdata_Cm7fm4",
+        "blockdata_wpi8KD",
+        "blockdata_QnKGEJ",
+        "first_block_eJLFKB",
+        "blockdata_zpXBz8",
+        "blockdata_9WnwPp",
+        "blockdata_AjBxJQ",
+        "blockdata_ELLUxp",
+        "blockdata_KbiFpC",
+        "first_block_wDdmWM",
+        "blockdata_8kEPb9",
+        "blockdata_DDMdx8",
+        "blockdata_tD7wVA",
+        "blockdata_7bFEc4",
+        "blockdata_UebpkM",
+        "blockdata_QA8bqm",
+        "blockdata_9VkMip",
+        "background_6gW9Mt",
+        "textcontainer_LMfB8V",
+        "textsuggestion_qchMJY"
+      ],
+      "settings": {
+        "header": ""
+      }
+    },
+    "custom_category_AwWGLr": {
+      "type": "custom-category",
+      "blocks": {
+        "category_Xmqpkn": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "image_link": "shopify:\/\/collections\/womens-fashion",
+            "category_title": "Girls Fashion"
+          }
+        },
+        "category_cWWaTX": {
+          "type": "category",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mct_e6ee778b-22ee-4577-a5de-1eb0762dd4c6.jpg",
+            "image_link": "shopify:\/\/collections\/mens-fashion",
+            "category_title": "Mens Fashion"
+          }
+        }
+      },
+      "block_order": [
+        "category_Xmqpkn",
+        "category_cWWaTX"
+      ],
+      "disabled": true,
+      "settings": {
+        "text": ""
+      }
+    },
+    "featured_collection_AaeP7H": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured Books",
+        "heading_size": "h1",
+        "description": "<h4><em>Build your book collection with our curated selection of literature, non-fiction, and children's books. Discover new worlds and expand your knowledge.<\/em><\/h4>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "books",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_n7PkAc": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Cat House Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cats",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_pNFXYt": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ppq4Wi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "books"
+          }
+        },
+        "featured_collection_MVFznH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cats"
+          }
+        },
+        "featured_collection_KaVDAy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dogs"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ppq4Wi",
+        "featured_collection_MVFznH",
+        "featured_collection_KaVDAy"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_PWXHyU": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "books",
+        "products_to_show": 15,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_input_practice_xLxLE4": {
+      "type": "new-input-practice",
+      "blocks": {
+        "slide_eFwGiV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b2.webp"
+          }
+        },
+        "range_3Pfgnk": {
+          "type": "range",
+          "settings": {
+            "font-size": 42
+          }
+        },
+        "select_nwjw6b": {
+          "type": "select",
+          "settings": {
+            "horizontal-alignment": "right"
+          }
+        },
+        "radio_qh6E8T": {
+          "type": "radio",
+          "disabled": true,
+          "settings": {
+            "radio": "left",
+            "text": "Hello  Welcome"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eFwGiV",
+        "range_3Pfgnk",
+        "select_nwjw6b",
+        "radio_qh6E8T"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Slideshow"
+      }
+    },
+    "demo_section_Xeywcx": {
+      "type": "demo-section",
+      "blocks": {
+        "question_WLpFrq": {
+          "type": "question",
+          "settings": {
+            "question": "what is your name?",
+            "answer": "Anil"
+          }
+        },
+        "question_6cgrkh": {
+          "type": "question",
+          "settings": {
+            "question": "Most sold products",
+            "answer": "Cat tree house"
+          }
+        }
+      },
+      "block_order": [
+        "question_WLpFrq",
+        "question_6cgrkh"
+      ],
+      "disabled": true,
+      "settings": {
+        "headline": "FAQ"
+      }
+    },
+    "custom_collection_list_jR6HpE": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "pageheading_YNNJ6M": {
+          "type": "pageheading",
+          "settings": {
+            "heading": "All of your CPAP supplies, all in one place",
+            "description": "We carry the world's best selection of sleep apnea treatments and accessories from leading manufacturers at the best prices."
+          }
+        },
+        "listcollection_trbNdF": {
+          "type": "listcollection",
+          "settings": {
+            "collectionlist1": [
+              "books",
+              "cats",
+              "children-story-books",
+              "dogs"
+            ]
+          }
+        },
+        "sublistcollection_QKAnq7": {
+          "type": "sublistcollection",
+          "settings": {
+            "collectionlist2": [
+              "books",
+              "cats",
+              "children-story-books",
+              "dogs",
+              "mens-fashion"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "pageheading_YNNJ6M",
+        "listcollection_trbNdF",
+        "sublistcollection_QKAnq7"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "custom_mega_menu_nPQydY",
+    "custom_category_AwWGLr",
+    "featured_collection_AaeP7H",
+    "featured_collection_n7PkAc",
+    "collection_list_pNFXYt",
+    "featured_collection_PWXHyU",
+    "new_input_practice_xLxLE4",
+    "demo_section_Xeywcx",
+    "custom_collection_list_jR6HpE"
+  ]
+}

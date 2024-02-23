@@ -1,0 +1,39 @@
+.announcement-container{
+  background:#faf9f2; 
+  width:100%;
+  position:fixed;
+  height: 48px;
+  max-height:48px;
+  transition:0.7s ease;
+}
+
+
+.announcement-bar{
+  z-index:20;
+  display:flex;
+  justify-content:space-evenly;
+  padding: 5px 10px;
+  align-items:center;
+  transition:0.7s ease;
+}
+
+.announcement-bar .offer-container{
+  order:1; 
+  margin-right:auto;
+}
+
+.announcement-bar .offer-container, .customer-care, .add-fav, .signup{
+  display:flex;
+  align-items:center;
+}
+
+.announcement-bar  img{
+  margin-inline:5px;
+}
+
+.announcement-bar .customer-care, 
+.add-fav,
+.signup{
+  order:2;
+  margin-inline:10px;
+}

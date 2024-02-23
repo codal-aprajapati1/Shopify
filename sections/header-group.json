@@ -1,0 +1,101 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to ouwerdtfgyhujklr store",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "inverse",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "disabled": true,
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_header_announcement_KiNbpd": {
+      "type": "custom-header-announcement",
+      "blocks": {
+        "text_igKTBr": {
+          "type": "text",
+          "settings": {
+            "offer-image": "shopify:\/\/shop_images\/s_logo.png",
+            "signup-offer": "Sign up to be a CPAP.com VIP for 20% off your order >"
+          }
+        },
+        "text1_3WUcjT": {
+          "type": "text1",
+          "settings": {
+            "call-image": "shopify:\/\/shop_images\/65cb4dcd32b6e4000f27615d.png",
+            "helplinetext": "Questions : Call us toll-free",
+            "contactnum": "1-800-356-5221"
+          }
+        },
+        "text2_nwzErW": {
+          "type": "text2",
+          "settings": {
+            "heart-image": "shopify:\/\/shop_images\/transparent_heart.png",
+            "add-fav": "My favourites"
+          }
+        },
+        "text3_CQTQVc": {
+          "type": "text3",
+          "settings": {
+            "signimage": "shopify:\/\/shop_images\/signup.png",
+            "signin": "Sign In"
+          }
+        }
+      },
+      "block_order": [
+        "text_igKTBr",
+        "text1_3WUcjT",
+        "text2_nwzErW",
+        "text3_CQTQVc"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "announcement": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "custom_header_announcement_KiNbpd"
+  ]
+}

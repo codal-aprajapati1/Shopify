@@ -1,0 +1,149 @@
+{{ 'practice-block-input.css' | asset_url | stylesheet_tag }} 
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'slide' %}
+      <div class="slide" {{ block.shopify_attributes }}>
+        {{ block.settings.image | image_url: width: 250 | image_tag }}
+      </div>
+  {% when 'range' %}
+        <p style="font-size:{{ block.settings.font-size }}px">Welcome to Range</p>  
+    {% when 'select' %}
+    <div class="horizontal-alignment" style="text-align:{{ block.settings.horizontal-alignment}}">
+        Align Me
+    </div>
+    {% when 'radio' %}
+      <div class="radio1">
+      <div class="container cont1">
+        <h2>Left Container</h2>
+    {% if block.settings.radio == "left" %}
+        <p>{{ block.settings.text }}</p>
+    {% endif %}
+    </div>
+      <div class="container cont2">
+        <h2>This is Right Container</h2>
+    {% if block.settings.radio == "right" %}
+        <p>{{ block.settings.text }}</p>
+      {% endif %}
+      </div>
+    </div>
+  {% endcase %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Slideshow-custom",
+  "tag": "section",
+  "class": "slideshow",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     },
+    {
+      "name": "Range",
+      "type": "range",
+      "settings":[
+        {
+          "type": "range",
+          "id": "font-size",
+          "min": 2,
+          "max": 50,
+          "step": 1,
+          "label": "Font-Size",
+          "default": 10
+        }
+      ]
+     },
+    {
+      "name": "Alignment",
+      "type": "select",
+      "settings": [
+        {
+          "type":"select",
+          "id": "horizontal-alignment",
+          "label": "horizontal_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+               "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+     },
+    {
+      "name":"Rad1",
+      "type":"radio",
+      "settings":[
+        {
+          "id":"radio",
+          "type":"radio",
+          "label":"Radio",
+          "options":[
+            {
+              "value":"left",
+              "label":"Left"
+            },
+             {
+              "value":"right",
+              "label":"Right"
+            }
+          ]
+        },
+        {
+          "id":"text",
+          "type":"text",
+          "label":"Enter Text"
+        }
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow-custom",
+      "settings": {
+        "title": "Slideshow"
+      },
+      "blocks": [
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Slideshow"
+    },
+    "fr": {
+      "title": "Diaporama"
+    }
+  }
+}
+{% endschema %}
