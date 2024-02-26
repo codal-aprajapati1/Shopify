@@ -12,7 +12,7 @@
 
         {% elsif block.type == 'navbarlinks' %}
           <div class="navbar-container search-effect">
-            <ul>
+            <ul >
               {% for link in block.settings.linklist.links %}
                 <li class="search-effect">
                   {% if link != blank %}
@@ -86,7 +86,7 @@
               <div class="close-container"><span class="close-btn">Close</span></div>
             </form>
           </div>
-          
+
         {% elsif block.type == 'cartimage' %}
           <div class="cart-btn search-effect">
             <a href="#">{% render 'icon-cart' %}</a>
@@ -97,14 +97,14 @@
   </div>
 </div>
 
-<div class="main-search-cont" >
+<div class="main-search-cont">
   <div class="sub-search-cont page-width">
     <div class="suggestion-container">
       <h1>Popular Search Terms</h1>
       <ul>
         <li>AirMini <span>&gt;</span></li>
         <li>AirSense10 <span>&gt;</span></li>
-          <li>ResMed <span>&gt;</span></li>
+        <li>ResMed <span>&gt;</span></li>
         <li>AirFit <span>&gt;</span></li>
         <li>CPAP Mask <span>&gt;</span></li>
       </ul>
@@ -113,31 +113,31 @@
       {% for block in section.blocks %}
         {% if block.type == 'textsuggestion' %}
           <div class="quest">
-            {{ block.settings.question-heading }}
+            {{ block.settings['question-heading'] }}
           </div>
-          <div class="suggest">
-            <p>{{ block.settings.option1 }}</p>
-            <a href="{{ block.settings.option1url }}">&gt;</a>
+          <div class="display-row">
+            <div class="suggest">
+              <p>{{ block.settings.option1 }}</p>
+              <a href="{{ block.settings.option1url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option2 }}</p>
+              <a href="{{ block.settings.option2url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option3 }}</p>
+              <a href="{{ block.settings.option3url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option4 }}</p>
+              <a href="{{ block.settings.option4url }}">&gt;</a>
+            </div>
           </div>
-          <div class="suggest">
-            <p>{{ block.settings.option2 }}</p>
-            <a href="{{ block.settings.option2url }}">&gt;</a>
-          </div>
-          <div class="suggest">
-            <p>{{ block.settings.option3 }}</p>
-            <a href="{{ block.settings.option3url }}">&gt;</a>
-          </div>
-          <div class="suggest">
-            <p>{{ block.settings.option4 }}</p>
-            <a href="{{ block.settings.option4url }}">&gt;</a>
-          </div>
-      {% endif %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>
-  
 </div>
-
 
 <div class="background-img-container ">
   {% for block in section.blocks %}
@@ -155,8 +155,9 @@
       <div class="blocks-container page-width">
         <div class="image-below-container">
           <div class="question-container">
-            <h2>{{ block.settings.question-heading }}</h2>
+            <h2>{{ block.settings['question-heading'] }}</h2>
           </div>
+
           <div class="options">
             <p>{{ block.settings.option1 }}</p>
             <a href="{{ block.settings.option1url }}">&gt;</a>
@@ -184,97 +185,63 @@
 </div>
 
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     // alert();
-    $('.main-cont').mouseenter(function() {
-      $(this).addClass('active');
-      $('.announcement-container').addClass('active-text-white');
-      $('.announcement-bar').addClass('active-text-white');
-      $('.navbar-container ul li a').addClass('active-only-text-black');
-      $('.mega-menu .find-my-solution a').addClass('background-black');
-      $('.cart-btn a svg').addClass('active-svg');
+    $('.main-cont')
+      .mouseenter(function () {
+        $(this).addClass('active1');
+        $('.announcement-container').addClass('active-text-white');
+        $('.announcement-bar').addClass('active-text-white');
+        $('.navbar-container ul li a').addClass('active-only-text-black');
+        $('.mega-menu .find-my-solution a').addClass('background-black');
+        $('.cart-btn a svg').addClass('active-svg');
 
-      $(document).on('click','input',function(){
-          $(".search-effect").hide();
+
+        $(document).on('click', 'input', function () {
+          $('.search-effect').hide();
+          $('.logo-container').addClass('logo-hide');
           $('.search-bar').addClass('adjust-margin');
           $('.mega-menu .search-bar form input').addClass('slideeffect');
-          $('.close-btn').css('display','flex');
-          $('.main-search-cont').css('display','block');
+          $('.close-btn').css('display', 'flex');
+          $('.main-search-cont').css('display', 'block');
           $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
-      $(document).on('click', '.close-btn', function(){
-          $(".search-effect").show();
-          $('.main-search-cont').css('display','none');
-          $('.mega-menu .search-bar form input').removeClass('slideeffect');
-          $('.close-btn').css('display','none');
-          $('.search-bar').removeClass('adjust-margin');
-          $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
+          $(document).on('click', '.close-btn', function () {
+            $('.search-effect').show();
+            $('.logo-container').removeClass('logo-hide');
+            $('.main-search-cont').css('display', 'none');
+            $('.mega-menu .search-bar form input').removeClass('slideeffect');
+            $('.close-btn').css('display', 'none');
+            $('.search-bar').removeClass('adjust-margin');
+            $('.findmy')
+            $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
           });
+        });
+
+
+        $(document).on('click', '.burger-bar', function () {
+          $('.mega-menu .navbar-container ul').addClass('convert-block');
+        });
+
+        $('.navbar-container ul li')
+          .mouseenter(function () {
+            $('.outer-div').removeClass('active');
+            $(this).find('.outer-div').addClass('active');
+            $(this).find('#rotate').css('transform', 'rotate(180deg)');
+          })
+          .mouseleave(function () {
+            $(this).find('#rotate').css('transform', 'rotate(0deg)');
+          });
+      })
+      .mouseleave(function () {
+        $('.announcement-bar').removeClass('active-text-white');
+        $('.mega-menu .find-my-solution a').removeClass('background-black');
+        $('.announcement-container').removeClass('active-text-white');
+        $('.navbar-container ul li a').removeClass('active-only-text-black');
+        $(this).removeClass('active');
+        // $('.cart-btn svg').removeClass('active-text-black');
+        $('.navbar-container ul li').find('.outer-div').removeClass('active');
+        $('.cart-btn a svg').removeClass('active-svg');
       });
-
-      $('.navbar-container ul li').mouseenter(function() {
-      $('.outer-div').removeClass("active");
-      $(this).find(".outer-div").addClass("active");
-      $(this).find('#rotate').css("transform","rotate(180deg)");
-      }).mouseleave(function() {
-
-      $(this).find('#rotate').css("transform","rotate(0deg)");
-
-  });
-
-      }).mouseleave(function() {
-      $('.announcement-bar').removeClass('active-text-white');
-      $('.mega-menu .find-my-solution a').removeClass('background-black');
-      $('.announcement-container').removeClass('active-text-white');
-      $('.navbar-container ul li a').removeClass('active-only-text-black');
-      $(this).removeClass("active");
-      // $('.cart-btn svg').removeClass('active-text-black');
-      $('.navbar-container ul li').find(".outer-div").removeClass("active");
-      $('.cart-btn a svg').removeClass('active-svg');
-      
-  })
-
-  });
-</script>
-<script>
-   $(document).ready(function() {
-  });
-
-  //     $(window).on('scroll',function(){
-  //       $('.main-cont').css("background","white");
-  //       $('.mega-menu .navbar-container ul li a').css('color','grey');
-  //     });
-
-  //     $('.grid-cont').hide();
-  //     $('.navbar-container ul li a').hover( function() {
-  //       $('.caret-icon').css('transform', 'rotate(180deg)');0
-  //       $('.grid-cont').hide();
-  //       $('.navbar-container ul li a').css('color', 'grey');
-  //           var linkValue = $(this).text();
-  //           if(linkValue == 'CPAP Masks'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Masks').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Machines'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Machines').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Supplies'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Supplies').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Accessories'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Accessories').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Home Sleep Test'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Home-Sleep-Test').slideDown('slow').show();
-  //           }
-  //     });
-  //     $('.grid-cont').mouseleave(function() {
-  //       $(this).slideUp('slow');
-  //       $('.navbar-container ul li a').css('color','grey');
-  // });
   });
 </script>
 
@@ -307,7 +274,7 @@
       "name": "Button Text",
       "type": "text1",
       "limit": 1,
-      "settings":[
+      "settings": [
         {
           "type": "text",
           "id": "buttontext",
@@ -354,14 +321,14 @@
       "name": "First Block Data",
       "type": "first_block",
       "limit": 5,
-      "settings":[
+      "settings": [
         {
           "type": "text",
           "id": "mega_menu_name",
           "label": "Enter Mega Menu Name"
         },
         {
-           "type": "image_picker",
+          "type": "image_picker",
           "id": "product_image",
           "label": "Enter Product Image"
         },
@@ -376,7 +343,7 @@
           "label": "Enter Product Description"
         },
         {
-           "type": "text",
+          "type": "text",
           "id": "enter_button_text",
           "label": "Enter Button Text"
         },
@@ -388,22 +355,22 @@
       ]
     },
     {
-       "name": "Block Data",
+      "name": "Block Data",
       "type": "blockdata",
       "limit": 40,
-      "settings":[
+      "settings": [
         {
           "type": "text",
           "id": "mega_menu_name",
           "label": "Enter Mega Menu Name"
         },
         {
-           "type": "image_picker",
+          "type": "image_picker",
           "id": "product_image",
           "label": "Enter Product Image"
         },
         {
-           "type": "text",
+          "type": "text",
           "id": "enter_product_title",
           "label": "Enter Product Title"
         },
@@ -434,7 +401,7 @@
           "label": "Enter Image Description"
         },
         {
-          "type":"text",
+          "type": "text",
           "id": "firstbuttontext",
           "label": "First Button Text"
         },
@@ -443,8 +410,8 @@
           "id": "firstbuttonurl",
           "label": "Enter First Button URL"
         },
-       {
-          "type":"text",
+        {
+          "type": "text",
           "id": "secondbuttontext",
           "label": "First Button Text"
         },
@@ -469,12 +436,12 @@
           "id": "option1",
           "label": "Enter First option Value"
         },
-         {
+        {
           "type": "url",
           "id": "option1url",
           "label": "Enter First option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option2",
           "label": "Enter Second option Value"
@@ -484,7 +451,7 @@
           "id": "option2url",
           "label": "Enter Second option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option3",
           "label": "Enter Third option Value"
@@ -494,7 +461,7 @@
           "id": "option3url",
           "label": "Enter Third option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option4",
           "label": "Enter Fourth option Value"
@@ -504,12 +471,12 @@
           "id": "option4url",
           "label": "Enter Fourth option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option5",
           "label": "Enter Fifth option Value"
         },
-         {
+        {
           "type": "url",
           "id": "option5url",
           "label": "Enter Fourth option URL"
@@ -525,7 +492,7 @@
       "name": "SuggestionBelowContainer",
       "type": "textsuggestion",
       "settings": [
-       {
+        {
           "type": "text",
           "id": "question-heading",
           "label": "Enter the Question"
@@ -535,12 +502,12 @@
           "id": "option1",
           "label": "Enter First option Value"
         },
-         {
+        {
           "type": "url",
           "id": "option1url",
           "label": "Enter First option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option2",
           "label": "Enter Second option Value"
@@ -550,7 +517,7 @@
           "id": "option2url",
           "label": "Enter Second option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option3",
           "label": "Enter Third option Value"
@@ -560,7 +527,7 @@
           "id": "option3url",
           "label": "Enter Third option URL"
         },
-         {
+        {
           "type": "text",
           "id": "option4",
           "label": "Enter Fourth option Value"
@@ -572,13 +539,11 @@
         }
       ]
     }
-
   ],
   "presets": [
     {
       "name": "Mega-Menu",
-      "settings": {
-      },
+      "settings": {},
       "blocks": [
         {
           "type": "text"
