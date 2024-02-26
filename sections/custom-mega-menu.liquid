@@ -69,6 +69,7 @@
                 </li>
               {% endfor %}
             </ul>
+            <span class="burger-bar">{% render 'icon-hamburger' %}</span>
           </div>
 
         {% elsif block.type == 'text1' %}
@@ -151,7 +152,7 @@
         </div>
       </div>
     {% elsif block.type == 'textcontainer' %}
-      <div class="page-width">
+      <div class="blocks-container page-width">
         <div class="image-below-container">
           <div class="question-container">
             <h2>{{ block.settings.question-heading }}</h2>
@@ -199,12 +200,14 @@
           $('.mega-menu .search-bar form input').addClass('slideeffect');
           $('.close-btn').css('display','flex');
           $('.main-search-cont').css('display','block');
+          $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
       $(document).on('click', '.close-btn', function(){
           $(".search-effect").show();
           $('.main-search-cont').css('display','none');
           $('.mega-menu .search-bar form input').removeClass('slideeffect');
           $('.close-btn').css('display','none');
           $('.search-bar').removeClass('adjust-margin');
+          $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
           });
       });
 
@@ -212,7 +215,6 @@
       $('.outer-div').removeClass("active");
       $(this).find(".outer-div").addClass("active");
       $(this).find('#rotate').css("transform","rotate(180deg)");
-      // $(this).find(".outer-div").slideDown('slow');
       }).mouseleave(function() {
 
       $(this).find('#rotate').css("transform","rotate(0deg)");

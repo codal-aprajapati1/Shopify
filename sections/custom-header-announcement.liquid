@@ -2,124 +2,120 @@
 
 <div class="announcement-container ">
   <div class="announcement-bar page-width">
-  {%  for block in section.blocks %}
-      {% if block.type == "text" %}
+    {% for block in section.blocks %}
+      {% if block.type == 'text' %}
         <div class="offer-container">
           <img src="{{ block.settings.offer-image | img_url }}" style="width: 20px">
-          {{ block.settings.signup-offer }}
+          {{ block.settings['signup-offer'] -}}
+          <span class="show-options">{% render 'icon-caret' %}</span>
         </div>
-      {% elsif block.type == "text1" %}
+      {% elsif block.type == 'text1' %}
         <div class="customer-care">
-          <img src="{{ block.settings.call-image | image_url}}" style="width:20px">{{ block.settings.helplinetext }} <a href="tel: {{ block.settings.contactnum }}">{{ block.settings.contactnum }}</a>
+          <img src="{{ block.settings.call-image | image_url}}" style="width:20px">{{ block.settings.helplinetext }}
+          <a class="contact-no" href="tel: {{ block.settings.contactnum }}">{{ block.settings.contactnum }}</a>
         </div>
-      {% elsif block.type == "text2" %}
+      {% elsif block.type == 'text2' %}
         <div class="add-fav">
           <img src="{{ block.settings.heart-image | img_url }}" style="width: 20px">
-          {{ block.settings.add-fav }}
+          {{ block.settings['add-fav'] }}
         </div>
-      {% elsif block.type == "text3" %}
+      {% elsif block.type == 'text3' %}
         <div class="signup">
-        <img src="{{ block.settings.signimage | image_url }}" style="width: 20px;">
+          <img src="{{ block.settings.signimage | image_url }}" style="width: 20px;">
           {{ block.settings.signin }}
         </div>
       {% endif %}
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 </div>
 
 <script>
-   // $(document).ready(function() {
-   //    $(window).on('scroll',function(){
-   //      $('.announcement-container').css({"background":"black","color":"white"});
-   //      $('.announcement-bar').css({"color":"white"});
-        
-   //    });
-   // });
+  $(document).ready(function () {
+    // $('.show-options').hide();
+  });
 </script>
 
-
 {% schema %}
-  {
-    "name": "Custom Announcement",
-    "settings": [
-      {
-        "id": "announcement",
-        "label": "Announcement Bar",
-        "type": "text"
-      }
-    ],
-    "max_blocks": 4,
-    "blocks": [
-      {
-        "name": "Text",
-        "type": "text",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "offer-image",
-            "label": "Upload Offer logo"
-          },
-          {
-            "id": "signup-offer",
-            "type": "text",
-            "label": "Signup Offer"
-          }
-        ]
-      },
-      {
-        "name": "Contact-Info",
-        "type": "text1",
-        "settings":[
-          {
-            "type": "image_picker",
-            "id": "call-image",
-            "label": "Upload Headphone Image"
-          },
-          {
-            "type": "text",
-            "id": "helplinetext",
-            "label": "Helpline Text"
-          },
-          {
-            "type": "text",
-            "id": "contactnum",
-            "label": "Upload Number"
-          }
-        ]
-      },
-       {
-        "name": "Add to Favourites",
-        "type": "text2",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "heart-image",
-            "label": "Upload Headphone Image"
-          },
-          {
-            "id": "add-fav",
-            "type": "text",
-            "label": "Add to Favourite"
-          }
-        ]
-      },
-       {
-        "name": "Signup",
-        "type": "text3",
-        "settings": [
-          {
-            "id": "signimage",
-            "type": "image_picker",
-            "label": "Upload Sign In"
-          },
-          {
-            "id": "signin",
-            "type": "text",
-            "label": "Sign In"
-          }
-        ]
-      }
-      
-    ]
-  }
+{
+  "name": "Custom Announcement",
+  "settings": [
+    {
+      "id": "announcement",
+      "label": "Announcement Bar",
+      "type": "text"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "offer-image",
+          "label": "Upload Offer logo"
+        },
+        {
+          "id": "signup-offer",
+          "type": "text",
+          "label": "Signup Offer"
+        }
+      ]
+    },
+    {
+      "name": "Contact-Info",
+      "type": "text1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "call-image",
+          "label": "Upload Headphone Image"
+        },
+        {
+          "type": "text",
+          "id": "helplinetext",
+          "label": "Helpline Text"
+        },
+        {
+          "type": "text",
+          "id": "contactnum",
+          "label": "Upload Number"
+        }
+      ]
+    },
+    {
+      "name": "Add to Favourites",
+      "type": "text2",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "heart-image",
+          "label": "Upload Headphone Image"
+        },
+        {
+          "id": "add-fav",
+          "type": "text",
+          "label": "Add to Favourite"
+        }
+      ]
+    },
+    {
+      "name": "Signup",
+      "type": "text3",
+      "settings": [
+        {
+          "id": "signimage",
+          "type": "image_picker",
+          "label": "Upload Sign In"
+        },
+        {
+          "id": "signin",
+          "type": "text",
+          "label": "Sign In"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
