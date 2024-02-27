@@ -125,15 +125,11 @@
                   <div class="card__content">
                     <div class="card__information">
                       <h3 class="card__heading h2">
-                        {% comment %} {{ 'sections.featured_blog.onboarding_title' | t }} {% endcomment %}
+                        {{ 'sections.featured_blog.onboarding_title' | t }}
                       </h3>
                       <p class="article-card__excerpt rte-width">
                         {{ 'sections.featured_blog.onboarding_content' | t }}
                       </p>
-                      <div class="bottom_container">
-                        <a>Shop Now</a>
-                        <img src="{{ 'section.' }}" alt="Image to be displayed">
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -264,7 +260,7 @@
     {
       "type": "checkbox",
       "id": "show_date",
-      "default": false,
+      "default": true,
       "label": "t:sections.featured-blog.settings.show_date.label"
     },
     {
