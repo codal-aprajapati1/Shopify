@@ -1,0 +1,116 @@
+.main-container .page-heading{
+    width:568px;
+    text-align:center;
+    margin: 100px 0;;
+    margin-inline:auto;
+    /* padding: 20px 45px; */
+  }
+  .main-container .page-heading p{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 500;
+  }
+  
+  .carousel-container{
+    padding:15px;
+    display:flex;
+    flex-direction:row;
+    gap:50px;
+    overflow-x:scroll;
+    /* scrollbar-width: thin; */
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  .carousel-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 7px;
+  }
+   
+  /* Handle */
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  .carousel-container::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  
+
+  .carousel-container .card{
+    min-width: 421px;
+    height: 627px;
+    box-shadow:0 0 10px 4px #c6c2c2;
+  }
+  .card .video-container{
+    height: 420px;
+  }
+   .card .video-container  iframe{
+      width: 100%;
+     height: 100%
+   }
+  
+    
+  .card .below-text-data{
+    padding: 10px;
+  }
+  
+  .card .below-text-data p{
+    width: 267px;
+  }
+  
+  .card .below-text-data .bottom-img-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px
+  }
+  
+  .card .below-text-data .bottom-img-btn a{
+    border : 1px solid var(--orange);
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  
+  .card .below-text-data .bottom-img-btn .image_container{
+    width: 100px;
+    height: 100px;
+  }
+
+  @media screen and (max-width: 768px){
+    .main-container .page-heading{
+        width: 335px;
+        text-align:center;
+        margin: 100px 0;;
+        margin-inline:auto;
+        /* padding: 20px 45px; */
+      }
+      .main-container .page-heading p{
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 500;
+      }
+      .carousel-container{
+          gap: 20px;
+      }
+      .carousel-container .card{
+        min-width: 276px;
+        height: 467px;
+        box-shadow:0 0 10px 4px #c6c2c2;
+      }
+      .card .video-container{
+        height: 271px;
+      }
+  }

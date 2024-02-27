@@ -22,6 +22,10 @@
   margin-right:auto;
 }
 
+.show-options{
+  display: none;
+}
+
 .announcement-bar .offer-container, .customer-care, .add-fav, .signup{
   display:flex;
   align-items:center;
@@ -37,3 +41,41 @@
   order:2;
   margin-inline:10px;
 }
+
+.customer-care .contact-no{
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .announcement-bar {
+    display: flex;
+    align-items: center;
+    transition: .7s ease;
+    font-weight: 700;
+    /* padding: 0; */
+  }
+  .announcement-bar .offer-container{
+    width: 100%;
+  }
+  .announcement-bar .offer-container img{
+    display: none; 
+  }
+  .announcement-bar .customer-care, 
+  .add-fav,
+  .signup{
+    display: none;
+
+  }
+  .show-options{
+    display: flex;
+    margin-left:30%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .announcement-bar .offer-container{
+    width: 100%;
+  }
+} 

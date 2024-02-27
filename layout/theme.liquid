@@ -250,7 +250,7 @@
         }
       }
     {% endstyle %}
-
+    {{ 'font.css' |  asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
@@ -298,6 +298,7 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+      {%  section 'custom-social-testimonial' %}
     </main>
 {% section 'custom-product-section' %}
 {% sections 'footer-group' %}

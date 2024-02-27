@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular.ttf?v=1706682747') format('truetype');
+       
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Thin.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Thin.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Thin.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Thin.ttf?v=1706682747') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Light.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Light.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Light.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Light.ttf?v=1706682747') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Heavy.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Heavy.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Heavy.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Heavy.ttf?v=1706682747') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular_1.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular_1.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular_1.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Regular_1.ttf?v=1706682747') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Bold.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Bold.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Bold.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Bold.ttf?v=1706682747') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Black.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Black.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Black.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Black.ttf?v=1706682747') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rand';
+    src: url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Medium.eot?v=1706682747'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Medium.woff2?v=1706682746') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Medium.woff?v=1706682746') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0575/5505/8766/files/Rand-Medium.ttf?v=1706682747') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+  font-family: 'Rand' !important;
+}

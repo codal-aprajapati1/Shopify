@@ -1,0 +1,98 @@
+{{ 'custom-social-testimonial.css' | asset_url | stylesheet_tag }}
+
+<div class="main-container">
+  <div class="sub-testimonial-container page-width">
+    <div class="page-heading">
+      <p>{{ section.settings.page_heading }}</p>
+    </div>
+        <div class="carousel-container">
+    {% for block in section.blocks %}
+          {% if block.type == 'description' %}
+              <div class="card">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}"
+                    class="youtube"
+                    allow="autoplay; encrypted-media"
+                    title="{{ section.settings.description | escape }}"
+                  ></iframe>
+                </div>
+                <div class="below-text-data">
+                  <div class="data-container">
+                    <p>{{ block.settings.customer_review }}</p>
+                  </div>
+                  <div class="bottom-img-btn">
+                    <a href="#">Shop Now</a>
+                    <div class="image_container">
+                      <img src="{{ block.settings.review_product_image | img_url }}" width=100% height=100%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endif %}
+    {% endfor %}
+        </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Social testimonial",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter Page Heading",
+      "id": "page_heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "description",
+      "name": "Enter description",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Enter User review",
+          "id": "customer_review"
+        },
+        {
+          "type": "image_picker",
+          "label": "Upload Product Image",
+          "id": "review_product_image"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "label": "URL",
+            "info": "Video plays in the page."
+          },
+        {
+          "type": "url",
+          "label": "Enter button URl",
+          "id": "buttonurl"
+        }
+      ]
+    },
+    {
+      "type": "image_block",
+      "name": "Image Upload Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Upload Product Image",
+          "id": "review_product_image"
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}

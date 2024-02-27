@@ -69,6 +69,7 @@
                 </li>
               {% endfor %}
             </ul>
+            <span class="burger-bar">{% render 'icon-hamburger' %}</span>
           </div>
 
         {% elsif block.type == 'text1' %}
@@ -96,39 +97,41 @@
   </div>
 </div>
 
-<div class="main-search-cont" >
+<div class="main-search-cont">
   <div class="sub-search-cont page-width">
     <div class="suggestion-container">
       <h1>Popular Search Terms</h1>
       <ul>
-        <li>AirMini <span>></span></li>
-        <li>AirSense10 <span>></span></li>
-          <li>ResMed <span>></span></li>
-        <li>AirFit <span>></span></li>
-        <li>CPAP Mask <span>></span></li>
+        <li>AirMini <span>&gt;</span></li>
+        <li>AirSense10 <span>&gt;</span></li>
+        <li>ResMed <span>&gt;</span></li>
+        <li>AirFit <span>&gt;</span></li>
+        <li>CPAP Mask <span>&gt;</span></li>
       </ul>
     </div>
     <div class="recommend-cont">
       {% for block in section.blocks %}
         {% if block.type == 'textsuggestion' %}
           <div class="quest">
-            {{ block.settings.question-heading }}
+            {{ block.settings['question-heading'] }}
           </div>
-          <div class="suggest">
-            <p>{{ block.settings.option1 }}</p>
-            <a href="{{ block.settings.option1url }}">&gt;</a>
-          </div>
-          <div class="suggest">
-            <p>{{ block.settings.option2 }}</p>
-            <a href="{{ block.settings.option2url }}">&gt;</a>
-          </div>
-          <div class="suggest">
-            <p>{{ block.settings.option3 }}</p>
-            <a href="{{ block.settings.option3url }}">&gt;</a>
-          </div>
-          <div class="suggest">
-            <p>{{ block.settings.option4 }}</p>
-            <a href="{{ block.settings.option4url }}">&gt;</a>
+          <div class="display-row">
+            <div class="suggest">
+              <p>{{ block.settings.option1 }}</p>
+              <a href="{{ block.settings.option1url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option2 }}</p>
+              <a href="{{ block.settings.option2url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option3 }}</p>
+              <a href="{{ block.settings.option3url }}">&gt;</a>
+            </div>
+            <div class="suggest">
+              <p>{{ block.settings.option4 }}</p>
+              <a href="{{ block.settings.option4url }}">&gt;</a>
+            </div>
           </div>
       {% endif %}
       {% endfor %}
@@ -151,10 +154,10 @@
         </div>
       </div>
     {% elsif block.type == 'textcontainer' %}
-      <div class="page-width">
+      <div class="blocks-containe page-width">
         <div class="image-below-container">
           <div class="question-container">
-            <h2>{{ block.settings.question-heading }}</h2>
+            <h2>{{ block.settings['question-heading'] }}</h2>
           </div>
           <div class="options">
             <p>{{ block.settings.option1 }}</p>
@@ -186,35 +189,44 @@
   $(document).ready(function() {
     // alert();
     $('.main-cont').mouseenter(function() {
-      $(this).addClass('active');
-      $('.announcement-container').addClass('active-text-white');
-      $('.announcement-bar').addClass('active-text-white');
-      $('.navbar-container ul li a').addClass('active-only-text-black');
-      $('.mega-menu .find-my-solution a').addClass('background-black');
-      $('.cart-btn a svg').addClass('active-svg');
+      $(this).addClass('active1');
+        $('.announcement-container').addClass('active-text-white');
+        $('.announcement-bar').addClass('active-text-white');
+        $('.navbar-container ul li a').addClass('active-only-text-black');
+        $('.mega-menu .find-my-solution a').addClass('background-black');
+        $('.cart-btn a svg').addClass('active-svg');
 
       $(document).on('click','input',function(){
           $(".search-effect").hide();
+          $('.logo-container').addClass('logo-hide');
           $('.search-bar').addClass('adjust-margin');
           $('.mega-menu .search-bar form input').addClass('slideeffect');
-          $('.close-btn').css('display','flex');
-          $('.main-search-cont').css('display','block');
-      $(document).on('click', '.close-btn', function(){
-          $(".search-effect").show();
-          $('.main-search-cont').css('display','none');
-          $('.mega-menu .search-bar form input').removeClass('slideeffect');
-          $('.close-btn').css('display','none');
-          $('.search-bar').removeClass('adjust-margin');
+          $('.close-btn').css('display', 'flex');
+          $('.main-search-cont').css('display', 'block');
+          $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
+          $(document).on('click', '.close-btn', function () {
+            $('.search-effect').show();
+            $('.logo-container').removeClass('logo-hide');
+            $('.main-search-cont').css('display', 'none');
+            $('.mega-menu .search-bar form input').removeClass('slideeffect');
+            $('.close-btn').css('display', 'none');
+            $('.search-bar').removeClass('adjust-margin');
+            $('.findmy')
+            $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
           });
       });
+
+     
+      $(document).on('click', '.burger-bar', function () {
+          $('.mega-menu .navbar-container ul').addClass('convert-block');
+        });
 
       $('.navbar-container ul li').mouseenter(function() {
       $('.outer-div').removeClass("active");
       $(this).find(".outer-div").addClass("active");
       $(this).find('#rotate').css("transform","rotate(180deg)");
-      // $(this).find(".outer-div").slideDown('slow');
-      }).mouseleave(function() {
 
+      }).mouseleave(function() {
       $(this).find('#rotate').css("transform","rotate(0deg)");
 
   });
@@ -233,48 +245,7 @@
 
   });
 </script>
-<script>
-   $(document).ready(function() {
-  });
 
-  //     $(window).on('scroll',function(){
-  //       $('.main-cont').css("background","white");
-  //       $('.mega-menu .navbar-container ul li a').css('color','grey');
-  //     });
-
-  //     $('.grid-cont').hide();
-  //     $('.navbar-container ul li a').hover( function() {
-  //       $('.caret-icon').css('transform', 'rotate(180deg)');0
-  //       $('.grid-cont').hide();
-  //       $('.navbar-container ul li a').css('color', 'grey');
-  //           var linkValue = $(this).text();
-  //           if(linkValue == 'CPAP Masks'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Masks').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Machines'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Machines').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Supplies'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Supplies').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Accessories'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Accessories').slideDown('slow').show();
-  //           }
-  //           else if(linkValue == 'CPAP Home Sleep Test'){
-  //             $(this).css('color', 'black');
-  //             $('#CPAP-Home-Sleep-Test').slideDown('slow').show();
-  //           }
-  //     });
-  //     $('.grid-cont').mouseleave(function() {
-  //       $(this).slideUp('slow');
-  //       $('.navbar-container ul li a').css('color','grey');
-  // });
-  });
-</script>
 
 {% schema %}
 {
