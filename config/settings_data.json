@@ -577,6 +577,12 @@
         "settings": {
           "title": ""
         }
+      },
+      "custom-social-testimonial": {
+        "type": "custom-social-testimonial",
+        "settings": {
+          "page_heading": "Hear from CPAP users like you"
+        }
       }
     },
     "content_for_index": [
