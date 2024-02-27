@@ -8,10 +8,10 @@
   width: 100%;
   position: fixed;
   max-height: 83px;
-  /* margin-top: 163px; */
   overflow-y: hidden;
   z-index: 4;
   transition: 0.7s ease;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .mega-menu {
@@ -373,7 +373,9 @@ svg {
   right: 0;
   transition: 2s ease;
 }
-
+.active1{
+  background: white;
+}
 .active {
   display: block;
   z-index: 20;
