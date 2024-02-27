@@ -647,6 +647,23 @@
       ],
       "settings": {
       }
+    },
+    "featured_blog_LzXrGg": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Hear from CPAP users like you",
+        "heading_size": "h0",
+        "blog": "news",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -658,6 +675,7 @@
     "featured_collection_PWXHyU",
     "new_input_practice_xLxLE4",
     "demo_section_Xeywcx",
-    "custom_collection_list_jR6HpE"
+    "custom_collection_list_jR6HpE",
+    "featured_blog_LzXrGg"
   ]
 }
