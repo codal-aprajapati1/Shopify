@@ -650,6 +650,7 @@
     },
     "featured_blog_LzXrGg": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Hear from CPAP users like you",
         "heading_size": "h0",
