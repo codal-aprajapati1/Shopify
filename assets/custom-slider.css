@@ -26,6 +26,11 @@
   background:#ccc;
   border-radius:4px;
 }
+
+.slider-scrollbar:hover .scrollbar-track{
+  height:4px;
+}
+
 .slider-scrollbar .scrollbar-thumb{
   position:absolute;
   height:100%;
