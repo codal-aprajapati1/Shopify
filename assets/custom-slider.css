@@ -34,11 +34,11 @@
   border:none;
 }
 
-.slide-button #prev-btn{
+ .slider-wrapper ..slide-button #prev-btn{
   left:-20px;
 }
 
-.slide-button #next-btn{
+.slider-wrapper .slide-button #next-btn{
   right:-20px;
 }
 
