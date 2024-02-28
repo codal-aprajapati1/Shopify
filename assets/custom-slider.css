@@ -12,7 +12,8 @@
 }
 
 .container .slider-scrollbar{
-  width:100%;
+  width:50%;
+  margin-inline:auto;
   height:20px;
   background-color:red;
   display:flex;
