@@ -26,6 +26,8 @@
   color: white;
   cursor: pointer;
   font-size:1.2rem;
+  border-radius:50%;
+  cursor:pointer;
 }
 
 .slider-scrollbar .scrollbar-track{
