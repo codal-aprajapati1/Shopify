@@ -9,3 +9,8 @@
 .slides-container::-webkit-scrollbar{
   display:none;
 }
+
+.container .slider-scrollbar{
+  width:100%;
+  height:20px;
+} 
