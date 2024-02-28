@@ -20,8 +20,8 @@
 } 
 
 .slider-scrollbar .scrollbar-track{
-  height:3px;
   position:relative;
+  height:3px;
   width:100%;
   background:#ccc;
   border-radius:4px;
