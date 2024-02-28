@@ -565,6 +565,7 @@
         "blocks": {
           "header_jKjiMm": {
             "type": "header",
+            "disabled": true,
             "settings": {
               "pageHeading": "All of your CPAP supplies, all in one place",
               "pageDescription": "We carry the world's best selection of sleep apnea treatments and accessories from leading manufacturers at the best prices."
