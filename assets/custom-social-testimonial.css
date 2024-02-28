@@ -55,7 +55,6 @@
   align-items: center;
   gap: 50px;
   overflow-x: hidden;
-  /* scrollbar-width: thin; */
 }
 
 .carousel-container::-webkit-scrollbar {
