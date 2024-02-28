@@ -21,6 +21,7 @@
 
 .slider-scrollbar .scrollbar-track{
   height:3px;
+  position:relative;
   width:100%;
   background-color:#ccc;
 }
