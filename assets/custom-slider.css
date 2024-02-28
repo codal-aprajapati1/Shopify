@@ -13,7 +13,9 @@
 .container .slider-scrollbar{
   width:30%;
   height:20px;
-  background-color:red
+  background-color:red;
+  display:flex;
+  align-items:center;
 } 
 
 .slider-scrollbar scrollbar-track{
