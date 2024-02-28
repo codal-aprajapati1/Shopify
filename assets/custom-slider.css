@@ -33,5 +33,13 @@
   background:black;
   border-radius:inherit;
   cursor:grab;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:-10px;
   
 }
