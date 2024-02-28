@@ -30,6 +30,7 @@
   border-radius:50%;
   outline:none;
   border:none;
+  z-index:4;
 }
 
  .slider-wrapper .slide-button#prev-btn{
