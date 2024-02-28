@@ -6,53 +6,63 @@
     <div class="page-heading">
       <p>{{ section.settings.page_heading }}</p>
     </div>
+    <div class="container">
     <div class="slider-wrapper">
-    <div class="carousel-container slides-container">
-      {% comment %} <div class=""> {% endcomment %}
+      <div class="carousel-container slides-container">
+        {% comment %} <div class=""> {% endcomment %}
         {% for block in section.blocks %}
-        {% if block.type == 'description' %}
+          {% if block.type == 'description' %}
+            <div class="card">
+              <div class="videoplayer">
+                <span class="close-btn">{% render 'icon-close' %}</span>
+                <video id="popup_video" controls loop>
+                  <source src="{{ block.settings.video |  video_tag }}">
+                </video>
+              </div>
 
-        <div class="card">
-
-          <div class="videoplayer">
-            <span class="close-btn">{% render 'icon-close' %}</span>
-            <video id="popup_video" controls loop >
-              <source  src="{{ block.settings.video |  video_tag }}"       />            
-            </video>
+              <div class="video-container">
+                <div class="popup-container">
+                  {% render 'icon-youtube' -%}
+                  <span>Watch Testimonial</span>
                 </div>
-
-                <div class= "video-container">
-              <div class="popup-container">
-                {% render 'icon-youtube' %}<span>Watch Testimonial</span>
+                <img
+                  src="{{ block.settings.video.preview_image |  image_url  }}"
+                  class="banner-image"
+                  alt="youtube video image here"
+                  width="100%"
+                  height="100%"
+                >
               </div>
-              <img src="{{ block.settings.video.preview_image |  image_url  }}" class="banner-image"
-                alt="youtube video image here" width="100%" height="100%">
-          </div>
-          <div class="below-text-data">
-            <div class="data-container">
-              <p>{{ block.settings.customer_review }}</p>
-            </div>
-            <div class="bottom-img-btn">
-              <a href="{{ block.settings.product_data.url }}">Shop Now</a>
-              <div class="image_container">
-                <img src="{{ block.settings.product_data.featured_image | image_url  }}" width=100% height=100%>
+              <div class="below-text-data">
+                <div class="data-container">
+                  <p>{{ block.settings.customer_review }}</p>
+                </div>
+                <div class="bottom-img-btn">
+                  <a href="{{ block.settings.product_data.url }}">Shop Now</a>
+                  <div class="image_container">
+                    <img src="{{ block.settings.product_data.featured_image | image_url  }}" width="100%" height="100%">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        {% endif %}
+          {% endif %}
         {% endfor %}
         <div class="button-container page-width">
           <button type="submit" class="prev-btn">{% render 'icon-arrow' %}</button>
           <button type="submit" class="next-btn">{% render 'icon-arrow' %}</button>
         </div>
-              </div>
+      </div>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-thumb">
+        <div class="scrollbar-track"></div>
+      </div>
+    </div>
     </div>
   </div>
 </div>
 
 <script>
-
   $(document).ready(function () {
     $(document).on('click', '.popup-container', function () {
       $(this).parents('.card').find('.videoplayer').addClass('active-player');
@@ -64,10 +74,6 @@
     });
 
   });
-
-
-
-
 </script>
 
 {% schema %}
