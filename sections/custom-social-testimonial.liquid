@@ -5,95 +5,122 @@
     <div class="page-heading">
       <p>{{ section.settings.page_heading }}</p>
     </div>
-        <div class="carousel-container">
-    {% for block in section.blocks %}
-          {% if block.type == 'description' %}
-              <div class="card">
-                <div class="video-container">
-                  <iframe
-                    src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}"
-                    class="youtube"
-                    allow="autoplay; encrypted-media"
-                    title="{{ section.settings.description | escape }}"
-                  ></iframe>
+    <div class="carousel-container">
+      {% comment %} <div class=""> {% endcomment %}
+        {% for block in section.blocks %}
+        {% if block.type == 'description' %}
+
+        <div class="card">
+
+          <div class="videoplayer">
+            <span class="close-btn">{% render 'icon-close' %}</span>
+            <video id="popup_video" controls loop >
+              <source  src="{{ block.settings.video |  video_tag }}                   </video>
                 </div>
-                <div class="below-text-data">
-                  <div class="data-container">
-                    <p>{{ block.settings.customer_review }}</p>
-                  </div>
-                  <div class="bottom-img-btn">
-                    <a href="{{ block.settings.product_data.url }}">Shop Now</a>
-                    <div class="image_container">
-                      <img src="{{ block.settings.product_data.featured_image | image_url  }}" width=100% height=100%>
-                    </div>
-                 
-                  </div>
-                </div>
+
+                <div class= "video-container">
+              <div class="popup-container">
+                {% render 'icon-youtube' %}<span>Watch Testimonial</span>
               </div>
-          {% endif %}
-    {% endfor %}
+              <img src="{{ block.settings.video.preview_image |  image_url  }}" class="banner-image"
+                alt="youtube video image here" width="100%" height="100%">
+          </div>
+          <div class="below-text-data">
+            <div class="data-container">
+              <p>{{ block.settings.customer_review }}</p>
+            </div>
+            <div class="bottom-img-btn">
+              <a href="{{ block.settings.product_data.url }}">Shop Now</a>
+              <div class="image_container">
+                <img src="{{ block.settings.product_data.featured_image | image_url  }}" width=100% height=100%>
+              </div>
+            </div>
+          </div>
         </div>
+        {% endif %}
+        {% endfor %}
+        <div class="button-container page-width">
+          <button type="submit" class="prev-btn">{% render 'icon-arrow' %}</button>
+          <button type="submit" class="next-btn">{% render 'icon-arrow' %}</button>
+        </div>
+
+      {% comment %} </div> {% endcomment %}
+    </div>
   </div>
 </div>
 
+<script>
+
+  $(document).ready(function () {
+    $(document).on('click', '.popup-container', function () {
+      $(this).parents('.card').find('.videoplayer').addClass('active-player');
+    });
+
+    $(document).on('click', '.close-btn', function () {
+      $('.videoplayer').removeClass('active-player');
+      $('#popup_video').trigger('pause').get(0).currentTime=0;
+    });
+
+  });
+
+
+
+
+</script>
+
 {% schema %}
 {
-  "name": "Social testimonial",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "label": "Enter Page Heading",
-      "id": "page_heading"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "description",
-      "name": "Enter description",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Enter User review",
-          "id": "customer_review"
-        },
-        {
-          "type": "product",
-          "label": "Upload your product",
-          "id": "product_data"
-        },
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "accept": [
-            "youtube",
-            "vimeo"
-          ],
-            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "label": "URL",
-            "info": "Video plays in the page."
-          }
-      ]
-    },
-    {
-      "type": "image_block",
-      "name": "Image Upload Block",
-      "settings": [
-        {
-          "type": "product",
-          "label": "Upload product",
-          "id": "product_id"
-        }
-      ]
-    }
-  ],
-  "presets":[
-    {
-      "name": "Social testimonial"
-    } 
-  ],
-  "enabled_on": {
-    "templates": ["*"]
-  }
+"name": "Social testimonial",
+"tag": "section",
+"settings": [
+{
+"type": "text",
+"label": "Enter Page Heading",
+"id": "page_heading"
+}
+],
+"blocks": [
+{
+"type": "description",
+"name": "Enter description",
+"settings": [
+{
+"type": "text",
+"label": "Enter User review",
+"id": "customer_review"
+},
+{
+"type": "product",
+"label": "Upload your product",
+"id": "product_data"
+},
+{
+"type": "video",
+"id": "video",
+"label": "URL",
+"info": "Video plays in the popup."
+}
+]
+},
+{
+"type": "image_block",
+"name": "Image Upload Block",
+"settings": [
+{
+"type": "product",
+"label": "Upload product",
+"id": "product_id"
+}
+]
+}
+],
+"presets":[
+{
+"name": "Social testimonial"
+}
+],
+"enabled_on": {
+"templates": ["*"]
+}
 }
 {% endschema %}
