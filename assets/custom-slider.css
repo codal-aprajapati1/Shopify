@@ -35,7 +35,7 @@
   outline:none;
   border:none;
   z-index:4;
-  translate: Y(-50%);
+  
 }
 
  .slider-wrapper .slide-button#prev-btn{
