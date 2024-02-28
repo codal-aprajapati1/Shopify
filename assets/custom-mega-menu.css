@@ -137,7 +137,7 @@ svg {
     height: 500px;
     background: var(--white);
     position:absolute;
-    z-index: 4;
+    z-index: 1;
     width: 100%;
     display:none;
     margin-top: 83px;
