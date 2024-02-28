@@ -79,7 +79,16 @@
 </script>
 
 <script>
-  const initSlider = document.querySelectorAll('.slide-button');
+  const initSlider = () =>{
+    
+    const slideButtons = document.querySelectorAll('.slide-button');
+    slideButtons.forEach(button=>{
+      button.addEventListener('click', () => {
+        console.log(button);
+      })
+    })
+    
+  } 
   window.addEventListener('load',initSlider);
 </script>
 
