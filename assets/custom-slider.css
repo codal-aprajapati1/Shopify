@@ -5,3 +5,7 @@
   overflow-x:auto;
   scrollbar-width:none;
 }
+
+.slides-container::-webkit-scrollbar{
+  display:none;
+}
