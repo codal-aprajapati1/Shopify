@@ -1,3 +1,6 @@
+.container{
+  width:100%;
+}
 .slides-container{
   display:grid;
   gap:50px;
