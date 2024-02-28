@@ -28,6 +28,7 @@
 
  .slider-wrapper .slide-button{
   position:absolute;
+  /* display:none; */
   top:50%;
   width:50px;
   height:50px;
@@ -41,6 +42,7 @@
   z-index:4;
   transform:translateY(-50%);
 }
+.slider-wrapper .slide-button
 
  .slider-wrapper .slide-button#prev-btn{
    transform:rotate(180deg);
