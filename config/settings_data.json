@@ -586,36 +586,32 @@
             "type": "description",
             "settings": {
               "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
-              "review_product_image": "shopify:\/\/shop_images\/PngItem_15955.png",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=aXTvGp3csps&ab_channel=BonSecoursSt.FrancisHealthSystem",
-              "buttonurl": "#"
+              "product_data": "foldable-cat-litter-tray-cat-house",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=aXTvGp3csps&ab_channel=BonSecoursSt.FrancisHealthSystem"
             }
           },
           "description_dJr9ja": {
             "type": "description",
             "settings": {
               "customer_review": "Merry uses the AirMini to fit into his hectic schedule and humid environment",
-              "review_product_image": "shopify:\/\/shop_images\/PngItem_15681.png",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=u8GVJNyA_MY&ab_channel=INTEGRISHealth",
-              "buttonurl": "#"
+              "product_data": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=u8GVJNyA_MY&ab_channel=INTEGRISHealth"
             }
           },
           "description_rYFjxe": {
             "type": "description",
             "settings": {
               "customer_review": "Jhon uses the AirMini to fit into his hectic schedule and humid environment",
-              "review_product_image": "shopify:\/\/shop_images\/PngItem_1518339.png",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=XWS1uGbeJBw&ab_channel=NeurosurgeryOne",
-              "buttonurl": "#"
+              "product_data": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=XWS1uGbeJBw&ab_channel=NeurosurgeryOne"
             }
           },
           "description_PUCzXt": {
             "type": "description",
             "settings": {
               "customer_review": "William uses the AirMini to fit into his hectic schedule and humid environment",
-              "review_product_image": "shopify:\/\/shop_images\/PngItem_15955.png",
-              "video_url": "https:\/\/www.youtube.com\/watch?v=4bWBILnuJlw&ab_channel=CPAPReviews",
-              "buttonurl": "#"
+              "product_data": "",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=4bWBILnuJlw&ab_channel=CPAPReviews"
             }
           }
         },
