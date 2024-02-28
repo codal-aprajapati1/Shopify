@@ -19,6 +19,14 @@
   align-items:center;
 } 
 
+.slide-button{
+  padding: 20px;
+  background: red;
+  border: #b30000;
+  color: white;
+  cursor: pointer;
+}
+
 .slider-scrollbar .scrollbar-track{
   position:relative;
   height:2px;
