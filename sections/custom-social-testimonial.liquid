@@ -5,6 +5,7 @@
     <div class="page-heading">
       <p>{{ section.settings.page_heading }}</p>
     </div>
+    <div class="slider-wrapper">
     <div class="carousel-container">
       {% comment %} <div class=""> {% endcomment %}
         {% for block in section.blocks %}
@@ -15,7 +16,8 @@
           <div class="videoplayer">
             <span class="close-btn">{% render 'icon-close' %}</span>
             <video id="popup_video" controls loop >
-              <source  src="{{ block.settings.video |  video_tag }}                   </video>
+              <source  src="{{ block.settings.video |  video_tag }}"       />            
+            </video>
                 </div>
 
                 <div class= "video-container">
@@ -43,6 +45,7 @@
           <button type="submit" class="prev-btn">{% render 'icon-arrow' %}</button>
           <button type="submit" class="next-btn">{% render 'icon-arrow' %}</button>
         </div>
+              </div>
     </div>
   </div>
 </div>
