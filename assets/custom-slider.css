@@ -14,7 +14,7 @@
 .container .slider-scrollbar{
   width:100%;
   /* margin-inline:auto; */
-  height:20px;
+  height:24px;
   display:flex;
   align-items:center;
 } 
