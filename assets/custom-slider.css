@@ -24,3 +24,8 @@
   width:100%;
   background-color:#ccc;
 }
+.slider-scrollbar .scrollbar-thumb{
+  height:3px;
+  width:100%;
+  background-color:#000;
+}
