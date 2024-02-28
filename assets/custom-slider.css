@@ -3,4 +3,5 @@
   gap:50px;
   grid-template-columns: repeat(10, 1fr);
   overflow-x:auto;
+  scrollbar-width:none;
 }
