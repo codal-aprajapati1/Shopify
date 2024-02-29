@@ -87,9 +87,9 @@
   gap:20px;
   margin-bottom: 100px;
 }
-  .needs-page-heading{
-  max-width:335px;
-  max-height:138px;
+.needs-page-heading{
+  width:335px;
+  height:138px;
   font-size:40px;
   font-weight:500;
   line-height:46px;
