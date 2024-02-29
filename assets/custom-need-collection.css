@@ -4,5 +4,5 @@
 
 .container .grid-container .card-block{
   min-height:356px;
-  width:421px;
+  min-width:421px;
 }
