@@ -739,11 +739,20 @@
             "solutionsimage": "shopify:\/\/shop_images\/lutchenca-medeiros-FcSYIRwh4Bw-unsplash.jpg",
             "url": "#"
           }
+        },
+        "listofcollections_yztTTf": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Nose Breathers",
+            "solutionsimage": "shopify:\/\/shop_images\/jonas-verstuyft-jXwZOSXC7KA-unsplash.jpg",
+            "url": "#"
+          }
         }
       },
       "block_order": [
         "listofcollections_FGHcBX",
-        "listofcollections_4JKKQA"
+        "listofcollections_4JKKQA",
+        "listofcollections_yztTTf"
       ],
       "settings": {
         "page_heading": "Sleep apnea solutions for your unique needs"
