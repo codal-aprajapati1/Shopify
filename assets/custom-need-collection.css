@@ -33,9 +33,15 @@
   height:308px;
 }
 
+.container .grid-container .card-block .title-container{
+  text-align:center;
+  
+}
 
 .container .grid-container .card-block .title-container a{
   text-decoration:none;
-  text-align:center;
   color:inherit;
+}
+.container .grid-container .card-block .title-container span{
+  transform: rotate(-90deg);
 }
