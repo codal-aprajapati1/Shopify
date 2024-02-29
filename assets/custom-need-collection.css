@@ -2,10 +2,7 @@
   margin:50px 57px;
 }
 
-.container .grid-container .card-block{
-  min-height:356px;
-  min-width:421px;
-}
+
 
 .needs-page-heading{
   max-width:713px;
@@ -17,8 +14,13 @@
   margin: 40px auto;
 }
 
-.grid-container {
+.container .grid-container {
   display:grid;
   grid-template-columns: repeat(10, 1fr); 
   gap:16px;
+}
+
+.container .grid-container .card-block{
+  min-height:356px;
+  min-width:421px;
 }
