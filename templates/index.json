@@ -784,6 +784,27 @@
       "settings": {
         "page_heading": "Sleep apnea solutions for your unique needs"
       }
+    },
+    "custom_social_proof_ipNrh9": {
+      "type": "custom-social-proof",
+      "blocks": {
+        "social_proof_DK8xyh": {
+          "type": "socialProof",
+          "settings": {
+            "card_heading": "",
+            "card_description": "",
+            "button_url": "",
+            "service_type": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_proof_DK8xyh"
+      ],
+      "settings": {
+        "page_heading": "",
+        "serveduser": ""
+      }
     }
   },
   "order": [
@@ -797,6 +818,7 @@
     "demo_section_Xeywcx",
     "custom_collection_list_jR6HpE",
     "custom_social_testimonial_CMnqJC",
-    "custom_needs_collection_gy738R"
+    "custom_needs_collection_gy738R",
+    "custom_social_proof_ipNrh9"
   ]
 }
