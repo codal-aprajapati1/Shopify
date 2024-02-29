@@ -16,7 +16,7 @@
               <div class="card">
                 <div class="videoplayer">
                   <span class="close-btn">{% render 'icon-close' %}</span>
-                  <video id="popup_video" controls loop>
+                  <video id="popup_video" controls loop autoplay>
                     <source src="{{ block.settings.video |  video_tag }}">
                   </video>
                 </div>
