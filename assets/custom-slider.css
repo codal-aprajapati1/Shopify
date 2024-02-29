@@ -11,8 +11,8 @@
   gap:50px;
   grid-template-columns: repeat(10, 1fr);
   margin-bottom:30px;
-  overflow-x:hidden;
-  /* scrollbar-width:none; */
+  overflow-x:auto;
+  scrollbar-width:none;
 }
 
 
