@@ -24,3 +24,8 @@
   min-height:356px;
   min-width:421px;
 }
+
+.container .grid-container .card-block .image-container{
+  width:421px;
+  height:308px;
+}
