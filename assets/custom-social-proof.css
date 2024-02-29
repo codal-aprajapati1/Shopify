@@ -1,3 +1,7 @@
 .animation-container{
   height:334px;
 }
+
+.social-proof-subcontainer .proof-container{
+  display:flex;
+}
