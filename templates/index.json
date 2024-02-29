@@ -730,10 +730,18 @@
             "blocktitle": "Travel Machines",
             "solutionsimage": "shopify:\/\/shop_images\/theme_cover_image.jpg"
           }
+        },
+        "listofcollections_4JKKQA": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Quiet Machines",
+            "solutionsimage": "shopify:\/\/shop_images\/lutchenca-medeiros-FcSYIRwh4Bw-unsplash.jpg"
+          }
         }
       },
       "block_order": [
-        "listofcollections_FGHcBX"
+        "listofcollections_FGHcBX",
+        "listofcollections_4JKKQA"
       ],
       "settings": {
         "page_heading": ""
