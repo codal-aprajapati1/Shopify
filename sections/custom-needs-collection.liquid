@@ -23,7 +23,7 @@
               {% endif %}
               {% if block.settings.blocktitle != blank %}
                 <div class="title-container">
-                  <a>{{ block.settings.blocktitle }}</a><span>{% render 'icon-caret' %}</span>
+                  <a href="{{  }}">{{ block.settings.blocktitle }}</a><span>{% render 'icon-caret' %}</span>
                 </div>
               {% endif %}
             </div>
@@ -60,6 +60,11 @@
           "type": "image_picker",
           "label": "Upload image",
           "id": "solutionsimage"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Enter block URL"
         }
   ]
     }
