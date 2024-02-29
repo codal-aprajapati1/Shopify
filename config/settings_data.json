@@ -613,13 +613,22 @@
               "product_data": "portable-cat-igloo-bed-with-removable-cushion",
               "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
             }
+          },
+          "description_aYxBgP": {
+            "type": "description",
+            "settings": {
+              "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+              "product_data": "cat-collar-with-bell",
+              "video": "shopify:\/\/files\/videos\/istockphoto-1483746707-640_adpp_is.mp4"
+            }
           }
         },
         "block_order": [
           "description_MTJCaJ",
           "description_dJr9ja",
           "description_rYFjxe",
-          "description_PUCzXt"
+          "description_PUCzXt",
+          "description_aYxBgP"
         ],
         "settings": {
           "page_heading": "Hear from CPAP users like you"
