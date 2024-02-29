@@ -12,9 +12,9 @@
   max-height:128px;
   font-size:56px;
   line-height:64px;
-  margin-inline:auto;
+  /* margin-inline:auto; */
   text-align:center;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 
 .grid-container {
