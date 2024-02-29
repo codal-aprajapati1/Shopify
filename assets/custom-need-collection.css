@@ -33,7 +33,7 @@
 }
 
 .container .grid-container .card-block .image-container{
-  min-width:421px;
+  width:421px;
   max-width:300px;
   min-height:308px;
   overflow:hidden;
