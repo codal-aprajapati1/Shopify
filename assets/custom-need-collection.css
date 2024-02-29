@@ -32,3 +32,8 @@
   width:421px;
   height:308px;
 }
+
+.container .grid-container .card-block .title-container a{
+  text-decoration:none;
+  
+}
