@@ -791,10 +791,11 @@
         "social_proof_DK8xyh": {
           "type": "socialProof",
           "settings": {
-            "card_heading": "",
-            "card_description": "",
-            "button_url": "",
-            "service_type": ""
+            "card_heading": "Our CPAP Guides are here to help",
+            "card_description": "From product recommendations to ongoing support, we're dedicated to helping you find — and successfully use — the treatment that's right for you.",
+            "button_url": "#",
+            "service_type": "Award-winning service",
+            "slider_video": "shopify:\/\/files\/videos\/video (2160p).mp4"
           }
         }
       },
