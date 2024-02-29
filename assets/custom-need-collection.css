@@ -104,7 +104,10 @@
   overflow:hidden;
   border-radius: 8px;
 }
-
+.container1 .grid-container .card-block .image-container p{
+  padding:0;
+  margin:0;
+}
   .container1 .grid-container .card-block .title-container{
   text-align:center;
   display:flex;
