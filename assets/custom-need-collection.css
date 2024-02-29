@@ -35,6 +35,8 @@
 
 .container .grid-container .card-block .title-container{
   text-align:center;
+  display:flex;
+  justify-content:center;
   align-items:center
 }
 
