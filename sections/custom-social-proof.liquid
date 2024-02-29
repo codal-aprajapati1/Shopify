@@ -1,6 +1,50 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Social Proof",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter Page Heading",
+      "id": "page_heading"
+    },
+    {
+      "type": "text",
+      "label": "Enter Number of Users served",
+      "id": "serveduser"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "socialProof",
+      "name": "Social Proof",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Enter card heading",
+          "id": "card_heading"
+        },
+        {
+          "type": "text",
+          "label": "Enter card description",
+          "id": "card_description"
+        },
+        {
+          "type": "url",
+          "label": "Enter button url",
+          "id": "button_url"
+        },
+        {
+          "type": "text",
+          "label": "Enter service type",
+          "id": "service_type"
+        },
+        {
+          "type": "url",
+          "label": "Enter video URL",
+          "id": "slider_video"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
