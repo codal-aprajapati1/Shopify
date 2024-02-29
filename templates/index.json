@@ -763,6 +763,14 @@
             "solutionsimage": "shopify:\/\/shop_images\/no-revisions-YyZFSb_U6N4-unsplash.jpg",
             "url": "#"
           }
+        },
+        "listofcollections_zbwgAm": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Lightweight Masks",
+            "solutionsimage": "shopify:\/\/shop_images\/retail-staff-sanitizing-her-hands.jpg",
+            "url": "#"
+          }
         }
       },
       "block_order": [
@@ -770,7 +778,8 @@
         "listofcollections_4JKKQA",
         "listofcollections_yztTTf",
         "listofcollections_PqiU9R",
-        "listofcollections_xrrA8C"
+        "listofcollections_xrrA8C",
+        "listofcollections_zbwgAm"
       ],
       "settings": {
         "page_heading": "Sleep apnea solutions for your unique needs"
