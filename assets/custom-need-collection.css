@@ -36,6 +36,7 @@
 }
 .container .grid-container .card-block:hover .title-container,.image-container img{
   transition:1s ease;
+  border-radius: 8px;
 }
 .container .grid-container .card-block:hover .image-container img{
   transform:scale(1.3);
