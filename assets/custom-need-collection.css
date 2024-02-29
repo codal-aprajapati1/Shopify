@@ -23,6 +23,7 @@
 .container .grid-container .card-block{
   min-height:356px;
   min-width:421px;
+  gap:8px;
 }
 
 .container .grid-container .card-block .image-container{
