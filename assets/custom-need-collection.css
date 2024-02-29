@@ -34,7 +34,7 @@
   height:308px;
   overflow:hidden;
 }
-.container .grid-container .card-block:hover .image-container img{
+.container .grid-container .card-block:hover .title-container,.image-container img{
   transition:1s ease;
 }
 .container .grid-container .card-block:hover .image-container img{
