@@ -3,8 +3,12 @@
   <div class="social-proof-subcontainer page-width">
       
     <div class="animation-container">
-      <div class="text-container"></div>
-      <div class="text-customers"></div>
+      <div class="text-container">
+        <p class="animate-text">{{ section.settings.page_heading }}</p>
+      </div>
+      <div class="text-customers">
+        <p class="animate_description">{{ section.settings.serveduser }}</p>
+      </div>
     </div>
 
     {% for block in section.blocks %}
@@ -12,9 +16,9 @@
         <div class="proof-container">
           <div class="proof-container">
             <div class="proof-card">
-             <p class="card-heading"></p>
-             <p class="card-description"></p>
-              <a href="">Chat Now</a>
+             <p class="card-heading">{{ block.settings.card_heading }}</p>
+             <p class="card-description">{{ block.settings.card_description }}</p>
+              <a href="{{ block.settings.button_url }}">Chat Now</a>
             </div>
           </div>
           
