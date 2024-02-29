@@ -88,17 +88,29 @@
     const scrollbarThumb = sliderScrollbar.querySelector('.scrollbar-thumb');
     const maxScrollLeft = cardList.scrollWidth - cardList.clientWidth;
 
+    // Handle scrolbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
       const startX = e.clientX;
       console.log(startX);
       const thumbPosition = scrollbarThumb.offsetLeft;
-      // update on mouse move
+      
+      // update on thumb position
       const handleMouseMove = (e) =>{
         const deltaX = e.clientX - startX;
         const newthumbPosition = thumbPosition + deltaX;
         scrollbarThumb.style.left = `${newthumbPosition}px`;
       }
+
+      const handleMouseUp = () =>{
+      document.removeEventListener("mouseUp", handleMouseUp);
+      document.removeEventListener("mousemove", handleMouseMove);
+        
+        
+      }
+      
+      // Add Event Listener to drag
       document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseUp", handleMouseUp);
     });
 
     
