@@ -98,7 +98,10 @@
       const handleMouseMove = (e) =>{
         const deltaX = e.clientX - startX;
         const newthumbPosition = thumbPosition + deltaX;
-        scrollbarThumb.style.left = `${newthumbPosition}px`;
+        const maxThumbPosition = sliderScrolbar.getBoundingClientRect().Width - scrollbarThumb.offsetWidth;
+        const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newthumbPosition));
+        
+        scrollbarThumb.style.left = `${boundedPosition}px`;
       }
 
       const handleMouseUp = () =>{
