@@ -32,8 +32,8 @@
 }
 
 .container .grid-container .card-block .image-container{
-  width:421px;
-  height:308px;
+  /* width:421px; */
+  /* height:308px; */
   overflow:hidden;
   border-radius: 8px;
 }
