@@ -42,7 +42,8 @@
 
 .main-collection-contianer .sub-container .upper-grid .upper-div{
   display:flex;
-  flex-basis:308px;
+  /* flex-basis:308px; */
+  width: calc(25% - 18px);
   min-height:414px;
   justify-content:space-around;
   align-items:center;
