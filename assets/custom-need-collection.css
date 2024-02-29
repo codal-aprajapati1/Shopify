@@ -23,8 +23,9 @@
 }
 
 .container .grid-container .card-block{
-  min-height:356px;
-  width:calc(33.33% - 16px);
+  max-width:421px;
+  min-width: 300px;
+  min-height: 356px;
   display:flex;
   flex-direction:column;
   gap:8px;
