@@ -100,9 +100,5 @@
   .container1 .grid-container .card-block{
   max-height:141px;
   max-width:158px;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  transition:1s ease;
 }
 }
