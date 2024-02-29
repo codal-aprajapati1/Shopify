@@ -87,13 +87,10 @@
 
     slideButtons.forEach(button => {
       button.addEventListener("click", () => {
-        // console.log(button);
         const direction = button.id === "prev-btn" ? -1 : 1;
         console.log(direction);
         const width1 = cardList.clientWidth;
         const scrollAmount = cardList.clientWidth * direction ;
-        // const abc = scrollAmount / 2;
-        // console.log(abc+"px");
         cardList.scrollBy({ left: scrollAmount, behavior: "smooth"});
       })
     })
