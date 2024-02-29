@@ -720,6 +720,23 @@
       "settings": {
         "page_heading": "Hear from CPAP users like you"
       }
+    },
+    "custom_needs_collection_gy738R": {
+      "type": "custom-needs-collection",
+      "blocks": {
+        "listofcollections_FGHcBX": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "listofcollections_FGHcBX"
+      ],
+      "settings": {
+        "page_heading": ""
+      }
     }
   },
   "order": [
@@ -732,6 +749,7 @@
     "new_input_practice_xLxLE4",
     "demo_section_Xeywcx",
     "custom_collection_list_jR6HpE",
-    "custom_social_testimonial_CMnqJC"
+    "custom_social_testimonial_CMnqJC",
+    "custom_needs_collection_gy738R"
   ]
 }
