@@ -33,7 +33,7 @@
   height:308px;
   overflow:hidden;
 }
-.container .grid-container .card-block:hover .image-container img{
+.container .grid-container .card-block:hover .title-container,.image-container img{
   transform:scale(1.3);
 }
 
