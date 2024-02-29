@@ -650,6 +650,7 @@
     },
     "custom_social_testimonial_CMnqJC": {
       "type": "custom-social-testimonial",
+      "disabled": true,
       "settings": {
         "page_heading": ""
       }
