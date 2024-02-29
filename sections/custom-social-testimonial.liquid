@@ -90,6 +90,7 @@
 
     scrollbarThumb.addEventListener("mousedown", (e) => {
       const startX = e.clientX;
+      console.log(startX);
       const thumbPosition = scrollbarThumb.offsetLeft;
       // update on mouse move
       const handleMouseMove = (e) =>{
