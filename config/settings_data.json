@@ -621,6 +621,14 @@
               "product_data": "cat-collar-with-bell",
               "video": "shopify:\/\/files\/videos\/istockphoto-1483746707-640_adpp_is.mp4"
             }
+          },
+          "description_FqCcN3": {
+            "type": "description",
+            "settings": {
+              "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+              "product_data": "qube-by-fort-collins-womens-rayon-short-length-jacket",
+              "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+            }
           }
         },
         "block_order": [
@@ -628,7 +636,8 @@
           "description_dJr9ja",
           "description_rYFjxe",
           "description_PUCzXt",
-          "description_aYxBgP"
+          "description_aYxBgP",
+          "description_FqCcN3"
         ],
         "settings": {
           "page_heading": "Hear from CPAP users like you"
