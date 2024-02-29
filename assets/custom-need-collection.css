@@ -12,6 +12,8 @@
   max-height:128px;
   font-size:56px;
   line-height:64px;
+  margin-inline:auto;
+  text-align:center;
 }
 
 .grid-container {
