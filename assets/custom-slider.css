@@ -1,6 +1,11 @@
 .sub-testimonal-container .container{
   width:95%;
 }
+
+.slider-wrapper{
+  position:relative;
+}
+
 .slides-container{
   display:grid;
   gap:50px;
@@ -10,9 +15,6 @@
   /* scrollbar-width:none; */
 }
 
-.slider-wrapper{
-  position:relative;
-}
 
 .slides-container::-webkit-scrollbar{
   display:none;
@@ -20,7 +22,6 @@
 
 .container .slider-scrollbar{
   width:100%;
-  /* margin-inline:auto; */
   height:24px;
   display:flex;
   align-items:center;
