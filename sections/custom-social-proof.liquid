@@ -1,17 +1,27 @@
 {{ 'custom-social-proof.css' | asset_url | stylesheet_tag }}
 <div class="social-proof-container">
   <div class="social-proof-subcontainer page-width">
-    
+      
     <div class="animation-container">
       <div class="text-container"></div>
       <div class="text-customers"></div>
     </div>
 
-    <div class="proof-container">
-      <div class="proof-container"></div>
-      <div class="slider-container"></div>
-    </div>
-    
+    {% for block in section.blocks %}
+      {% if block.type == 'socialProof' %}
+        <div class="proof-container">
+          <div class="proof-container">
+            <div class="proof-card">
+             <p class="card-heading"></p>
+             <p class="card-description"></p>
+              <a href="">Chat Now</a>
+            </div>
+          </div>
+          
+          <div class="slider-container"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
