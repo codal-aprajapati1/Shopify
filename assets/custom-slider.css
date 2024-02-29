@@ -42,7 +42,11 @@
   border:none;
   z-index:4;
   transform:translateY(-50%);
+   transition: 0.7s ease;
 }
+
+
+
 .slider-wrapper .slide-button:hover{
   background: #b30000;
 }
