@@ -1,6 +1,37 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Need Collection",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter Page Heading",
+      "id": "page_heading"
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "listofcollections",
+      "name": "desiredmachine",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Enter Title",
+          "id": "blocktitle"
+        },
+        {
+          "type": "image_picker",
+          "label": "Upload image",
+          "id": "solutionsimage"
+        }
+  ]
+    }
+  ],
+  "presets":[
+        {
+        "name": "custom Needs Collection"
+        }
+        ]
+}
 {% endschema %}
