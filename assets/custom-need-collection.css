@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 375px){
   .container1{
-    padding:10px 0;
+    padding:30px 20px;
   }
   .container1 .grid-container {
   display:grid;
