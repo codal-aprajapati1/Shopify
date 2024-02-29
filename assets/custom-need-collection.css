@@ -24,6 +24,7 @@
   display:grid;
   grid-template-columns: repeat(3, 1fr); 
   gap:16px;
+  margin-bottom: 100px;
 }
 
 .container1 .grid-container .card-block{
