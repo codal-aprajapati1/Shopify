@@ -102,7 +102,7 @@
         
         const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
         
-        scrollbarThumb.style.left = `${newThumbPosition}px`;
+        scrollbarThumb.style.left = `${boundedPosition}px`;
       }
 
       const handleMouseUp = () =>{
