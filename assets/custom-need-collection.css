@@ -101,4 +101,10 @@
   max-height:141px;
   max-width:158px;
 }
+  .container1 .grid-container .card-block .image-container{
+  max-width: 158px;
+  height: 116px;
+  overflow:hidden;
+  border-radius: 8px;
+}
 }
