@@ -24,7 +24,7 @@
 
 .container .grid-container .card-block{
   min-height:356px;
-  width:calc(33.33% - 16px);
+  /* width:calc(33.33% - 16px); */
   display:flex;
   flex-direction:column;
   gap:8px;
