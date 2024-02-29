@@ -105,7 +105,7 @@
         }
     const updateScrollBar = () => {
       const scrollPosition = cardList.scrollLeft;
-      const thumbPosition = (scrollPosition / maxScrollLeft ) * (sliderScrollbar.clientwidth - scrollbarThumb.offsetWidth);
+      const thumbPosition = (scrollPosition / maxScrollLeft ) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
       scrollbarThumb.style.left = `${thumbPosition}px`;
     }
         cardList.addEventListener("scroll", () => {
