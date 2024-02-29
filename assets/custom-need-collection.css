@@ -35,6 +35,9 @@
   overflow:hidden;
 }
 .container .grid-container .card-block:hover .image-container img{
+  transition:1s ease;
+}
+.container .grid-container .card-block:hover .image-container img{
   transform:scale(1.3);
 }
 
