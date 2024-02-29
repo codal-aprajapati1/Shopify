@@ -80,11 +80,12 @@
 
 <script>
   const initSlider = () =>{
-    
-    const slideButtons = document.querySelectorAll('.slide-button');
+    const cardList = document.querySelectorAll('slider-wrapper .slides-container');
+    const slideButtons = document.querySelectorAll('slider-wrapper .slide-button');
     slideButtons.forEach(button=>{
       button.addEventListener('click', () => {
-        console.log(button);
+        const direction = button.id === "prev-slide" ? -1 : 1;
+        const scrollAmount = 
       })
     })
     
