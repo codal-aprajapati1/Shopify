@@ -6,3 +6,8 @@
   min-height:356px;
   min-width:421px;
 }
+
+.grid-container {
+  display:grid;
+  
+}
