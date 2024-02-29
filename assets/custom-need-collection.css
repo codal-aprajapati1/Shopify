@@ -1,7 +1,6 @@
-.container1{
+.container{
   /* margin:50px 57px;*/
-  background: #371726;
-  color:white;
+  background: #371726
 }
 
 
@@ -23,9 +22,8 @@
 }
 
 .container .grid-container .card-block{
-  max-width:421px;
-  min-width: 300px;
-  min-height: 356px;
+  min-height:356px;
+  min-width:421px;
   display:flex;
   flex-direction:column;
   gap:8px;
@@ -34,8 +32,7 @@
 
 .container .grid-container .card-block .image-container{
   width:421px;
-  max-width:300px;
-  min-height:308px;
+  height:308px;
   overflow:hidden;
   border-radius: 8px;
 }
