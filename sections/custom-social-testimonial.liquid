@@ -93,18 +93,16 @@
         const width1 = cardList.clientWidth;
         const scrollAmount = cardList.clientWidth * direction / 2 ;
         cardList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+      });
+    });
 
-        const handleSlideButtons = () => {
+    const handleSlideButtons = () => {
           slideButtons[0].style.display = cardList.scrollLeft <= 0 ? "none" : "block";
           slideButtons[1].style.display = cardList.scrollLeft >= maxScrollLeft ? "none" : "block";
         }
         cardList.addEventListener("scroll", () => {
           handleSlideButtons();
-        })
-        
-        
-      })
-    })
+        });
 
   }
   window.addEventListener("load", initSlider);
