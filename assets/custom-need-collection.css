@@ -1,3 +1,8 @@
 .container{
   padding-inline:57px;
 }
+
+.container .grid-container .card-block{
+  min-height:356px;
+  width:421px;
+}
