@@ -1,5 +1,9 @@
 .main-container {}
 
+.container{
+  width:93%;
+  margin: auto;
+}
 
 .button-container {
   position: absolute;
