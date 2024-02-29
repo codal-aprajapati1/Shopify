@@ -84,6 +84,7 @@
   const initSlider = () =>{
     const cardList = document.querySelector('.slider-wrapper .carousel-container');
     const slideButtons = document.querySelectorAll('.slider-wrapper .slide-button');
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     slideButtons.forEach(button => {
       button.addEventListener("click", () => {
@@ -95,7 +96,7 @@
 
         const handleSlideButtons = () => {
           slideButtons[0].style.display = cardList.scrollLeft <= 0 ? "none" : "block";
-          slideButtons[1].style.display = cardList.scrollLeft >= 0 ? "none" : "block";
+          slideButtons[1].style.display = cardList.scrollLeft >= maxScrollLeft ? "none" : "block";
           
         }
         
