@@ -650,49 +650,75 @@
     },
     "custom_social_testimonial_CMnqJC": {
       "type": "custom-social-testimonial",
-      "disabled": true,
-      "settings": {
-        "page_heading": ""
-      }
-    },
-    "collection_list_qYwKQd": {
-      "type": "collection-list",
       "blocks": {
-        "featured_collection_widGcL": {
-          "type": "featured_collection",
+        "description_yJmF9k": {
+          "type": "description",
           "settings": {
-            "collection": "lightweight-masks"
+            "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "foldable-cat-litter-tray-cat-house",
+            "video": "shopify:\/\/files\/videos\/video (2160p).mp4"
           }
         },
-        "featured_collection_PPpVcW": {
-          "type": "featured_collection",
+        "description_kcdcTg": {
+          "type": "description",
           "settings": {
-            "collection": "masks-for-beards"
+            "customer_review": "Merry uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "pets-empire-hut-for-cats-kittens",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
           }
         },
-        "featured_collection_FbJxMb": {
-          "type": "featured_collection",
+        "description_FEb7Km": {
+          "type": "description",
           "settings": {
-            "collection": "mouth-breathers"
+            "customer_review": "Jhon uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "womens-jacket-green",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1483746707-640_adpp_is.mp4"
+          }
+        },
+        "description_RqArfW": {
+          "type": "description",
+          "settings": {
+            "customer_review": "William uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "portable-cat-igloo-bed-with-removable-cushion",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
+          }
+        },
+        "description_XJapjP": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "denill-women-bellies-ballet-flats",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1464567530-640_adpp_is.mp4"
+          }
+        },
+        "description_ajtMpi": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Claris uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "cat-collar-with-bell",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+          }
+        },
+        "description_XGHfCp": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Ron uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "qube-by-fort-collins-women-hoodie",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
           }
         }
       },
       "block_order": [
-        "featured_collection_widGcL",
-        "featured_collection_PPpVcW",
-        "featured_collection_FbJxMb"
+        "description_yJmF9k",
+        "description_kcdcTg",
+        "description_FEb7Km",
+        "description_RqArfW",
+        "description_XJapjP",
+        "description_ajtMpi",
+        "description_XGHfCp"
       ],
       "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "page_heading": "Hear from CPAP users like you"
       }
     }
   },
@@ -706,7 +732,6 @@
     "new_input_practice_xLxLE4",
     "demo_section_Xeywcx",
     "custom_collection_list_jR6HpE",
-    "custom_social_testimonial_CMnqJC",
-    "collection_list_qYwKQd"
+    "custom_social_testimonial_CMnqJC"
   ]
 }
