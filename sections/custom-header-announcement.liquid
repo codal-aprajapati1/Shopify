@@ -1,7 +1,7 @@
 {{ 'custom-header-announcement.css' | asset_url | stylesheet_tag }}
 
-<div class="announcement-container page-width">
-  <div class="announcement-bar ">
+<div class="announcement-container ">
+  <div class="announcement-bar page-width">
   {%  for block in section.blocks %}
       {% if block.type == "text" %}
         <div class="offer-container">
