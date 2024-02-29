@@ -52,6 +52,7 @@
   align-items:center;
   font-size:24px;
   line-height:32px;
+  font-weight:500;
 }
 
 .container .grid-container .card-block .title-container a{
