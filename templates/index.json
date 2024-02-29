@@ -727,7 +727,8 @@
         "listofcollections_FGHcBX": {
           "type": "listofcollections",
           "settings": {
-            "blocktitle": ""
+            "blocktitle": "Travel Machines",
+            "solutionsimage": "shopify:\/\/shop_images\/theme_cover_image.jpg"
           }
         }
       },
