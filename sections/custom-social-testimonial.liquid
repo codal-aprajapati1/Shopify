@@ -93,6 +93,7 @@
         const width1 = cardList.clientWidth;
         const scrollAmount = cardList.clientWidth * direction ;
         const abc = scrollAmount / 2;
+        console.log(abc+"px");
         cardList.scrollBy({ left: abc, behavior: "smooth"});
       })
     })
