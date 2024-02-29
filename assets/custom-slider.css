@@ -45,6 +45,9 @@
    transition: 0.7s ease;
 }
 
+.container:hover .slide-button{
+  display:block;
+}
 
 
 .slider-wrapper .slide-button:hover{
