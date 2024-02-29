@@ -124,7 +124,7 @@
         const direction = button.id === "prev-btn" ? -1 : 1;
         const width1 = cardList.clientWidth;
         const scrollAmount = cardList.clientWidth * direction  ;
-        cardList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+        cardList.scrollBy({ left: scrollAmount / 3, behavior: "smooth"});
       });
     });
 
