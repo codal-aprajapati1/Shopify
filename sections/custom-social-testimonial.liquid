@@ -99,6 +99,9 @@
           slideButtons[1].style.display = cardList.scrollLeft >= maxScrollLeft ? "none" : "block";
           
         }
+        cardList.addEventListener("scroll", () => {
+          handleSlideButtons();
+        })
         
         
       })
