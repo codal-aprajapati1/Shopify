@@ -7,6 +7,13 @@
   min-width:421px;
 }
 
+.needs-page-heading{
+  max-width:713px;
+  max-height:128px;
+  font-size:56px;
+  line-height:64px;
+}
+
 .grid-container {
   display:grid;
   grid-template-columns: repeat(10, 1fr); 
