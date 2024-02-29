@@ -76,3 +76,12 @@
   transform: rotate(-90deg);
   align-items:center;
 }
+
+@media screen and (max-width: 375px){
+  .container1 .grid-container {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap:20px;
+  margin-bottom: 100px;
+}
+}
