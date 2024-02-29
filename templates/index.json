@@ -747,12 +747,21 @@
             "solutionsimage": "shopify:\/\/shop_images\/jonas-verstuyft-jXwZOSXC7KA-unsplash.jpg",
             "url": "#"
           }
+        },
+        "listofcollections_PqiU9R": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Masks for Beards",
+            "solutionsimage": "shopify:\/\/shop_images\/lutchenca-medeiros-FcSYIRwh4Bw-unsplash.jpg",
+            "url": "#"
+          }
         }
       },
       "block_order": [
         "listofcollections_FGHcBX",
         "listofcollections_4JKKQA",
-        "listofcollections_yztTTf"
+        "listofcollections_yztTTf",
+        "listofcollections_PqiU9R"
       ],
       "settings": {
         "page_heading": "Sleep apnea solutions for your unique needs"
