@@ -84,6 +84,9 @@
   const initSlider = () =>{
     const cardList = document.querySelector('.slider-wrapper .carousel-container');
     const slideButtons = document.querySelectorAll('.slider-wrapper .slide-button');
+    const sliderScrollbar = document.querySelector('.container .slider-scrollbar');
+    const scrollbarThumb = sliderScrollbar.querySelector('.scrollbar-thumb');
+    
     const maxScrollLeft = cardList.scrollWidth - cardList.clientWidth;
 
     slideButtons.forEach(button => {
@@ -100,8 +103,13 @@
           slideButtons[0].style.display = cardList.scrollLeft <= 0 ? "none" : "block";
           slideButtons[1].style.display = cardList.scrollLeft >= maxScrollLeft ? "none" : "block";
         }
+    const updateScrollBar = () => {
+      const scrollPosition = cardList.scrollLeft;
+      const thumbPosition = (scrollPosition / maxScrollLeft ) * ()
+    }
         cardList.addEventListener("scroll", () => {
           handleSlideButtons();
+          updateScrollBar();
         });
 
   }
