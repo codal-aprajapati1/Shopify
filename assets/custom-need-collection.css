@@ -37,5 +37,5 @@
 .container .grid-container .card-block .title-container a{
   text-decoration:none;
   text-align:center;
-  
+  color:inherit;
 }
