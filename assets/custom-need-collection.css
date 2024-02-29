@@ -16,7 +16,7 @@
 
 .container .grid-container {
   display:grid;
-  grid-template-columns: repeat(10, 1fr); 
+  grid-template-columns: repeat(3, 1fr); 
   gap:16px;
 }
 
