@@ -90,6 +90,7 @@
         // console.log(button);
         const direction = button.id === "prev-btn" ? -1 : 1;
         const scrollAmount = cardList.clientWidth * direction;
+        console.log(scrollAmount);
         // console.log("button:clicked");
         cardList.scrollBy({ left: scrollAmount, behavior: "smooth" });
       })
