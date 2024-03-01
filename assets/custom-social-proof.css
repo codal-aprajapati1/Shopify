@@ -9,9 +9,15 @@
 .animation-container {
   height:259.03px;
   margin:85.21px auto;
+  text-align:center;
+  
 }
 
 .text-container{
   width:773px;
   height:190px;
+}
+.text-customers{
+  text-align:center;
+  
 }
