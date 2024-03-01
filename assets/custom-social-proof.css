@@ -147,7 +147,7 @@
 }
 
 .card{
-  width: 315.75px;
+  width: 315.75px !important;
   height: 575px !important;
   /* position:absolute; */
 
