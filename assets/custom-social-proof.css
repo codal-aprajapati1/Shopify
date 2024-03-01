@@ -133,7 +133,6 @@
   position:absolute;
   width: 315.75px;
   height: 470.25px;
-  border-radius:12px;
 }
 .slide1{
   transform: translateX(-220px);
@@ -153,6 +152,8 @@
   width:100%;
   height:100%;
   object-fit:cover;
+  
+  border-radius:20px;
 }
 
 
