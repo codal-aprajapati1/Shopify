@@ -49,10 +49,9 @@
 .upper-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
   height:384px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eaeaea;
 }
 
 .upper-container .card-heading {
@@ -88,12 +87,13 @@
 }
 
 .below-container {
+  border-top: 1px solid #eaeaea;
   width: 423px;
   height: 176px;
   display:flex;
   flex-direction:column;
-  gap: 16px;
-  margin-top:20px;
+  gap: 28px;
+  margin-top:23px;
 }
 
 
