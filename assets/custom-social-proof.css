@@ -157,13 +157,7 @@
   height:100%;
   object-fit:cover;
 }
-.slick-initialized .slick-slide{
-  position: relative !important;
-}
 
-.slick-track {
-  height: 100% !important;
-}
 
 
 
