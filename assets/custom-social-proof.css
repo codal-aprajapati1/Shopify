@@ -117,15 +117,9 @@
 }
 
 .slider-container{
-  /* width: 60%; */
   margin-inline:auto;
   width: 760.75px;
   height: 669px;
-  /* top: 120px; */
-  /* left: 623px; */
-
-  /* position: relative; */
-  /* overflow: hidden; */
 }
 
 .slider{
