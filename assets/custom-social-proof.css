@@ -138,6 +138,7 @@
 .slider-container .slider-cont .card{
   width:450px;
   height:500px;
+  display:flex;
 }
 .slider-container .slider-cont{
   display:flex;
