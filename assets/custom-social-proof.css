@@ -144,8 +144,12 @@
   justify-content:center;
 }
 
+.card{
+  width: 315.75px
+  height: 470.25px
 
-video{
+}
+.card video{
   width:100%;
   height:100%;
 }
