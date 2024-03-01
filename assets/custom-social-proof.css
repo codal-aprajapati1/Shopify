@@ -137,7 +137,9 @@
   transform: translateX(-150px);
 }
 
-
+.slide3{
+  transform: translateX(150px);
+}
 
 
 
