@@ -37,26 +37,22 @@
 .proof-card {
   padding: 32px;
   width: 40%;
-  color:#FFFFFF;
-  background:#FF600A;
+  color: #ffffff;
+  background: #ff600a;
   width: 487px;
   height: 688px;
   /* top: 110.67px; */
   /* left: 56px; */
   border-radius: 16px;
   /* box-shadow: 4325.64% 1698.29% at 50% 49.53%, #FFAA8F 57.19%, #F0C6FF 100% ; */
-
-
 }
 .upper-container {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  padding-bottom:28px;
-  border-bottom: 1px solid #EAEAEA
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eaeaea;
 }
-
-
 
 .upper-container .card-heading {
   font-family: Rand;
@@ -68,25 +64,32 @@
   color: #ffffff;
 }
 
-.upper-container .card-description{
+.upper-container .card-description {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
 }
-.upper-container a{
+.upper-container a {
   width: 150px;
-    height: 40px;
-  text-align:center;
-  padding: 9px 16px ;
+  height: 40px;
+  text-align: center;
+  padding: 9px 16px;
   border-radius: 28px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   gap: 10px;
   color: #000000;
-  background: #FFFFFF;
-  font-size:14px;
-  line-height:17px;
-  font-weight:700;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
 
+.below-container {
+  width: 423px;
+  height: 176px;
+  top: 590.67px;
+  left: 88px;
+  gap: 24px;
 }
