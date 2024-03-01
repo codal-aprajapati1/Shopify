@@ -121,7 +121,7 @@
   position: relative;
   overflow: hidden;
 }
-
+/* 
 .slider-container .slide1{
   background:red;
   
@@ -133,10 +133,10 @@
 .slider-container .slide3{
   background:green;
   
-}
+} */
 
 
-.slider-cont{
+/* .slider-cont{
   display:flex;
   justify-content:center;
 }
@@ -146,7 +146,7 @@
   height:100%;
   object-fit:cover;
 }
-
+ */
 /* Container for the slider */
 .slider-container {
   width: 100%;
