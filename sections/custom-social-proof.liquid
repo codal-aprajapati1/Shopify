@@ -75,31 +75,6 @@
 </script>
 
 <script>
-$('.slider').on('afterChange', function(event, slick, currentSlide) {
-  $('.card').removeClass('left-slide').removeClass('right-slide');
-  $('.card').eq(currentSlide).addClass('center-slide');
-  $('.card').eq(currentSlide - 1).addClass('left-slide');
-  $('.card').eq(currentSlide + 1).addClass('right-slide');
-});
-
-$('.slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: true,
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
 
 
 </script>
