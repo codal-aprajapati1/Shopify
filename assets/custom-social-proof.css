@@ -150,9 +150,8 @@
   height: 470.25px
 
 }
-.card  source{
-  width:100%;
-  height:100%;
+.card video{
+  object-fit:cover;
 }
 
 
