@@ -143,6 +143,7 @@
 .slider-cont{
   display:flex;
   justify-content:center;
+  overflow:hidden;
   /* position:relative !important; */
 }
 
