@@ -125,7 +125,7 @@
 
 .slider-container .slide2{
   /* position:absolute; */
-  background:yellow;
+  /* background:yellow; */
 }
 
 .slide1,.slide3{
@@ -133,8 +133,8 @@
 }
 
 .card{
-  width:421px;
-  height:621px;
+  /* width:421px;
+  height:621px; */
 }
 
 /* .slider{
