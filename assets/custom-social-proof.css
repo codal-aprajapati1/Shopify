@@ -143,7 +143,7 @@
 .slider-cont{
   display:flex;
   justify-content:center;
-  position:relative !important;
+  /* position:relative !important; */
 }
 
 .card{
