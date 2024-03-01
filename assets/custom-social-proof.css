@@ -89,7 +89,7 @@
 .below-container {
   width: 423px;
   height: 176px;
-  top: 590.67px;
-  left: 88px;
+  display:flex;
+  flex-direction:column;
   gap: 24px;
 }
