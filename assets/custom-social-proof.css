@@ -133,7 +133,6 @@
   object-fit:contain;
 } */
 
-
 /* Container for the slider */
 .slider-container {
   width: 100%;
@@ -179,6 +178,11 @@
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+}
+
+/* Styles for the left and right slides */
+.left-slide, .right-slide {
+  opacity: 0.5; /* Reduced opacity for left and right slides */
 }
 
 

@@ -75,7 +75,14 @@
 </script>
 
 <script>
-  $('.slider').slick({
+$('.slider').on('afterChange', function(event, slick, currentSlide) {
+  $('.card').removeClass('left-slide').removeClass('right-slide');
+  $('.card').eq(currentSlide).addClass('center-slide');
+  $('.card').eq(currentSlide - 1).addClass('left-slide');
+  $('.card').eq(currentSlide + 1).addClass('right-slide');
+});
+
+$('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -93,6 +100,7 @@
     }
   ]
 });
+
 
 </script>
 
