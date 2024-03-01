@@ -76,8 +76,8 @@
   text-align: left;
 }
 .upper-container a{
-  /* width: 150px;
-  height: 40px; */
+  width: 150px;
+  /* height: 40px; */
   padding: 9px 16px ;
   border-radius: 28px;
   border: 1px;
