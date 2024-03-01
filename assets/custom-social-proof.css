@@ -39,6 +39,12 @@
   width: 40%;
   color:#FFFFFF;
   background:#FF600A;
+  width: 487px;
+  height: 688px;
+  top: 110.67px;
+  /* left: 56px; */
+  border-radius: 16px
+
 }
 .upper-container {
   display: flex;
