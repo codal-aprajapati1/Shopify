@@ -139,7 +139,7 @@
   width:450px;
   height:500px;
 }
-.slider-container .slider-cont{
+.slider-cont{
   display:flex;
   justify-content:center;
 }
