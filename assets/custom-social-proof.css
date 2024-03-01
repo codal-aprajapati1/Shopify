@@ -140,7 +140,7 @@
 }
 .slide2{
   z-index:2;
-  transform: (1.5);
+  transform: scale(1.5);
 }
 
 .slide3{
