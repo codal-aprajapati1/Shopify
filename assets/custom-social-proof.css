@@ -119,17 +119,17 @@
 .slider-container{
   width:760.75px;
   height:669px;
-  position:relative;
+  /* position:relative; */
   margin-inline:auto;
 }
 
 .slider-container .slide2{
-  position:absolute;
+  /* position:absolute; */
   background:yellow;
 }
 
 .slide1,.slide3{
-  transform:scale(0.7);
+  /* transform:scale(0.7); */
 }
 
 .card{
