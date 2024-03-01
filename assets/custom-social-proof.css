@@ -122,7 +122,9 @@
   height: 669px;
 }
 
-.slider{
+.slider .card{
+  width:421px;
+  height:627px;
   
 }
 
