@@ -135,23 +135,12 @@
   
 }
 
-/* .slider-container .slider-cont .card{
-  width:450px;
-  height:500px;
-} */
+
 .slider-cont{
   display:flex;
   justify-content:center;
-  /* overflow:hidden; */
-  /* position:relative !important; */
 }
 
-.card{
-  /* width: 400px !important; */
-  /* height: 575px !important; */
-  /* position:absolute; */
-
-}
 .card video{
   width:100%;
   height:100%;
