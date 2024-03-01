@@ -139,7 +139,9 @@
   width:200px;
   height:200px;
 }
-
+.slider-cont{
+  display:flex;
+}
 .slide1,.slide3{
 }
 
