@@ -150,7 +150,7 @@
   height: 470.25px
 
 }
-.card video{
+.card video source{
   width:100%;
   height:100%;
 }
