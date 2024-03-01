@@ -24,13 +24,16 @@
                 <hr>
                 <div class="below-container">
                   <div class="win-service-cont">
-                    <span>{% render 'icon-success' %}</span><p>{{ block.settings.service_type }}</p>
+                    <span>{% render 'icon-success' %}</span>
+                    <p>{{ block.settings.service_type }}</p>
                   </div>
                   <div class="live-chat">
-                    <span>{% render 'icon-snapchat' %}</span><p>{{ block.settings.service_time }}</p>
+                    <span>{% render 'icon-snapchat' %}</span>
+                    <p>{{ block.settings.service_time }}</p>
                   </div>
                   <div class="help-center">
-                    <span>{% render 'icon-pinterest' %}</span><p>{{ block.settings.service_helpline }}</p>
+                    <span>{% render 'icon-pinterest' %}</span>
+                    <p>{{ block.settings.service_helpline }}</p>
                   </div>
                 </div>
               </div>
@@ -39,21 +42,23 @@
 
           <div class="slider-container">
             <div class="slider splide__track">
-              <div class="splide__list">
-                <div class="card slide1 splide__slide">
-                  <video controls autoplay muted loop>
-                    <source src="{{ block.settings.slider_video | video_tag }}">
-                  </video>
-                </div>
-                <div class="card slide2 splide__slide">
-                  <video controls autoplay muted loop>
-                    <source src="{{ block.settings.slider_video | video_tag }}">
-                  </video>
-                </div>
-                <div class="card slide3 splide__slide">
-                  <video controls autoplay muted loop>
-                    <source src="{{ block.settings.slider_video | video_tag }}">
-                  </video>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="card slide1 splide__slide">
+                    <video controls autoplay muted loop>
+                      <source src="{{ block.settings.slider_video | video_tag }}">
+                    </video>
+                  </div>
+                  <div class="card slide2 splide__slide">
+                    <video controls autoplay muted loop>
+                      <source src="{{ block.settings.slider_video | video_tag }}">
+                    </video>
+                  </div>
+                  <div class="card slide3 splide__slide">
+                    <video controls autoplay muted loop>
+                      <source src="{{ block.settings.slider_video | video_tag }}">
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
@@ -64,26 +69,25 @@
   </div>
 </div>
 
-<script >
-    // $(document).ready(function(){
-    //   $('.slider').slick({
-    //     dots:true,
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
-    //   });
+<script>
+  // $(document).ready(function(){
+  //   $('.slider').slick({
+  //     dots:true,
+  //     infinite: true,
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1
+  // });
+  //   });
 </script>
 
 <script>
-var splide = new Splide( '.slider', {
-  type   : 'loop',
-  perPage: 3,
-  focus  : 'center',
-} );
+  var splide = new Splide( '.slider', {
+    type   : 'loop',
+    perPage: 3,
+    focus  : 'center',
+  } );
 
-splide.mount();
-
+  splide.mount();
 </script>
 
 {% schema %}
