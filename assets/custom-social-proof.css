@@ -44,3 +44,13 @@
   flex-direction:column;
   gap:28px;
 }
+
+.upper-container .card-heading{
+font-family: Rand;
+font-size: 56px;
+font-weight: 500;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+
+}
