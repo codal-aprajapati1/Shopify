@@ -117,10 +117,9 @@
 }
 
 .slider-container{
-  width:267.46px;
-  height:151px;
-  margin-inline:auto;
-  margin-top:50px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .slider-container .slide1{
