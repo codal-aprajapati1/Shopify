@@ -135,15 +135,15 @@
   
 }
 
-.card{
+.slider-container .slider-cont .card{
   width:200px;
   height:200px;
 }
-.slider-cont{
+.slider-container .slider-cont{
   display:flex;
   justify-content:center;
 }
-.slide1,.slide3{
+.slider-container .slider-cont .slide1,.slide3{
 }
 
 
