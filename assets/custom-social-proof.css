@@ -119,7 +119,6 @@
 .slider-container{
   width:760.75px;
   height:669px;
-  /* position:relative; */
   margin-inline:auto;
 }
 
@@ -129,7 +128,6 @@
 }
 
 .slider-container .slide2{
-  /* position:absolute; */
   background:yellow;
 }
 .slider-container .slide3{
@@ -137,20 +135,7 @@
   
 }
 .slide1,.slide3{
-  /* transform:scale(0.7); */
 }
 
-.card{
-  width:200px;
-  height:300px;
-}
 
-.slider-cont{
-
-}
-
-/* .card video{
-  width:100%;
-  height:100%;
-} */
 
