@@ -37,7 +37,26 @@
             </div>
           </div>
 
-          <div class="slider-container"></div>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide1">
+                <video controls autoplay loop>
+                  <source src="">
+                </video>
+              </div>
+              <div class="slide2">
+                <video controls autoplay loop>
+                  <source src="">
+                </video>
+              </div>
+              <div class="slide3">
+                <video controls autoplay loop>
+                  <source src="">
+                </video>
+              </div>
+              
+            </div>
+          </div>
         </div>
       {% endif %}
     {% endfor %}
@@ -48,6 +67,13 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+</script>
 
 
 {% schema %}
