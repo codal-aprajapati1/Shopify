@@ -116,6 +116,10 @@
   line-height:24px;
 }
 
+.slider-container{
+  width:760.75px;
+}
+
 .slider{
   display:flex;
 }
