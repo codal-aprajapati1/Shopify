@@ -1,58 +1,63 @@
-.social-proof-subcontainer{
-  padding:45px 0;
-  background: #F6F5F0;
-}
-
-.animation-container{
-  height:334px;
-}
-
-.social-proof-subcontainer .proof-container{
-  display:flex;
+.social-proof-subcontainer {
+  padding: 45px 0;
+  background: #f6f5f0;
 }
 
 .animation-container {
-  height:259.03px;
-  margin:85.21px auto;
-  text-align:center;
-  
+  height: 334px;
 }
 
-.text-container{
-  width:773px;
-  height:190px;
+.social-proof-subcontainer .proof-container {
+  display: flex;
+}
+
+.animation-container {
+  height: 259.03px;
+  margin: 85.21px auto;
+  text-align: center;
+}
+
+.text-container {
+  width: 773px;
+  height: 190px;
   font-size: 13rem;
   font-weight: 900;
-  margin-inline:auto;
+  margin-inline: auto;
 }
 
-.text-customers{
+.text-customers {
   font-size: 24px;
   line-height: 32px;
 }
 
-.section-container{
-  padding-inline:56px;
+.section-container {
+  padding-inline: 56px;
 }
 
-.proof-card{
-  padding:32px;
-  width:40%;
-  
+.proof-card {
+  padding: 32px;
+  width: 40%;
 }
-.upper-container{
-  display:flex;
-  flex-direction:column;
-  gap:28px;
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.upper-container .card-heading{
-font-family: Rand;
-font-size: 56px;
-font-weight: 500;
-line-height: 64px;
-letter-spacing: 0em;
-text-align: left;
-  color:#FFFFFF;
+.upper-container .card-heading {
+  font-family: Rand;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
 
+.upper-container .card-description{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
