@@ -142,6 +142,7 @@
 .slider-cont{
   display:flex;
   justify-content:center;
+  position:relative;
 }
 
 .card{
@@ -153,6 +154,7 @@
   width:100%;
   height:100%;
 }
+
 
 
 
