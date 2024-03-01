@@ -162,7 +162,7 @@
 
 /* Styling for the slides */
 .slider div {
-  /* width: 50%; */
+  width: 50%;
   flex-shrink: 0;
 }
 
@@ -174,7 +174,7 @@
 .overlay {
   position: absolute;
   top: 0;
-  /* width: 50%;  */
+  width: 50%; 
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); 
 }
