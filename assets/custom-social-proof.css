@@ -139,6 +139,7 @@
 
 .slider{
   display:flex;
+  justify-content:center;
 }
 
 .card video{
