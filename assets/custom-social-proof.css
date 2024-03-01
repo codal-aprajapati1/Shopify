@@ -129,7 +129,7 @@
   align-items:center;
   position:relative;
 }
-.card{
+.slider .card{
   position:absolute;
   width: 315.75px;
   height: 470.25px;
