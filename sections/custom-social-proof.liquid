@@ -38,7 +38,7 @@
           </div>
 
           <div class="slider-container">
-            <div class="slider-cont">
+            <div class="slider">
               <div class="card slide1">
                 <video controls autoplay muted loop>
                   <source src="{{ block.settings.slider_video | video_tag }}">
@@ -65,7 +65,7 @@
 
 <script >
     $(document).ready(function(){
-      $('.slider-cont').slick({
+      $('.slider').slick({
         dots:true,
         infinite: true,
         slidesToShow: 1,
