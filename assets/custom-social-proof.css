@@ -121,6 +121,11 @@
   height:669px;
 }
 
+.card{
+  width:421px;
+  height:621px;
+}
+
 .slider{
   display:flex;
 }
