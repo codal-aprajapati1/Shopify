@@ -119,6 +119,11 @@
 .slider-container{
   width:760.75px;
   height:669px;
+  position:relative;
+}
+
+.slider-container .slide2{
+  position:absolute;
 }
 
 .card{
