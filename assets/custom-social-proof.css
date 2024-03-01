@@ -37,7 +37,10 @@
 
 .proof-card{
   padding:32px;
+  
+}
+.upper-container{
   display:flex;
   flex-direction:column;
-  gap:88px;
+  gap:28px;
 }
