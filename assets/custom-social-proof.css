@@ -98,6 +98,7 @@
 .win-service-cont,.live-chat, .help-center{
   display:flex;
   gap:32px;
+  align-items:center;
 }
 
 .win-service-cont svg,.live-chat svg, .help-center svg{
