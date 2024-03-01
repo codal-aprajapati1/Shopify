@@ -162,6 +162,10 @@
   position: relative !important;
 }
 
+.slick-track {
+  height: 100% !important;
+}
+
 
 
 
