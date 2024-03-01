@@ -54,6 +54,11 @@
   gap: 28px;
 }
 
+.shadow-container{
+  background: radial-gradient(4325.64% 1698.29% at 50% 49.53%, #FFAA8F 57.19%, #F0C6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+
 .upper-container .card-heading {
   font-family: Rand;
   font-size: 56px;
