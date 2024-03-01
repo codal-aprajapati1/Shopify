@@ -129,6 +129,9 @@
   align-items:center;
   position:relative;
 }
+.card{
+  position:absolute;
+}
 
 
 
