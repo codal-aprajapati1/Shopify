@@ -123,8 +123,8 @@
 }
 
 .slider .card{
-  width:421px;
-  height:627px;
+  width:421px !important;
+  height:627px !important;
 }
 
 .card video{
