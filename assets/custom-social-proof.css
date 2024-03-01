@@ -116,3 +116,7 @@
   line-height:24px;
 }
 
+.slider{
+  display:flex;
+}
+
