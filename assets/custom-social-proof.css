@@ -145,7 +145,7 @@
   height:300px;
 }
 
-.slider{
+.slider-cont{
   display:flex;
   justify-content:center;
 }
