@@ -131,6 +131,10 @@
 }
 .card{
   position:absolute;
+  
+}
+.slide1{
+  transform: translateX(-150px);
 }
 
 
