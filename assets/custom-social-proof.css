@@ -120,6 +120,7 @@
   width:760.75px;
   height:669px;
   position:relative;
+  margin-inline:auto;
 }
 
 .slider-container .slide2{
