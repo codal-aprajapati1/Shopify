@@ -132,7 +132,10 @@
   /* position:absolute; */
   background:yellow;
 }
-
+.slider-container .slide3{
+  background:green;
+  
+}
 .slide1,.slide3{
   /* transform:scale(0.7); */
 }
