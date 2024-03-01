@@ -136,15 +136,15 @@
 
 }
 .slide1{
-  transform: translateX(-150px);
+  transform: translateX(-220px);
 }
 .slide2{
   z-index:2;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .slide3{
-  transform: translateX(150px);
+  transform: translateX(220px);
 }
 
 .slider .card video{
