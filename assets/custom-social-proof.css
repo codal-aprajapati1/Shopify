@@ -77,10 +77,13 @@
 }
 .upper-container a{
   width: Fixed (150px);
-height: Fixed (40px);
-padding: 9px 16px ;
-border-radius: 28px;
-border: 1px;
-gap: 10px;
+  height: Fixed (40px);
+  padding: 9px 16px ;
+  border-radius: 28px;
+  border: 1px;
+  gap: 10px;
+  color: #000000;
+  background: #FFFFFF;
+
 
 }
