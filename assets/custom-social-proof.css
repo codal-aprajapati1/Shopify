@@ -147,6 +147,50 @@
   object-fit:cover;
 }
 
+/* Container for the slider */
+.slider-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the slider */
+.slider {
+  width: 200%;
+  display: flex;
+}
+
+/* Styling for the slides */
+.slider div {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+/* Styling for images */
+.slider video {
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 50%; /* Half-width overlay */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+/* Additional styling for the overlay content */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
 
 
 
