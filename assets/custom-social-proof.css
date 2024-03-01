@@ -135,10 +135,10 @@
   
 }
 
-.slider-container .slider-cont .card{
+/* .slider-container .slider-cont .card{
   width:450px;
   height:500px;
-}
+} */
 .slider-cont{
   display:flex;
   justify-content:center;
@@ -151,7 +151,7 @@
 
 }
 .card video{
-  object-fit:cover;
+  width:100%;
 }
 
 
