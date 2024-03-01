@@ -134,6 +134,12 @@
   background:green;
   
 }
+
+.card{
+  width:200px;
+  height:200px;
+}
+
 .slide1,.slide3{
 }
 
