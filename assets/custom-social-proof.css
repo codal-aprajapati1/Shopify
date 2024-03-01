@@ -118,6 +118,7 @@
 
 .slider-container{
   width: 60%;
+  margin-inline:auto;
   /* position: relative; */
   /* overflow: hidden; */
 }
