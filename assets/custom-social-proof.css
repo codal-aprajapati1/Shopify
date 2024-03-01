@@ -44,7 +44,7 @@
   top: 110.67px;
   /* left: 56px; */
   border-radius: 16px;
-  box-shadow: radial-gradient(4325.64% 1698.29% at 50% 49.53%, #FFAA8F 57.19%, #F0C6FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 4325.64% 1698.29% at 50% 49.53%, #FFAA8F 57.19%, #F0C6FF 100% ;
 
 
 }
