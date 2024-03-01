@@ -123,6 +123,11 @@
   margin-inline:auto;
 }
 
+.slider-container .slide1{
+  background:red;
+  
+}
+
 .slider-container .slide2{
   /* position:absolute; */
   background:yellow;
