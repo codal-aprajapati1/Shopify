@@ -6,6 +6,12 @@
   display:flex;
 }
 
+.animation-container {
+  height:259.03px;
+  
+  margin:85.21px auto;
+}
+
 .text-container{
   width:773px;
   height:190px;
