@@ -128,6 +128,10 @@
   background:yellow;
 }
 
+.slide1,.slide3{
+  transform:scale(0.7);
+}
+
 .card{
   width:421px;
   height:621px;
