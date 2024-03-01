@@ -133,57 +133,6 @@
   object-fit:contain;
 } */
 
-/* Container for the slider */
-.slider-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Styling for the slider */
-.slider {
-  width: 300%; /* Three times the width to accommodate three slides */
-  display: flex;
-  position: relative;
-}
-
-/* Styling for each slide */
-.card {
-  width: 33.333%; /* One-third of the slider container */
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Styling for videos */
-.card video {
-  width: 100%;
-  height: 500px;
-}
-
-/* Overlay styles */
-.overlay {
-  position: absolute;
-  top: 0;
-  width: 50%; /* Half-width overlay */
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-}
-
-/* Additional styling for the overlay content */
-.overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
-
-/* Styles for the left and right slides */
-.left-slide, .right-slide {
-  opacity: 0.5; /* Reduced opacity for left and right slides */
-}
 
 
 
