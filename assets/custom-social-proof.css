@@ -136,6 +136,9 @@
 .slide1{
   transform: translateX(-150px);
 }
+.slide2{
+  z-index:2
+}
 
 .slide3{
   transform: translateX(150px);
