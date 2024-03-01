@@ -93,3 +93,9 @@
   flex-direction:column;
   gap: 24px;
 }
+
+
+.win-service-cont,.live-chat, .help-center{
+  display:flex;
+  gap:32px;
+}
