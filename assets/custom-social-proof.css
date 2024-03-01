@@ -50,6 +50,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height:384px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eaeaea;
 }
