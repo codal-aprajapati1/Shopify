@@ -86,14 +86,18 @@
   font-weight: 700;
 }
 
-.below-container {
+.proof-card hr{
   border-top: 1px solid #eaeaea;
+  padding:20px 0;
+}
+
+.below-container {
   width: 423px;
   height: 176px;
   display:flex;
   flex-direction:column;
   gap: 28px;
-  margin-top:23px;
+  /* margin-top:23px; */
 }
 
 
