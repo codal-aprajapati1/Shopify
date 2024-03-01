@@ -141,6 +141,7 @@
 }
 .slider-cont{
   display:flex;
+  justify-content:center;
 }
 .slide1,.slide3{
 }
