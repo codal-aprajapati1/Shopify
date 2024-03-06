@@ -816,13 +816,20 @@
           "settings": {
             "slider_video": "shopify:\/\/files\/videos\/istockphoto-1464567530-640_adpp_is.mp4"
           }
+        },
+        "video_proof_7n8qYg": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+          }
         }
       },
       "block_order": [
         "social_proof_DK8xyh",
         "video_proof_bng8P7",
         "video_proof_8CXAjd",
-        "video_proof_XhaUbX"
+        "video_proof_XhaUbX",
+        "video_proof_7n8qYg"
       ],
       "settings": {
         "page_heading": "1 Million+",
