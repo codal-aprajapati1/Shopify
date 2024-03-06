@@ -129,10 +129,10 @@
   position:relative;
 }
 .slider .card{
-  display:flex;
-  justify-content:center;
+  /* display:flex; */
+  /* justify-content:center; */
   align-items:center;
-  height: 470.25px;
+  /* height: 470.25px; */
 }
 .slick-slide{
   display:none !important;
