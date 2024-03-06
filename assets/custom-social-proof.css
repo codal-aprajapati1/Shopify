@@ -139,6 +139,7 @@
   display:flex !important;
   transition:0.7s ease !important;
   opacity:0.5;
+  z-index:1;
 }
 .slick-center{
   opacity:1;
