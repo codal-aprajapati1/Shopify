@@ -180,11 +180,6 @@
   border-radius:8px;
 }
 
-.slick-track .slick-active:first-child{
-  transform:translateX(50px) !important;
-  
-}
-
 
 .slick-prev{
   left: 120px !important;
