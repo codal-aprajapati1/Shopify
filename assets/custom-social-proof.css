@@ -169,13 +169,6 @@
 .slide1 {
   display: flex !important;
 }
-.slide2 {
-  display: flex !important;
-}
-
-.slide3 {
-  display: flex !important;
-}
 
 .slider .card video {
   width: 100%;
@@ -252,6 +245,13 @@
   }
   .slick-center .card {
     max-height: 344px !important;
-    transform: scale(2.37,1.79);
+    transform: scale(2.37, 1.79);
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+
+  .slick-next {
+    right: 0 !important;
   }
 }
