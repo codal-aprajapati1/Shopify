@@ -11,8 +11,8 @@
     </div>
 
     {% for block in section.blocks %}
-      {% if block.type == 'socialProof' %}
         <div class="section-container">
+      {% if block.type == 'socialProof' %}
           <div class="proof-container">
             <div class="shadow-container">
               <div class="proof-card">
@@ -39,7 +39,8 @@
               </div>
             </div>
           </div>
-
+      {% endif %}
+            
           <div class="slider-container">
             <div class="slider ">
                   <div class="card slide1 ">
@@ -50,7 +51,6 @@
                 </div>
               </div>
             </div>
-      {% endif %}
     {% endfor %}
   </div>
 </div>
