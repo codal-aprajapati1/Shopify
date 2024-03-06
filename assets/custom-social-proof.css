@@ -140,7 +140,7 @@
 .slide1{
   /* transform: translateX(-220px); */
   /* opacity:0.3; */
-  display:flex;
+  display:flex !important;
 }
 .slide2{
   /* z-index:2; */
