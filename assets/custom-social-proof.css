@@ -198,6 +198,7 @@
 @media screen and (max-width: 375px){
   .section-container{
     display:block;
+    padding-inline:10px;
   }
   .proof-card{
     padding:20px;
