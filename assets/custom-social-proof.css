@@ -140,15 +140,19 @@
 .slide1{
   /* transform: translateX(-220px); */
   /* opacity:0.3; */
+  display:flex;
 }
 .slide2{
   /* z-index:2; */
   /* transform: scale(1.3); */
+  display:flex;
+  
 }
 
 .slide3{
   /* transform: translateX(220px); */
   /* opacity:0.3; */
+  display:flex;
 }
 
 .slider .card video{
