@@ -165,10 +165,13 @@
 .slick-prev{
   left: -10px !important;
 }
-.slick-active{
+/* .slick-active{
   height:500px !important;
-}
+} */
 
+.slick-center{
+  height:600px !imopratnt;
+}
 .slick-next{
   right: -10px !important;
 }
