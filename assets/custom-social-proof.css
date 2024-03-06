@@ -139,6 +139,7 @@
 }
 .slick-active{
   display:flex !important;
+  opacity:0.5;
 }
 .slick-track{
   width:1000px !important;
@@ -167,6 +168,7 @@
 
 .slider .slick-active:first-child{
   transform:translateX(50px);
+  
 }
 
 
