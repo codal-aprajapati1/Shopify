@@ -205,8 +205,8 @@
     display:block;
   }
   .proof-card{
-    width: 355px;
-    height: 600px;
+    max-width: 300px;
+    max-height: 600px;
   }
   .slider-container{
     width: 343px;
@@ -226,6 +226,7 @@
      max-width:100%;
     max-height:130px;
   }
+  
   
 }
 
