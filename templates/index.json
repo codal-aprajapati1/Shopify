@@ -798,10 +798,17 @@
             "service_time": "24\/7 live chat",
             "service_helpline": "Help with any CPAP (even if you didn’t buy it from us!)"
           }
+        },
+        "video_proof_4fyhBJ": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/pexels_videos_2791669 (2160p).mp4"
+          }
         }
       },
       "block_order": [
-        "social_proof_DK8xyh"
+        "social_proof_DK8xyh",
+        "video_proof_4fyhBJ"
       ],
       "settings": {
         "page_heading": "1 Million+",
