@@ -40,18 +40,18 @@
             </div>
           </div>
       {% endif %}
-            {%  if block.type == 'VideoProof' %}
-          <div class="slider-container">
-            <div class="slider ">
-                  <div class="card slide1 ">
-                    <video controls autoplay muted loop>
-                      <source src="{{ block.settings.slider_video | video_tag }}
-                    </video>
-                  </div>
-                </div>
-              </div>
-      {% endif %}
+      {%  if block.type == 'VideoProof' %}
+        <div class="slider-container">
+          <div class="slider ">
+            <div class="card slide1 ">
+              <video controls autoplay muted loop>
+                <source src="{{ block.settings.slider_video | video_tag }}
+              </video>
             </div>
+          </div>
+        </div>
+      {% endif %}
+      </div>
     {% endfor %}
   </div>
 </div>
