@@ -44,13 +44,15 @@
 
       <div class="slider-container">
         <div class="slider ">
-          {% if section.blocks.type == 'VideoProof' %}
+          {%  for block in section.blocks %}
+          {% if block.type == 'VideoProof' %}
             <div class="card slide1 ">
               <video controls autoplay muted loop>
-                <source src="{{ section.blocks.settings.slider_video | video_tag }}">
+                <source src="{{ block.settings.slider_video | video_tag }}">
               </video>
             </div>
           {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
