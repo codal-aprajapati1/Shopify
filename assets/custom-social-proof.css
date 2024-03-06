@@ -172,7 +172,7 @@
   border-radius:8px;
 }
 
-.slider .slick-active:first-child{
+.slick-track .slick-active:first-child{
   transform:translateX(50px);
   
 }
