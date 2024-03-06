@@ -1,7 +1,6 @@
 {{ 'custom-social-proof.css' | asset_url | stylesheet_tag }}
 <div class="social-proof-container">
   <div class="social-proof-subcontainer page-width">
-    
     <div class="animation-container">
       <div class="text-container">
         <p class="animate-text">{{ section.settings.page_heading }}</p>
@@ -11,9 +10,9 @@
       </div>
     </div>
 
-        <div class="section-container">
-    {% for block in section.blocks %}
-      {% if block.type == 'socialProof' %}
+    <div class="section-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'socialProof' %}
           <div class="proof-container">
             <div class="shadow-container">
               <div class="proof-card">
@@ -40,21 +39,21 @@
               </div>
             </div>
           </div>
-      {% endif %}
-    {% endfor %}
-    
-    {%  if section.blocks.type == 'VideoProof' %}
-        <div class="slider-container">
-          <div class="slider ">
+        {% endif %}
+      {% endfor %}
+
+      <div class="slider-container">
+        <div class="slider ">
+          {% if section.blocks.type == 'VideoProof' %}
             <div class="card slide1 ">
               <video controls autoplay muted loop>
-                <source src="{{ block.settings.slider_video | video_tag }}">
+                <source src="{{ section.blocks.settings.slider_video | video_tag }}">
               </video>
             </div>
-          </div>
+          {% endif %}
         </div>
-      {% endif %}
       </div>
+    </div>
   </div>
 </div>
 
@@ -66,9 +65,9 @@
       slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
-                        
+
   });
-    
+
     });
 </script>
 
@@ -132,7 +131,7 @@
           "label": "Enter Helpline Text",
           "id": "service_helpline"
         }
-        
+
       ]
     },
     {
