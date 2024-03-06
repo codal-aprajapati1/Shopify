@@ -40,7 +40,7 @@
             </div>
           </div>
       {% endif %}
-            
+            {%  if block.type == 'VideoProof' %}
           <div class="slider-container">
             <div class="slider ">
                   <div class="card slide1 ">
@@ -50,6 +50,7 @@
                   </div>
                 </div>
               </div>
+      {% endif %}
             </div>
     {% endfor %}
   </div>
