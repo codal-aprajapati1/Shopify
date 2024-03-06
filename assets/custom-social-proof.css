@@ -86,7 +86,6 @@
 
 .proof-card hr{
   border-top: 1px solid #eaeaea;
-  /* padding:20px 0; */
   margin:28px 0;;
 }
 
@@ -204,6 +203,10 @@
 @media screen and (max-width: 375px){
   .section-container{
     display:block;
+  }
+  .proof-card{
+        width: 355px;
+    height: 600px;
   }
 }
 
