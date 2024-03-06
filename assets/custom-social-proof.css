@@ -137,6 +137,12 @@
   /* width: 315.75px; */
   height: 470.25px;
 }
+.slick-slider{
+  display:none;
+}
+.slick-active{
+  display:block;
+}
 .slide1{
   /* transform: translateX(-220px); */
   /* opacity:0.3; */
