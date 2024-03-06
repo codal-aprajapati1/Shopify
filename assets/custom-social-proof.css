@@ -243,10 +243,8 @@
     max-width:315px;
   }
   .below-container {
-    width: 423px;
-    height: 176px;
-    display:flex;
-    flex-direction:column;
+    max-width: 315px;
+    height: 200px;
     gap: 24px;
 }
   
