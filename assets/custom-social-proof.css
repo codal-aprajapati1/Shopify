@@ -130,6 +130,7 @@
 }
 .slider .card{
   align-items:center;
+  transition:0.7s ease !important;
 }
 .slick-slide{
   display:none !important;
@@ -137,7 +138,6 @@
 .slick-active{
   display:flex !important;
   transition:0.7s ease !important;
-  
   opacity:0.5;
 }
 .slick-center{
