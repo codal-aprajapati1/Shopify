@@ -147,7 +147,7 @@
 .slick-center .card{
   height:600px !important;
   transform:scale(1.7);
-  z-index:2
+  z-index:999;
 }
 .slick-track{
   width:1000px !important;
