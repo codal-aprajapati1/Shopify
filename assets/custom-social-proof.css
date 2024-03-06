@@ -202,7 +202,9 @@
 
 
 @media screen and (max-width: 375px){
-  
+  .section-container{
+    display:block;
+  }
 }
 
 
