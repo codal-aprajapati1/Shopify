@@ -180,14 +180,12 @@
   left: 120px !important;
 }
 
-
-
 .slick-next{
   right: 150px !important;
 }
 .slick-prev:before,.slick-next:before{
   font-size: 45px !important;
-  z-index:5!important;
+  /* z-index:5!important; */
 }
 
 
