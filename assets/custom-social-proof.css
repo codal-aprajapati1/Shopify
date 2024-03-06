@@ -251,7 +251,6 @@
     padding: 10px !important;
   }
   .slick-center .card {
-    /* height: 600px !important; */
     transform: scale(1.9,1.8);
   }
 }
