@@ -131,6 +131,9 @@
 }
 .slider .card{
   /* position:absolute; */
+  display:flex;
+  justify-content:center;
+  align-items:center;
   width: 315.75px;
   height: 470.25px;
 }
