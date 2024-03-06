@@ -163,14 +163,14 @@
 }
 
 .slick-prev{
-  left: 120px !important;
+  left: -10px !important;
 }
 .slick-active{
   height:500px !important;
 }
 
 .slick-next{
-  right: 150px !important;
+  right: -10px !important;
 }
 .slick-prev:before,.slick-next:before{
   font-size: 45px !important;
