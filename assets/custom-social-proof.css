@@ -226,6 +226,7 @@
   .upper-container{
     max-width:317px;
     height:227px;
+    gap:24px;
   }
   .upper-container .card-heading{
     font-size:24px;
