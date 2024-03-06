@@ -165,6 +165,11 @@
   border-radius:8px;
 }
 
+.slider .slick-active:first-child{
+  transform:translateX(50px);
+}
+
+
 .slick-prev{
   left: -10px !important;
 }
