@@ -130,7 +130,7 @@
   position:relative;
 }
 .slider .card{
-  position:absolute;
+  /* position:absolute; */
   width: 315.75px;
   height: 470.25px;
 }
