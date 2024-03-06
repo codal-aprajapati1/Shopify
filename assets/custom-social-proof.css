@@ -162,7 +162,6 @@
 .slick-center .card{
   height:600px !important;
   transform:scale(1.7);
-  z-index:999;
 }
 .slide1{
   display:flex !important;
