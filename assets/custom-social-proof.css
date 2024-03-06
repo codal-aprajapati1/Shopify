@@ -136,10 +136,17 @@
 }
 .slick-active{
   display:flex !important;
+  transition:0.7s ease !important;
+  
   opacity:0.5;
 }
 .slick-center{
   opacity:1;
+  transition:0.7s ease !important;
+}
+
+.slick-center .card video{
+  
 }
 
 .slick-track{
