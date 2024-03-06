@@ -45,7 +45,7 @@
           {%  for block in section.blocks %}
           {% if block.type == 'VideoProof' %}
             <div class="card slide1 ">
-              <video controls autoplay muted loop>
+              <video controls autoplay  loop>
                 <source src="{{ block.settings.slider_video | video_tag }}
               </video>
             </div>
