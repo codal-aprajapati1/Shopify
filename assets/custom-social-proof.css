@@ -141,6 +141,7 @@
 .slick-center{
   opacity:1;
 }
+
 .slick-track{
   width:1000px !important;
   transform: translate3d(0px, 0px, 0px) !important;
@@ -183,6 +184,7 @@
 .slick-next{
   right: 150px !important;
 }
+
 .slick-prev:before , .slick-next:before{
   font-size: 45px !important;
 }
