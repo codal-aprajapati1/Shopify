@@ -796,13 +796,19 @@
             "button_url": "#",
             "service_type": "Award-winning service",
             "service_time": "24\/7 live chat",
-            "service_helpline": "Help with any CPAP (even if you didn’t buy it from us!)",
-            "slider_video": "shopify:\/\/files\/videos\/video (2160p).mp4"
+            "service_helpline": "Help with any CPAP (even if you didn’t buy it from us!)"
+          }
+        },
+        "video_proof_bng8P7": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
           }
         }
       },
       "block_order": [
-        "social_proof_DK8xyh"
+        "social_proof_DK8xyh",
+        "video_proof_bng8P7"
       ],
       "settings": {
         "page_heading": "1 Million+",
