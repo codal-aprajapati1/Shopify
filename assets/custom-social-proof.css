@@ -141,7 +141,7 @@
   display:none !important;
 }
 .slick-active{
-  display:block;
+  display:block !important;
 }
 .slide1{
   /* transform: translateX(-220px); */
