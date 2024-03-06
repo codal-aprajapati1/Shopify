@@ -190,6 +190,7 @@
 
 .slick-prev{
   left: 120px !important;
+  z-index:5;
 }
 
 .slick-next{
