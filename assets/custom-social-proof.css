@@ -254,4 +254,8 @@
   .slick-next {
     right: 0 !important;
   }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px !important;
+  }
 }
