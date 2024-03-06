@@ -213,12 +213,18 @@
     height: 369px;
   }
   .animation-container{
-    width:300;
-    height:236px;
+    max-width:300;
+    max-height:236px;
   }
   .text-container{
     font-size:40px;
+    max-width:
   }
+  .text-customers{
+     max-width:267.52px;
+    max-height:130px;
+  }
+  
 }
 
 
