@@ -165,6 +165,9 @@
 .slick-prev{
   left: 120px !important;
 }
+.slick-active{
+  height:500px !important;
+}
 
 .slick-next{
   right: 150px !important;
