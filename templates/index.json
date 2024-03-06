@@ -804,11 +804,32 @@
           "settings": {
             "slider_video": "shopify:\/\/files\/videos\/pexels_videos_2791669 (2160p).mp4"
           }
+        },
+        "video_proof_CBEJpE": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/production_id_4176461 (2160p).mp4"
+          }
+        },
+        "video_proof_Jd3nEg": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/production_id_4176492 (2160p).mp4"
+          }
+        },
+        "video_proof_iffTbL": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/video (2160p).mp4"
+          }
         }
       },
       "block_order": [
         "social_proof_DK8xyh",
-        "video_proof_4fyhBJ"
+        "video_proof_4fyhBJ",
+        "video_proof_CBEJpE",
+        "video_proof_Jd3nEg",
+        "video_proof_iffTbL"
       ],
       "settings": {
         "page_heading": "1 Million+",
