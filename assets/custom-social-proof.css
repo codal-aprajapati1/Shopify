@@ -145,14 +145,14 @@
 .slide2{
   /* z-index:2; */
   /* transform: scale(1.3); */
-  display:flex;
+  display:flex !important;
   
 }
 
 .slide3{
   /* transform: translateX(220px); */
   /* opacity:0.3; */
-  display:flex;
+  display:flex !important;
 }
 
 .slider .card video{
