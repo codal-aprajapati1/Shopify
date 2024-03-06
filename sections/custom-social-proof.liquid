@@ -14,7 +14,6 @@
       {% for block in section.blocks %}
         {% if block.type == 'socialProof' %}
           <div class="proof-container">
-            <div class="shadow-container">
               <div class="proof-card">
                 <div class="upper-container">
                   <p class="card-heading">{{ block.settings.card_heading }}</p>
@@ -38,7 +37,6 @@
                 </div>
               </div>
             </div>
-          </div>
         {% endif %}
       {% endfor %}
 
