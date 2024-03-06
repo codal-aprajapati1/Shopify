@@ -74,8 +74,13 @@
 
   });
    $('.slick-center video').prop('muted', true);
-    $('.slick-center video').on('click', '.popup' ,function(){
-                  
+   $(document).on('click', '.popup-container', function () {
+      $(this).parents('.card').find('.videoplayer').addClass('active-player');
+    });
+
+    $(document).on('click', '.close-btn', function () {
+      $('.videoplayer').removeClass('active-player');
+      $('#popup_video').trigger('pause').get(0).currentTime=0;
     });
                   
     });
