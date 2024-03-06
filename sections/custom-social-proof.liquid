@@ -44,12 +44,6 @@
         <div class="slider ">
           {%  for block in section.blocks %}
           {% if block.type == 'VideoProof' %}
-            <div class="videoplayer">
-                  <span class="close-btn">{% render 'icon-close' %}</span>
-                <video id="popup_video" controls loop autoplay>
-                  <source src="{{ block.settings.slider_video |  video_tag }}">
-                </video>
-              </div>
             <div class="card slide1 ">
               <video controls autoplay  loop>
                 <source src="{{ block.settings.slider_video | video_tag }}
