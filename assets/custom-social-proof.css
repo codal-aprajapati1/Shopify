@@ -143,6 +143,10 @@
 .slick-active{
   display:flex !important;
 }
+.slick-track{
+  width:1000px !important;
+      transform: translate3d(0px, 0px, 0px) !important;
+}
 .slide1{
   /* transform: translateX(-220px); */
   /* opacity:0.3; */
