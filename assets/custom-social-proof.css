@@ -238,6 +238,8 @@
     font-size:18px;
     font-weight:500;
     line-height:24px;
+    max-height:120px;
+    max-width:315px;
   }
   
   
