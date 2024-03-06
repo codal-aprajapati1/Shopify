@@ -140,6 +140,7 @@
 
 .videoplayer {
 display: none;
+  position:absolute;
 }
 .active-player{
   backdrop-filter: blur(5px)!important;
