@@ -179,7 +179,7 @@
   height:500px !important;
 } */
 
-.slick-center{
+.slick-center .slider .card{
   height:600px !important;
 }
 .slick-next{
