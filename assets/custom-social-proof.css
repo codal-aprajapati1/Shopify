@@ -228,6 +228,11 @@
     line-height:32px;
     font-weight:500;
   }
+  .upper-container .card-description{
+    font-size:18px;
+    font-weight:500;
+    line-height:24px;
+  }
   
   
 }
