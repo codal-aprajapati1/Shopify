@@ -137,6 +137,12 @@
   align-items: center;
   transition: 0.7s ease !important;
 }
+
+.videoplayer {
+display: none;
+}
+
+
 .slick-slide {
   display: none !important;
 }
