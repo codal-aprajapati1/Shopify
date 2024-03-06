@@ -247,6 +247,9 @@
     height: 200px;
     gap: 24px;
 }
+  .slick-list{
+    padding:10px !important;
+  }
   
 }
 
