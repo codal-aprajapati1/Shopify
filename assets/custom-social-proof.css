@@ -144,6 +144,7 @@
 .slick-center{
   opacity:1;
   transition:0.7s ease !important;
+  z-index:5;
 }
 
 .slick-center .card video{
