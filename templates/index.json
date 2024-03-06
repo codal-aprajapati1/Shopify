@@ -804,11 +804,18 @@
           "settings": {
             "slider_video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
           }
+        },
+        "video_proof_8CXAjd": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/istockphoto-1483746707-640_adpp_is.mp4"
+          }
         }
       },
       "block_order": [
         "social_proof_DK8xyh",
-        "video_proof_bng8P7"
+        "video_proof_bng8P7",
+        "video_proof_8CXAjd"
       ],
       "settings": {
         "page_heading": "1 Million+",
