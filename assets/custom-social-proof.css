@@ -242,7 +242,13 @@
     max-height:120px;
     max-width:315px;
   }
-  
+  .below-container {
+    width: 423px;
+    height: 176px;
+    display:flex;
+    flex-direction:column;
+    gap: 24px;
+}
   
 }
 
