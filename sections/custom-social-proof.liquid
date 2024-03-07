@@ -45,9 +45,10 @@
           {%  for block in section.blocks %}
           {% if block.type == 'VideoProof' %}
             <div class="card slide1 ">
-              <video controls autoplay  loop>
-                <source src="{{ block.settings.slider_video | video_tag }}
+              <video controls autoplay muted  loop>
+                <source src="{{ block.settings.slider_video | video_tag }}">
               </video>
+                <img src="{{ block.settings.slider_video.preview_image |  image_url  }}" alt="videoimage">
             </div>
           {% endif %}
           {% endfor %}
@@ -68,26 +69,8 @@
 
   });
    $('.slick-center video').prop('muted', true);
-   $(document).on('click', '.popup-container', function () {
-      $(this).parents('.card').find('.videoplayer').addClass('active-player');
+   $('.slick-active .card video').css({'display':'block !important'});     
     });
-
-    $(document).on('click', '.close-btn', function () {
-      $('.videoplayer').removeClass('active-player');
-      $('#popup_video').trigger('pause').get(0).currentTime=0;
-    });
-                  
-    });
-</script>
-
-<script>
-  // var splide = new Splide( '.slider', {
-  //   type   : 'loop',
-  //   perPage: 3,
-  //   focus  : 'center',
-  // } );
-
-  // splide.mount();
 </script>
 
 {% schema %}
