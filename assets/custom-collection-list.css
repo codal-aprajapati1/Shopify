@@ -1,7 +1,7 @@
 :root{
   --black : #000000;
   --white : #ffffff;
-  --orange : #f56527;
+  --orange : #FF600A;
   --grey : #c2c0be; 
   --fadeorange : #ffa27a;
   --bold : 900; 
@@ -42,7 +42,8 @@
 
 .main-collection-contianer .sub-container .upper-grid .upper-div{
   display:flex;
-  flex-basis:308px;
+  /* flex-basis:308px; */
+  width: calc(25% - 18px);
   min-height:414px;
   justify-content:space-around;
   align-items:center;
@@ -95,7 +96,7 @@
 
 .main-collection-contianer .sub-container .last-grid .each-div{
   display:flex;
-  flex-basis:200px;
+  width: calc(16% - 15px);
   justify-content:space-around;
   align-items:center;
   flex-direction:column;

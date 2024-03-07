@@ -1,0 +1,165 @@
+{{ 'custom-social-proof.css' | asset_url | stylesheet_tag }}
+<div class="social-proof-container">
+  <div class="social-proof-subcontainer page-width">
+    <div class="animation-container">
+      <div class="text-container">
+        <p class="animate-text">{{ section.settings.page_heading }}</p>
+      </div>
+      <div class="text-customers">
+        <p class="animate_description">{{ section.settings.serveduser }}</p>
+      </div>
+    </div>
+
+    <div class="section-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'socialProof' %}
+          <div class="proof-container">
+              <div class="proof-card">
+                <div class="upper-container">
+                  <p class="card-heading">{{ block.settings.card_heading }}</p>
+                  <p class="card-description">{{ block.settings.card_description }}</p>
+                  <a href="{{ block.settings.button_url }}">Chat Now</a>
+                </div>
+                <hr>
+                <div class="below-container">
+                  <div class="win-service-cont">
+                    <span>{% render 'icon-success' %}</span>
+                    <p>{{ block.settings.service_type }}</p>
+                  </div>
+                  <div class="live-chat">
+                    <span>{% render 'icon-snapchat' %}</span>
+                    <p>{{ block.settings.service_time }}</p>
+                  </div>
+                  <div class="help-center">
+                    <span>{% render 'icon-pinterest' %}</span>
+                    <p>{{ block.settings.service_helpline }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {% endif %}
+      {% endfor %}
+
+      <div class="slider-container">
+        <div class="slider ">
+          {%  for block in section.blocks %}
+          {% if block.type == 'VideoProof' %}
+            <div class="card slide1 ">
+              <video controls autoplay  loop>
+                <source src="{{ block.settings.slider_video | video_tag }}
+              </video>
+            </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots:false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+
+  });
+   $('.slick-center video').prop('muted', true);
+   $(document).on('click', '.popup-container', function () {
+      $(this).parents('.card').find('.videoplayer').addClass('active-player');
+    });
+
+    $(document).on('click', '.close-btn', function () {
+      $('.videoplayer').removeClass('active-player');
+      $('#popup_video').trigger('pause').get(0).currentTime=0;
+    });
+                  
+    });
+</script>
+
+<script>
+  // var splide = new Splide( '.slider', {
+  //   type   : 'loop',
+  //   perPage: 3,
+  //   focus  : 'center',
+  // } );
+
+  // splide.mount();
+</script>
+
+{% schema %}
+{
+  "name": "Social Proof",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter Page Heading",
+      "id": "page_heading"
+    },
+    {
+      "type": "text",
+      "label": "Enter Number of Users served",
+      "id": "serveduser"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "socialProof",
+      "name": "Social Proof",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Enter card heading",
+          "id": "card_heading"
+        },
+        {
+          "type": "text",
+          "label": "Enter card description",
+          "id": "card_description"
+        },
+        {
+          "type": "url",
+          "label": "Enter button url",
+          "id": "button_url"
+        },
+        {
+          "type": "text",
+          "label": "Enter service type",
+          "id": "service_type"
+        },
+        {
+          "type": "text",
+          "label": "Enter service time",
+          "id": "service_time"
+        },
+        {
+          "type": "text",
+          "label": "Enter Helpline Text",
+          "id": "service_helpline"
+        }
+
+      ]
+    },
+    {
+      "type": "VideoProof",
+      "name": "VideoProof",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "video",
+          "label": "Upload Video",
+          "id": "slider_video"
+        }
+      ]
+    }
+  ],
+  "presets":[
+        {
+          "name": "Social Proof"
+        }
+      ]
+}
+{% endschema %}

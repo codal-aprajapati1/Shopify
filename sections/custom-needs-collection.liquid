@@ -1,0 +1,78 @@
+{{ 'custom-need-collection.css' | asset_url | stylesheet_tag }}
+
+
+<div class="main-container">
+  <div class="sub-container page-width">
+    <div class="container1">
+      <div class="needs-page-heading">
+        <p>{{ section.settings.page_heading }}</p>
+      </div>
+      <div class="grid-container">
+        {% for block in section.blocks %}
+          {% if block.type == 'listofcollections' %}
+            <div class="card-block">
+              {% if block.settings.solutionsimage != blank -%}
+                <div class="image-container">
+                  <img
+                    src="{{ block.settings.solutionsimage | image_url }}"
+                    width="100%"
+                    height="100%"
+                    alt="Image to be uploaded"
+                  >
+                </div>
+              {% endif %}
+              {% if block.settings.blocktitle != blank %}
+                <div class="title-container">
+                  <a href="{{ block.settings.url }}">{{ block.settings.blocktitle }}</a><span>{% render 'icon-caret' %}</span>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Need Collection",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Enter Page Heading",
+      "id": "page_heading"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "listofcollections",
+      "name": "desiredmachine",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Enter Title",
+          "id": "blocktitle"
+        },
+        {
+          "type": "image_picker",
+          "label": "Upload image",
+          "id": "solutionsimage"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Enter block URL"
+        }
+  ]
+    }
+  ],
+  "presets":[
+        {
+        "name": "custom Needs Collection"
+        }
+        ]
+}
+{% endschema %}

@@ -650,8 +650,190 @@
     },
     "custom_social_testimonial_CMnqJC": {
       "type": "custom-social-testimonial",
+      "blocks": {
+        "description_yJmF9k": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "foldable-cat-litter-tray-cat-house",
+            "video": "shopify:\/\/files\/videos\/video (2160p).mp4"
+          }
+        },
+        "description_kcdcTg": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Merry uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "pets-empire-hut-for-cats-kittens",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+          }
+        },
+        "description_FEb7Km": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Jhon uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "womens-jacket-green",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1483746707-640_adpp_is.mp4"
+          }
+        },
+        "description_RqArfW": {
+          "type": "description",
+          "settings": {
+            "customer_review": "William uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "portable-cat-igloo-bed-with-removable-cushion",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
+          }
+        },
+        "description_XJapjP": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Taylor uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "denill-women-bellies-ballet-flats",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1464567530-640_adpp_is.mp4"
+          }
+        },
+        "description_ajtMpi": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Claris uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "cat-collar-with-bell",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+          }
+        },
+        "description_XGHfCp": {
+          "type": "description",
+          "settings": {
+            "customer_review": "Ron uses the AirMini to fit into his hectic schedule and humid environment",
+            "product_data": "qube-by-fort-collins-women-hoodie",
+            "video": "shopify:\/\/files\/videos\/istockphoto-1269662250-640_adpp_is.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "description_yJmF9k",
+        "description_kcdcTg",
+        "description_FEb7Km",
+        "description_RqArfW",
+        "description_XJapjP",
+        "description_ajtMpi",
+        "description_XGHfCp"
+      ],
       "settings": {
-        "page_heading": ""
+        "page_heading": "Hear from CPAP users like you"
+      }
+    },
+    "custom_needs_collection_gy738R": {
+      "type": "custom-needs-collection",
+      "blocks": {
+        "listofcollections_FGHcBX": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Travel Machines",
+            "solutionsimage": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+            "url": "#"
+          }
+        },
+        "listofcollections_4JKKQA": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Quiet Machines",
+            "solutionsimage": "shopify:\/\/shop_images\/lutchenca-medeiros-FcSYIRwh4Bw-unsplash.jpg",
+            "url": "#"
+          }
+        },
+        "listofcollections_yztTTf": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Nose Breathers",
+            "solutionsimage": "shopify:\/\/shop_images\/jonas-verstuyft-jXwZOSXC7KA-unsplash.jpg",
+            "url": "#"
+          }
+        },
+        "listofcollections_PqiU9R": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Masks for Beards",
+            "solutionsimage": "shopify:\/\/shop_images\/lutchenca-medeiros-FcSYIRwh4Bw-unsplash.jpg",
+            "url": "#"
+          }
+        },
+        "listofcollections_xrrA8C": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Mouth Breathers",
+            "solutionsimage": "shopify:\/\/shop_images\/no-revisions-YyZFSb_U6N4-unsplash.jpg",
+            "url": "#"
+          }
+        },
+        "listofcollections_zbwgAm": {
+          "type": "listofcollections",
+          "settings": {
+            "blocktitle": "Lightweight Masks",
+            "solutionsimage": "shopify:\/\/shop_images\/retail-staff-sanitizing-her-hands.jpg",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "listofcollections_FGHcBX",
+        "listofcollections_4JKKQA",
+        "listofcollections_yztTTf",
+        "listofcollections_PqiU9R",
+        "listofcollections_xrrA8C",
+        "listofcollections_zbwgAm"
+      ],
+      "settings": {
+        "page_heading": "Sleep apnea solutions for your unique needs"
+      }
+    },
+    "custom_social_proof_ipNrh9": {
+      "type": "custom-social-proof",
+      "blocks": {
+        "social_proof_DK8xyh": {
+          "type": "socialProof",
+          "settings": {
+            "card_heading": "Our CPAP Guides are here to help",
+            "card_description": "From product recommendations to ongoing support, we're dedicated to helping you find — and successfully use — the treatment that's right for you.",
+            "button_url": "#",
+            "service_type": "Award-winning service",
+            "service_time": "24\/7 live chat",
+            "service_helpline": "Help with any CPAP (even if you didn’t buy it from us!)"
+          }
+        },
+        "video_proof_4fyhBJ": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/pexels_videos_2791669 (2160p).mp4"
+          }
+        },
+        "video_proof_CBEJpE": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/production_id_4176461 (2160p).mp4"
+          }
+        },
+        "video_proof_Jd3nEg": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/production_id_4176492 (2160p).mp4"
+          }
+        },
+        "video_proof_iffTbL": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/production_id_4176492 (2160p).mp4"
+          }
+        }
+      },
+      "block_order": [
+        "social_proof_DK8xyh",
+        "video_proof_4fyhBJ",
+        "video_proof_CBEJpE",
+        "video_proof_Jd3nEg",
+        "video_proof_iffTbL"
+      ],
+      "settings": {
+        "page_heading": "1 Million+",
+        "serveduser": "Happy customers served by our team"
       }
     }
   },
@@ -665,6 +847,8 @@
     "new_input_practice_xLxLE4",
     "demo_section_Xeywcx",
     "custom_collection_list_jR6HpE",
-    "custom_social_testimonial_CMnqJC"
+    "custom_social_testimonial_CMnqJC",
+    "custom_needs_collection_gy738R",
+    "custom_social_proof_ipNrh9"
   ]
 }
