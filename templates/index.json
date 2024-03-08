@@ -822,6 +822,12 @@
           "settings": {
             "slider_video": "shopify:\/\/files\/videos\/production_id_4176492 (2160p).mp4"
           }
+        },
+        "video_proof_bztmUH": {
+          "type": "VideoProof",
+          "settings": {
+            "slider_video": "shopify:\/\/files\/videos\/istockphoto-1473302036-640_adpp_is.mp4"
+          }
         }
       },
       "block_order": [
@@ -829,7 +835,8 @@
         "video_proof_4fyhBJ",
         "video_proof_CBEJpE",
         "video_proof_Jd3nEg",
-        "video_proof_iffTbL"
+        "video_proof_iffTbL",
+        "video_proof_bztmUH"
       ],
       "settings": {
         "page_heading": "1 Million+",
