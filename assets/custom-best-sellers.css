@@ -20,9 +20,11 @@
 
 .actual-slider-container .slick-slider .slick-list {
   height: 900px !important;
+  display:flex;
 }
 .actual-slider-container .slick-list .slick-track {
   width: 1000px !important;
+  display:flex;
   transform: translate3d(0px, 0px, 0px) !important;
 }
 
