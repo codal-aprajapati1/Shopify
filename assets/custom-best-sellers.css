@@ -18,4 +18,8 @@
   
 }
 
-.slider-container .info-container
+.slider-container .info-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
