@@ -874,6 +874,34 @@
     },
     "custom_best_sellers_khPHgA": {
       "type": "custom-best-sellers",
+      "blocks": {
+        "navlinks_gDzzfa": {
+          "type": "navlinks",
+          "settings": {
+            "nav-text": "CPAP Machines",
+            "product": "foldable-cat-litter-tray-cat-house"
+          }
+        },
+        "navlinks_6NDyNN": {
+          "type": "navlinks",
+          "settings": {
+            "nav-text": "CPAP Masks",
+            "product": "cinderella-story-book-twist-in-the-tale-colourful-pictures-for-children-story-books"
+          }
+        },
+        "navlinks_WFinP4": {
+          "type": "navlinks",
+          "settings": {
+            "nav-text": "CPAP Masks Parts",
+            "product": "cat-tent-bed-comfortable-cat-house"
+          }
+        }
+      },
+      "block_order": [
+        "navlinks_gDzzfa",
+        "navlinks_6NDyNN",
+        "navlinks_WFinP4"
+      ],
       "settings": {
         "sect_heading": "Shop Our Best Sellers"
       }
