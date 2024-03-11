@@ -140,6 +140,7 @@
 }
 .slider .card {
   align-items: center;
+  justify-content: center;
   transition:  all 0.7s ease !important;
 }
 
