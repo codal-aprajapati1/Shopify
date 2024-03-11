@@ -17,7 +17,10 @@
 .actual-slider-container .each-slide{
   
 }
-..each-slide .product-image-cont
+..each-slide .product-image-cont{
+  width:300px;
+  height:auto;
+}
 
 .slider-container .info-container{
   display:flex;
