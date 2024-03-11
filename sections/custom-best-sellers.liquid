@@ -6,13 +6,13 @@
       <h2>{{ section.settings.sect_heading }}</h2>
     </div>
     <div class="best-seller-slider">
-          <div class="slider-navbar"><h3>{{ block.settings.nav-text }}</h3></div>
+          <div class="slider-navbar"><h3>{{ section.blocks.settings.nav-text }}</h3></div>
       {% for block in section.blocks %}
         {% if block.type == 'navlinks' %}
           <div class="actual-slider-container">
-            <div class="slider-container">
+            <div class="slider-container each-slide">
               <div class="product-image-cont">
-                <img src="{{ block.settings.product.featured_image | img_url }}" width=100% height=100%>
+                <img src="{{ block.settings.product.featured_image | image_url }}" width=100% height=100%>
               </div>
               <div class="info-container">
                 <!-- <div class="reviews-container">{{block.settings.product  }}</div> -->
@@ -31,7 +31,9 @@
 </div>
 
 <script>
-  
+  $('.actual-slider-container').slick({
+    
+  });
 </script>
 
 {% schema %}
