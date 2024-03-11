@@ -12,13 +12,10 @@
 
 .actual-slider-container{
   display:flex;
+  justify-content:center
 }
 
 .actual-slider-container .each-slide{
-  display:flex;
-  flex-flow:column;
-  justify-content:center !important;
-  align-items:center;
   width:600px;
 }
 .each-slide .product-image-cont{
@@ -27,10 +24,7 @@
 }
 
 .slider-container .info-container{
-  display:flex;
-  flex-flow:column;
-  justify-content:center;
-  align-items:center;
+ 
   width:449px;
   height:197px;
 }
