@@ -20,7 +20,7 @@
 .slick-slider .slick-list{
   height:900px !important;
 }
-.actual-slider-container .slick-track{
+.actual-slider-container .slick-list .slick-track{
  width:1000px !important; 
 }
 
