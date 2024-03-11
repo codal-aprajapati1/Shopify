@@ -11,7 +11,7 @@
 }
 
 .actual-slider-container{
-  
+  display:flex;
 }
 
 .actual-slider-container .each-slide{
