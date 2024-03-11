@@ -30,6 +30,7 @@
   flex-flow: column;
   justify-content: center;
   width:500px !important;
+  gap:30px;
 }
 .each-slide .product-image-cont {
   width: fit-content;
