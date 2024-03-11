@@ -135,11 +135,11 @@
 }
 .slider .card {
   align-items: center;
-  transition:  all 0.7s ease !important;
+  transition: 0.7s ease !important;
 }
 
 .slick-slide{
-  transition: all 0.7s ease;
+  transition:0.7s ease;
 }
 /* .videoplayer {
 display: none;
@@ -152,14 +152,14 @@ display: none;
 }
 .slick-active {
   display: flex !important;
-  transition: all 0.7s ease !important;
+  transition: 0.7s ease !important;
 
   opacity: 0.5;
   z-index: 1;
 }
 .slick-center {
   opacity: 1;
-  transition: all 0.7s ease !important;
+  transition: 0.7s ease !important;
   z-index: 5;
 }
 
@@ -169,7 +169,7 @@ display: none;
   transform: translate3d(0px, 0px, 0px) !important;
   display: flex;
   align-items: center;
-  transition: all 0.7s ease !important;
+  transition: 0.7s ease !important;
 }
 .slick-center .card {
   height: 600px !important;
