@@ -845,6 +845,7 @@
     },
     "featured_collection_fqGbNN": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
