@@ -7,7 +7,7 @@
 
 .best-seller-slider{
   display:flex;
-  overflow-x:hidden;
+  /* overflow-x:hidden; */
 }
 
 .actual-slider-container{
