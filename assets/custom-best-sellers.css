@@ -4,3 +4,8 @@
 .Page-headig-container{
   
 }
+
+.best-seller-slider{
+  display:flex;
+  overflow-x:hidden;
+}
