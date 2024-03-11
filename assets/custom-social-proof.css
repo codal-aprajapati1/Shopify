@@ -148,7 +148,7 @@ display: none;
  */
 .slick-slide {
   display: none !important;
-  transition: 0.7s ease !important;
+  transition: all 0.7s ease !important;
 }
 .slick-active {
   display: flex !important;
