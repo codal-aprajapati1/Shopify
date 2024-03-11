@@ -35,6 +35,10 @@
     height: 150px;
 }
 
+.each-slide .product-image-cont img{
+object-fit:contain;
+}
+
 .slider-container .info-container{
  
   width:449px;
