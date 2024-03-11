@@ -17,6 +17,9 @@
   width:1000px !important;
 }
 
+.slick-slider .slick-list{
+  height:50%;
+}
 .actual-slider-container .slick-track{
  width:1000px !important; 
 }
