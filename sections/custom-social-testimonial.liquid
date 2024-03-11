@@ -16,7 +16,7 @@
               <div class="card">
                 <div class="videoplayer">
                   <span class="close-btn">{% render 'icon-close' %}</span>
-                  <video id="popup_video" controls loop autoplay>
+                  <video id="popup_video" muted controls loop autoplay>
                     <source src="{{ block.settings.video |  video_tag }}">
                   </video>
                 </div>
@@ -68,6 +68,7 @@
 
 <script>
   $(document).ready(function () {
+
     $(document).on('click', '.popup-container', function () {
       $(this).parents('.card').find('.videoplayer').addClass('active-player');
       alert("");
@@ -77,9 +78,9 @@
       $('.videoplayer').removeClass('active-player');
       $('#popup_video').trigger('pause').get(0).currentTime=0;
     });
-
   });
 </script>
+
 
 <script>
   const initSlider = () =>{
