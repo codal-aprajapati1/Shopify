@@ -13,6 +13,7 @@
 .actual-slider-container {
   display: flex;
   justify-content: center;
+  width:1328px !important;
 }
 
 .slick-slider .slick-list {
