@@ -12,7 +12,8 @@
 
 .actual-slider-container{
   display:flex;
-  justify-content:center
+  justify-content:center;
+  width:1000px !important;
 }
 
 .actual-slider-container .each-slide{
