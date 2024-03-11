@@ -13,7 +13,7 @@
 .actual-slider-container {
   display: flex;
   justify-content: center;
-  width:1328px !important;
+  width:1000px !important;
   overflow:visible;
   gap:50px;
 }
