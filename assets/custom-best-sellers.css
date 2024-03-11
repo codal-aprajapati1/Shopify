@@ -15,6 +15,7 @@
   justify-content: center;
   width:1328px !important;
   overflow:visible;
+  gap:50px;
 }
 
 .slick-slider .slick-list {
