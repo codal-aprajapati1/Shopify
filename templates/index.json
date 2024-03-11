@@ -895,12 +895,20 @@
             "nav-text": "CPAP Masks Parts",
             "product": "cat-tent-bed-comfortable-cat-house"
           }
+        },
+        "navlinks_fP8BnE": {
+          "type": "navlinks",
+          "settings": {
+            "nav-text": "CPAP Accessories",
+            "product": "cat-collar-with-bell"
+          }
         }
       },
       "block_order": [
         "navlinks_gDzzfa",
         "navlinks_6NDyNN",
-        "navlinks_WFinP4"
+        "navlinks_WFinP4",
+        "navlinks_fP8BnE"
       ],
       "settings": {
         "sect_heading": "Shop Our Best Sellers"
