@@ -43,6 +43,7 @@
   width: 487px;
   height: 688px;
   border-radius: 16px;
+  box-shadow: -4px 8px 35px orange, 7px 4px 16px violet, 1px -6px 9px orange, -4px 4px 16px violet;
 }
 .upper-container {
   display: flex;
