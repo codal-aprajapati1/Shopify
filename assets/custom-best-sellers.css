@@ -18,7 +18,7 @@
   gap:50px;
 }
 
-.slick-slider .slick-list {
+.actual-slider-container .slick-slider .slick-list {
   height: 900px !important;
 }
 .actual-slider-container .slick-list .slick-track {
