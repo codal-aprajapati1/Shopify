@@ -23,9 +23,9 @@
   display:flex;
 }
 .actual-slider-container .slick-list .slick-track {
-  width: 1000px !important;
+  /* width: 1000px !important; */
   display:flex;
-  transform: translate3d(0px, 0px, 0px) !important;
+  /* transform: translate3d(0px, 0px, 0px) !important; */
 }
 
 .actual-slider-container .each-slide {
