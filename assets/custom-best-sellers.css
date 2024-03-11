@@ -14,7 +14,7 @@
 .actual-slider-container{
   display:flex;
   justify-content:center;
-  width:1000px !important;
+  /* width:1000px !important; */
 }
 
 .slick-slider .slick-list{
@@ -22,7 +22,7 @@
 }
 .actual-slider-container .slick-list .slick-track{
  width:1000px !important; 
-transform: translate3d(0px, 0px, 0px) !important;
+ transform: translate3d(0px, 0px, 0px) !important;
 }
 
 .actual-slider-container .each-slide{
