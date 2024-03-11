@@ -19,7 +19,7 @@
 }
 
 .actual-slider-container .slick-slider .slick-list {
-  height: 900px !important;
+  /* height: 900px !important; */
   display:flex;
 }
 .actual-slider-container .slick-list .slick-track {
