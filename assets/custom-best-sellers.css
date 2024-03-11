@@ -31,8 +31,8 @@
   justify-content:center;
 }
 .each-slide .product-image-cont{
-  width:300px;
-  height:auto;
+      width: fit-content;
+    height: 150px;
 }
 
 .slider-container .info-container{
