@@ -184,7 +184,7 @@ display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height:392px !important;
+  min-height:392.88px !important;
   border-radius: 8px;
 }
 .slick-center .card img{
