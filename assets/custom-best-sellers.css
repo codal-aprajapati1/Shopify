@@ -33,8 +33,7 @@
 .each-slide .product-image-cont{
     width: fit-content;
     height: 150px;
-  display:flex;
-  justify-content:center;
+  margin-inline:auto;
 }
 
 .each-slide .product-image-cont img{
