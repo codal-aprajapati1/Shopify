@@ -31,8 +31,9 @@
   justify-content:center;
 }
 .each-slide .product-image-cont{
-      width: fit-content;
+    width: fit-content;
     height: 150px;
+  display:flex;
 }
 
 .each-slide .product-image-cont img{
