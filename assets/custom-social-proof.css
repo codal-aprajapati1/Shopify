@@ -141,11 +141,11 @@
 .slick-slide{
   transition:0.7s ease;
 }
-.videoplayer {
+/* .videoplayer {
 display: none;
   position:absolute;
 }
-
+ */
 .slick-slide {
   display: none !important;
   transition: 0.7s ease !important;
