@@ -20,9 +20,13 @@
 .text-container {
   width: 773px;
   height: 190px;
-  font-size: 13rem;
   font-weight: 900;
   margin-inline: auto;
+}
+
+.text-container .animate-text{
+    font-size: 15rem;
+    line-height: 19rem;
 }
 
 .text-customers {
@@ -43,6 +47,7 @@
   width: 487px;
   height: 688px;
   border-radius: 16px;
+  box-shadow: -4px 8px 35px orange, 7px 4px 16px violet, 1px -6px 9px orange, -4px 4px 16px violet;
 }
 .upper-container {
   display: flex;
@@ -135,81 +140,85 @@
 }
 .slider .card {
   align-items: center;
-  transition: 0.7s ease !important;
-  min-height: 392px !important;
+  justify-content: center;
+  transition:  all 0.7s ease !important;
 }
 
-.slick-slide{
-  transition:0.7s ease;
+.slider .slick-slide{
+  transition: all 0.7s ease;
 }
-
-.slick-slide {
+/* .videoplayer {
+display: none;
+  position:absolute;
+}
+ */
+.slider .slick-slide {
   display: none !important;
-  transition: 0.7s ease !important;
+  transition: all 0.7s ease !important;
 }
-.slick-active {
+.slider .slick-active {
   display: flex !important;
-  transition: 0.7s ease !important;
+  transition: all 0.7s ease !important;
+
   opacity: 0.5;
   z-index: 1;
 }
-.slick-center {
+.slider .slick-center {
   opacity: 1;
-  transition: 0.7s ease !important;
+  transition: all 0.7s ease !important;
   z-index: 5;
 }
 
 
-.slick-track {
+.slider .slick-track {
   width: 1000px !important;
   transform: translate3d(0px, 0px, 0px) !important;
   display: flex;
   align-items: center;
-  transition: 0.7s ease !important;
+  transition: all 0.7s ease !important;
 }
-.slick-center .card {
+.slider .slick-center .card {
   height: 600px !important;
   transform: scale(1.4);
 }
-.slide1 {
+.slider .slide1 {
   display: flex !important;
 }
 
-.slick-active .card img{
+.slider .slick-active .card img{
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 392px !important;
   object-fit: cover;
+  min-height:392.88px !important;
   border-radius: 8px;
 }
-.slick-center .card img{
+.slider .slick-center .card img{
   display: none !important;
 }
 
-.slick-active .card video {
+.slider .slick-active .card video {
   display: none;
   width: 100%;
-  min-height: 392px !important;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.slick-center .card video{
+.slider .slick-center .card video{
   display: flex !important;
 }
 
-.slick-prev {
+.slider .slick-prev {
   left: 120px !important;
   z-index: 5;
 }
 
-.slick-next {
+.slider .slick-next {
   right: 150px !important;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.slider .slick-prev:before,
+.slider .slick-next:before {
   font-size: 45px !important;
 }
 
