@@ -261,13 +261,16 @@ svg {
   font-size: 20px;
   text-align: center;
 }
-.background-img-container .image-data-cont h1 {
-  font-size: 8rem;
+.background-img-container .image-data-cont .img-heading {
+  font-size: 72px;
+  line-height: 78px;
+  font-weight: 500;
 }
 
-.background-img-container .image-data-cont p {
-  font-size: 2.2rem;
+.background-img-container .image-data-cont .img-description {
+  font-size: 16px;
   margin-top: 40px;
+  line-height: 24px;
 }
 .background-img-container .image-data-cont .btn-container {
   margin: 30px 0;
@@ -302,6 +305,10 @@ svg {
   border: 1px solid var(--orange);
 }
 
+.background-img-container .blocks-container{
+  padding: 0 56px;
+}
+
 .background-img-container .image-below-container {
   position: absolute;
   display: flex;
@@ -322,6 +329,11 @@ svg {
   padding: 0 30px;
   align-items: center;
 }
+.background-img-container .image-below-container .question-container p{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
 
 .background-img-container .image-below-container .options {
   display: flex;
@@ -330,12 +342,17 @@ svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  gap: 12px;
   max-width: 170px;
   padding: 17px 13px;
-  font-weight: 700;
   border-left: 1.5px solid var(--button-border);
   transition: 1s ease;
+}
+
+.background-img-container .image-below-container .options p{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
 }
 
 .background-img-container .image-below-container .options:hover {

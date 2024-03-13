@@ -16,34 +16,38 @@
             {% endif %}
           {% endfor %}
         </div>
+        {% comment %} <a href="#" class="prev-arrow">{%  render 'icon-arrow' %}</a> {% endcomment %}
         <div class="actual-slider-container">
-          {% for block in section.blocks %}
-            {% if block.type == 'navlinks' %}
-              <div class="slider-container1 each-slide">
-                <div class="product-image-cont">
-                  <img src="{{ block.settings.product.featured_image | image_url }}" width="100%" height="100%">
+          {% comment %} <div class="fade-effect"> {% endcomment %}
+            {% for block in section.blocks %}
+              {% if block.type == 'navlinks' %}
+                <div class="slider-container1 each-slide">
+                  <div class="product-image-cont">
+                    <img src="{{ block.settings.product.featured_image | image_url }}" width="100%" height="100%">
+                  </div>
+                  <div class="info-container">
+                    <!-- <div class="reviews-container">{{block.settings.product  }}</div> -->
+                    <div class="title-container">
+                      <p>{{ block.settings.product.title }}</p>
+                    </div>
+                    <div class="description-container">
+                      <p>{{ block.settings.product.description }}</p>
+                    </div>
+                    <div class="button-container1">
+                      <a href="{{ block.settings.product.url }}"
+                        ><span>Shop now</span
+                        ><span class="price-container">
+                          {{- block.settings.product.price | money_without_trailing_zeros -}}
+                        </span></a
+                      >
+                    </div>
+                  </div>
                 </div>
-                <div class="info-container">
-                  <!-- <div class="reviews-container">{{block.settings.product  }}</div> -->
-                  <div class="title-container">
-                    <p>{{ block.settings.product.title }}</p>
-                  </div>
-                  <div class="description-container">
-                    <p>{{ block.settings.product.description }}</p>
-                  </div>
-                  <div class="button-container1">
-                    <a href="{{ block.settings.product.url }}"
-                      ><span>Shop now</span
-                      ><span class="price-container">
-                        {{- block.settings.product.price | money_without_trailing_zeros -}}
-                      </span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+              {% endif %}
+            {% endfor %}
+            {% comment %} </div> {% endcomment %}
+            </div>
+            {% comment %} <a href="#" class="next-arrow">{%  render 'icon-arrow' %}</a> {% endcomment %}
       </div>
     </div>
   </div>
@@ -87,7 +91,12 @@ $('.actual-slider-container').slick({
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    asNavFor: '.slider-navbar'
+    cssEase: 'ease-out',
+    easing: 'ease-out',
+    useCSS: true,
+    // useTransform: true,
+    speed: 700,
+    asNavFor: '.slider-navbar',
 });
 
 

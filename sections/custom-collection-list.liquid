@@ -1,15 +1,15 @@
 {{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
 
 <div class="main-collection-contianer">
-  <div class="sub-container page-width">
+  <div class="sub-container1 page-width">
     {% for block in section.blocks %}
       {% if block.type == 'pageheading' %}
         <div class="page-heading">
           {% if block.settings.heading != blank %}
-            <h1>{{ block.settings.heading }}</h1>
+            <p class="page-title">{{ block.settings.heading }}</p>
           {% endif %}
           {% if block.settings.description != blank %}
-            <p>{{ block.settings.description }}</p>
+            <p class="page-descrip">{{ block.settings.description }}</p>
           {% endif %}
         </div>
       {% endif %}
@@ -17,11 +17,13 @@
           <div class="upper-grid">
             {% for collection in block.settings.collectionlist1 %}
               <div class="upper-div">
-                <div class="image-container">
+                <div class="image-container ">
                   <img src="{{ collection.image | image_url }}" width="100%" height="100%">
                 </div>
-                  <h2>{{ collection.title }}</h2>
+                <div class="upper-collection-data">
+                  <p class="collection-name">{{ collection.title }}</p>
                   <a href="#" class="shopnow-btn">Shop Now</a>
+                  </div>
               </div>
             {% endfor %}
           </div>
@@ -30,10 +32,13 @@
           {% for collection in block.settings.collectionlist2 %}
             <div class="each-div">
               <div class="img-container2">
-                <img src="{{ collection.image | image_url }}" width="100%">
+                <img src="{{ collection.image | image_url }}" width="100%" height="100%">
+                {% comment %} <img src="{{ collection.image1 | image_url }}" alt="image to be displayed" width="100%" height="100%"> {% endcomment %}
               </div>
-              <h2>{{ collection.title }}</h2>
-              <a href="#" class="shopnow-btn">Shop Now</a>
+              <div class="collection-data-container">
+                <p>{{ collection.title }}</p>
+                <a href="#" class="shopnow-btn">Shop Now</a>
+              </div>
             </div>
           {% endfor %}
           <div class="last-div">

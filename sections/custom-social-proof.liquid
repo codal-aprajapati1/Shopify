@@ -44,7 +44,12 @@
         <div class="slider ">
           {%  for block in section.blocks %}
           {% if block.type == 'VideoProof' %}
-            <div class="card slide1 ">
+            <div class="card slide1" 
+            class="example1"
+            data-rbox-autoplay="true"
+            data-rbox-width="480"
+            data-rbox-height="360"
+            data-rbox-video="{{ block.settings.slider_video.sources[0].url }}">
               <video controls autoplay muted  loop>
                 <source src="{{ block.settings.slider_video | video_tag }}">
               </video>
@@ -60,16 +65,22 @@
 
 <script>
   $(document).ready(function(){
+    
     $('.slider').slick({
       dots:false,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
+      cssEase: 'linear',
+      speed: 700,
 
   });
    $('.slick-center video').prop('muted', true);
    $('.slick-active .card video').css({'display':'block !important'});     
+   $('.example1').rbox({
+      type: 'video',
+    })
     });
 </script>
 
