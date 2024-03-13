@@ -5,6 +5,10 @@
   margin:100px auto;
 }
 
+.sub-testimonial-container{
+  padding:0px ;
+} 
+
 .button-container {
   position: absolute;
   width: 67vw;
