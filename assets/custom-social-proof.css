@@ -1,6 +1,10 @@
+
+.social-proof-container{
+background: #f6f5f0;
+}
+
 .social-proof-subcontainer {
   padding: 45px 0;
-  background: #f6f5f0;
 }
 
 .animation-container {
@@ -41,10 +45,10 @@
 
 .proof-card {
   padding: 32px;
-  width: 40%;
+  /* width: 40%; */
   color: #ffffff;
   background: #ff600a;
-  width: 487px;
+  max-width: 487px;
   height: 688px;
   border-radius: 16px;
   box-shadow: -4px 8px 35px orange, 7px 4px 16px violet, 1px -6px 9px orange, -4px 4px 16px violet;
@@ -53,7 +57,7 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  height: 384px;
+  max-height: 384px;
   padding-bottom: 20px;
 }
 
@@ -100,7 +104,6 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  /* margin-top:23px; */
 }
 
 .win-service-cont,
@@ -179,7 +182,7 @@ display: none;
 }
 .slider .slick-center .card {
   height: 600px !important;
-  transform: scale(1.4);
+  transform: scale(1.7,1.5);
 }
 .slider .slide1 {
   display: flex !important;
@@ -222,7 +225,79 @@ display: none;
   font-size: 45px !important;
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 1330px) {
+  .proof-card {
+    max-width: 432px;
+    max-height: 688px;
+  }
+  .slider-container {
+    max-width: 600px;
+    max-height: 669px;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .proof-card {
+    max-width: 390px;
+    max-height: 688px;
+  }
+  .slider-container {
+    max-width: 500px;
+    max-height: 669px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .proof-card {
+    max-width: 320px;
+    max-height: 688px;
+  }
+  .slider-container {
+    max-width: 432px;
+    max-height: 669px;
+  }
+  .upper-container {
+    max-width: 300px;
+    max-height: 384px;
+    gap: 24px;
+  }
+  .upper-container .card-heading {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  .upper-container .card-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .below-container {
+    max-width: 315px;
+    height: 200px;
+    gap: 24px;
+  }
+  .slick-list{
+    padding: 20px;
+  }
+  .social-proof-subcontainer {
+    padding: 20px 0;
+  }
+  .section-container {
+    padding-inline: 20px;
+  }
+  .text-container .animate-text{
+    font-size: 12rem;
+    line-height: 15rem;
+}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
   .section-container {
     display: block;
     padding-inline: 10px;
@@ -290,4 +365,25 @@ display: none;
   .slick-next:before {
     font-size: 25px !important;
   }
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  .animation-container {
+    height: 88.03px;
+    margin: 85.21px auto;
+  }
+  .text-container {
+    max-height: 76px;
+  }
+  .text-container .animate-text{
+    font-size: 5rem;
+    line-height: 7rem;
+}
+.social-proof-subcontainer .proof-container {
+  /* display: flex; */
+  justify-content: center;
+}
 }

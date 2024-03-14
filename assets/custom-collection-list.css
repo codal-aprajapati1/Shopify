@@ -15,9 +15,7 @@
   padding:0;
 }
 
-.main-collection-contianer{
-  margin-top:200px;
-}
+
 
 .sub-container1{
   padding: 56px;
@@ -53,13 +51,14 @@
 }
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div{
-  /* display:flex; */
-  width: calc(25% - 18px);
+  display:flex;
+  width: calc(25% - 24px);
   min-height:414px;
-  /* justify-content:space-between; */
-  /* align-items:center; */
-  /* flex-direction:column; */
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
   /* justify-content: flex-end; */
+  padding: 39px 20px 39.5px;
   text-align:center;
   background: var(--collection-back);
   border-radius:14px;
@@ -85,13 +84,14 @@
   margin-right: 0;
 }
 
-.main-collection-contianer .sub-container1 .upper-grid .upper-div:nth-child(2) .image-container{
-  transform:scale(2) ;
-}
+/* .main-collection-contianer .sub-container1 .upper-grid .upper-div:nth-child(2) .image-container img{
+  width: 100%;
+  margin-top: -130px;
+} */
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div:nth-child(2) .image-container img{
-  margin-right: 0;
-  margin-top: -41px;
+  width: 100%;
+  margin-top: -130px;
 }
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div .image-container img{
@@ -99,15 +99,15 @@
   width: 70%;
 }
 
-.main-collection-contianer .sub-container1 .upper-grid .upper-div:last-child .image-container{
-  margin-left: 100px;
+.main-collection-contianer .sub-container1 .upper-grid .upper-div:last-child .image-container img{
+  margin-left: 160px;
 }
 .main-collection-contianer .sub-container1 .upper-grid .upper-div:hover:last-child  img{
-  transform: translateX(-50px);
+  transform: translateX(-40px);
 }
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div:hover:nth-child(2) img{
-  transform: translateY(40px);
+  transform: translateY(50px);
   
 }
 
@@ -141,16 +141,17 @@
 
 .main-collection-contianer .sub-container1 .last-grid .each-div{
   display:flex;
-  width: calc(16% - 15px);
+  width: calc(16% - 24px);
   justify-content:space-around;
   align-items:center;
   flex-direction:column;
   text-align:center;
   background:var(--collection-back);
-  margin: 10px 0;
-  border-radius:14px;
+  /* margin: 10px 0; */
+  padding: 16px;
+  border-radius:8px;
   border:1px solid var(--grey);
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div .collection-data-container{
@@ -168,10 +169,11 @@
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div .img-container2{
-  width:50%;
-  height:50%;
+  width:75px;
+  height:75px;
   border-radius:50%;
   border:1px solid var(--grey);
+  overflow: hidden;
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div .img-container2 img{
@@ -206,18 +208,10 @@
 }
 
 .main-collection-contianer .sub-container1 .last-grid .last-div{
-  border-radius:14px;
-  display:flex;
-  flex-basis:200px;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  text-align:center;
   background:var(--white);
-  margin: 10px 5px;
   border:1px solid var(--orange);
   color: var(--orange);
-  transition:1s ease;
+  transition:.3s ease;
 }
 
 .main-collection-contianer .sub-container1 .last-grid .last-div h2{
@@ -244,15 +238,55 @@
   .main-collection-contianer{
     margin-top:360px;
   }
+  
+.main-collection-contianer .page-heading .page-title{
+  font-size:40px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.main-collection-contianer .page-heading .page-descrip{
+  font-size:16px;
+  max-width:647px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-inline:auto;
+}
+.main-collection-contianer .sub-container1 .upper-grid .upper-div{
+  max-height: 300px;
+  flex-basis:300px;
+  border-radius: 14px;
+  align-items: center;
+  padding-bottom: 20px;
+  background: var(--collection-back);
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+.main-collection-contianer .sub-container1 .upper-grid .upper-div .image-container img{
+  object-fit:contain;
+  width: 100%;
+}
+.main-collection-contianer .sub-container1 .last-grid .each-div{
+  flex-wrap: wrap;
+  flex-basis: 200px;
+  gap: 20px;
+}
+.main-collection-contianer .sub-container1 .last-grid{
+  gap: 20px;
+}
+
 }
 
 @media screen and (max-width:375px){
   .main-collection-contianer{
-    margin-top:600px;
-    max-height: 1322px;
-    margin-bottom: 70px;
+    /* margin-top:600px; */
+    /* max-height: 1322px; */
+    /* margin-bottom: 70px; */
   }
-
+  .sub-container1{
+    padding: 0px;
+  }
+  
   .main-collection-contianer .page-heading h1{
     font-size:40px;
     line-height: 46px;
@@ -280,11 +314,11 @@
   border-radius: 0px;
 }
   .main-collection-contianer .sub-container1 .upper-grid .upper-div{
-    max-height: 212px;
+    max-height: 300px;
     min-height: 0;
-    height: 212px;
+    /* height: 212px; */
     min-height: 0;
-    height: 212px;
+    height: 250px;
     flex-basis: 160px;
     border-radius: 14px;
     flex-basis: 160px;
@@ -292,7 +326,7 @@
     padding-bottom: 20px;
     background: var(--collection-back);
     border-radius: 14px;
-    transition: 1s ease;
+    transition: 0.3s ease;
   }
 
   .main-collection-contianer .sub-container1 .upper-grid .upper-div a{
@@ -310,13 +344,16 @@
   .main-collection-contianer .sub-container1 .last-grid .each-div{
     display: flex;
     flex-basis: auto;
-    flex-direction: row;
     align-items: center;
     text-align: center;
+    width: 100%;
     margin: 10px 0;
     border-radius: 14px;
     height: 72px;
-    transition: 1s ease;
+    transition: 0.3s ease;
+  }
+  .main-collection-contianer .sub-container1 .last-grid .each-div p{
+
   }
 
   .main-collection-contianer .sub-container1 .last-grid .each-div a{
@@ -340,5 +377,15 @@
     flex-basis: 72px;
     flex-direction: row;
     justify-content: space-around;
+  }
+  .main-collection-contianer .sub-container1 .last-grid .each-div .collection-data-container{
+    display: flex; 
+    flex-direction: row;
+    max-width: 230px;
+    min-height: 1px;
+  }
+  .main-collection-contianer .sub-container1 .last-grid .each-div .collection-data-container p{
+    font-size: 16px;
+    line-height: 24px;
   }
 }
