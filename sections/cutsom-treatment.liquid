@@ -1,0 +1,126 @@
+{{ 'custom-treatment.css' | asset_url | stylesheet_tag }}
+
+<div class="treatment-section">
+  <div class="page-width treatment-container">
+    {% for block in section.blocks %}
+      {% if block.type == 'pageheading' %}
+        <div class="treatment-upper-container">
+          {% if block.settings.pageheading != blank %}
+            <h1>{{ block.settings.pageheading }}</h1>
+          {% endif %}
+          {% if block.settings.pagedescription != blank %}
+            <p>{{ block.settings.pagedescription }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if block.type == 'question' or block.type == 'options' %}
+        <div class="treatment-bottom-container">
+          {% if block.type == 'question' and block.settings.questiontext != blank %}
+            <h1>{{ block.settings.questiontext }}</h1>
+          {% endif %}
+          <div class="treatment-options-container">
+            {% if block.type == 'options' %}
+              <div class="options-design treatment-options-unique-container">
+                {% if block.settings.optiontext != blank %}
+                  <p>{{ block.settings.optiontext }}</p>
+                {% endif %}
+                {% if block.settings.btn_url != blank %}
+                  <a href="{{ block.settings.btn_url }}">&lt;</a>
+                {% endif %}
+              </div>
+            {% endif %}
+            {% if block.type == 'lastcontainer' %}
+              <div class="options-design last-order">
+                {% if block.settings.lastcontainertext != blank %}
+                  <p>{{ block.settings.lastcontainertext }}</p>
+                {% endif %}
+                {% if block.settings.lastContainerURl != blank %}
+                  <a href="{{ block.settings.lastContainerURl }}">Reorder</a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Treatment Section",
+  "tag": "section",
+  "settings": [],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "name": "pageheading",
+      "type": "pageheading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "pageheading",
+          "label": "Enter Page Heading"
+        },
+        {
+          "type": "text",
+          "id": "pagedescription",
+          "label": "Enter Page Description"
+        }
+      ]
+    },
+    {
+      "name": "question",
+      "type": "question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "questiontext",
+          "label": "Enter the question text"
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "type": "options",
+      "settings": [
+        {
+          "type": "text",
+          "id": "optiontext",
+          "label": "Enter the answer text"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Enter the button Url"
+        }
+      ]
+    },
+    {
+      "name": "lastcontainer",
+      "type": "lastcontainer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "lastcontainertext",
+          "label": "Enter the question text"
+        },
+        {
+          "type": "url",
+          "id": "lastContainerURl",
+          "label": "Enter the order url"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Treatment Section",
+      "settings": {},
+      "blocks": [
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,69 @@
+
+{{ 'custom-text-banner.css' |  asset_url |  stylesheet_tag }}
+
+<div class="banner-text-container">
+    <div class="banner-text-block-container">
+        {% for block in section.blocks %}
+            
+        <div class="text-block-unique-container">
+            <figure>
+                {% if block.settings.bannertextimage != blank  %}
+                    <img src="{{ block.settings.bannertextimage |  image_url }}" alt="image upload" width="100%" height="100%"> 
+                {% endif %}
+            </figure>
+            {% if block.settings.bannertext != blank %}
+                <p>{{ block.settings.bannertext }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "Text Banner",
+        "tag": "section",
+      "settings": [
+        {
+            "type": "text",
+            "id" : "text",
+            "label" : "Text Banner"
+        }
+      ],
+      "max_blocks": 4,
+      "blocks":[
+        {
+            "name": "container1",
+            "type": "text",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "bannertext",
+                    "label": "Enter the banner text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "bannertextimage",
+                    "label": "upload the image"
+                }
+
+            ]
+        }
+      ],
+    
+      "presets": [
+        {
+          "name": "Text Banner",
+          "settings": {
+          },
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}

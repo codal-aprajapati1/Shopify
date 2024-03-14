@@ -305,15 +305,21 @@ display: none;
   .proof-card {
     padding: 20px;
     max-height: 600px;
+    min-width: 80%;
   }
   .slider-container {
-    max-width: 343px;
-    max-height: 369px;
+    min-width: 80%;
+    min-height: 100%;
   }
   .animation-container {
     max-width: 300px;
     max-height: 236px;
+    margin: 20px auto;
   }
+  .text-container .animate-text {
+    font-size: 5rem;
+    line-height: 8rem;
+}
   .text-container {
     font-size: 40px;
     max-width: 100%;
@@ -324,6 +330,9 @@ display: none;
     line-height: 32px;
     max-width: 100%;
     max-height: 130px;
+  }
+  .social-proof-subcontainer .proof-container{
+    justify-content: center;
   }
   .upper-container {
     max-width: 317px;

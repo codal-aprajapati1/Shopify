@@ -1,0 +1,36 @@
+.banner-text-container{
+    max-width: 1368px;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+.banner-text-container .banner-text-block-container{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ff600a;
+    padding: 28px 16px;
+    border-radius: 8px;
+    max-height: 200px;
+}
+
+.banner-text-block-container .text-block-unique-container{
+    width: calc(25% - 38px);
+}
+
+.text-block-unique-container figure {
+    text-align: center;
+    
+}
+
+.text-block-unique-container figure  img{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 8px;
+}
+
+.text-block-unique-container p{
+    color: white;
+    text-align: center;
+    max-width: 285px;
+}

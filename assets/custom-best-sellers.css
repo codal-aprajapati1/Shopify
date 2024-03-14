@@ -283,3 +283,33 @@
 }
 
 }
+
+@media screen and (max-width: 768px) {
+  .best-seller-slider {
+    max-width: 100%;
+  }
+  .best-seller-container .Page-headig-container p {
+    font-size: 5rem;
+    line-height: 8rem;
+}
+.best-seller-slider .slider-navbar p{
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+.slider-container1 .info-container .title-container p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.slider-container1 .info-container .description-container p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+
+
+}
