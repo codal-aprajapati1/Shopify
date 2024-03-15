@@ -28,24 +28,23 @@ background: #f6f5f0;
   margin-inline: auto;
   text-shadow: 5px 7px 9px pink;
   transition: 2s ease;
+  /* opacity: 0; */
 }
 
 
 
 
 .text-container .animate-text{
-    position: absolute;
     opacity: 0;
     font-size: 15rem;
     line-height: 19rem;
-    margin-top: 180px;
+    transform:translate3d(0px, 180px, 0px);
 }
 
 .animation-forwards{
- transform: translate3d(0px , -180px , 0px) !important;
- /* margin-top: 0 !important; */
+ transform: translate3d(0px , -40px , 0px) !important;
  opacity: 1 !important;
- transition: all 1s ease-in-out;
+ transition: all 1.5s ease-in-out;
 }
 
 
@@ -163,8 +162,8 @@ background: #f6f5f0;
   transition:  all 0.7s ease !important;
 }
 
-.slide1 .popup-container{
-  position: absolute;
+/* .social-proof-popup{
+
   width: fit-content;
   padding: 7px 12px;
   background-color: #2E2E2E33;
@@ -174,13 +173,13 @@ background: #f6f5f0;
   cursor: pointer;
   z-index: 99;
   gap: 8px;color: var(--white);
-}
-.slide1  .popup-container span{
+} */
+.social-proof-popup span{
   font-size: 12px; 
   line-height: 15px;
 }
 
-.slide1  .popup-container svg {
+.social-proof-popup svg {
   color: red;
   width: 20px;
   height: 20px;

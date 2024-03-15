@@ -46,19 +46,26 @@
             {% if block.type == 'VideoProof' %}
               <div
                 class="card slide1"
-                class="example1"
-                data-rbox-autoplay="true"
-                data-rbox-width="480"
-                data-rbox-height="360"
-                data-rbox-video="{{ block.settings.slider_video.sources[0].url }}"
-              ><div class="popup-container">
-                {% render 'icon-youtube' -%}
-                <span>Watch</span>
-              </div>
-                <video controls autoplay muted loop>
+              >
+                {% comment %} <div
+                  class="social-proof-popup"
+                  >
+                  {% render 'icon-youtube' %}
+                  <span>Watch</span>
+                </div> {% endcomment %}
+                {% comment %} <video controls autoplay muted loop 
+                  class="social-proof-popup"
+                  data-rbox-autoplay="true"
+                  data-rbox-controls="true"
+                  data-rbox-width="480"
+                  data-rbox-height="360"
+                  data-rbox-video="{{ block.settings.slider_video.sources[0].url }}">
                   <source src="{{ block.settings.slider_video | video_tag }}">
-                </video>
-                <img src="{{ block.settings.slider_video.preview_image |  image_url  }}" alt="videoimage">
+                </video> {% endcomment %}
+                <div class="video">
+                  {{ block.settings.slider_video | video_tag: autoplay:true, loop: true, muted:true, controls:true }}
+                </div>
+                <img src="{{ block.settings.slider_video.preview_image |  image_url  }}" alt="videoimage" width="100%" height="100%">
               </div>
             {% endif %}
           {% endfor %}
@@ -70,8 +77,6 @@
 
 <script>
   $(document).ready(function () {
-    
-
     $('.slider').slick({
       dots: false,
       infinite: true,
@@ -92,45 +97,44 @@
       ],
     });
     $('.slick-center video').prop('muted', true);
-    $('.slick-active .card video').css({ display: 'block !important' });
-    $('.example1').rbox({
-      type: 'video',
+
+    $(document).on('click', '.social-proof-popup', function () {
+      $('.social-proof-popup').rbox({
+        type: 'video',
+      });
     });
+  });
 
-   
-
-});
-
-    // if($('.animate-text').is(":visible")){
-    //   alert("welcome");
-    // }
-    // else{
-    //   alert("No luck");
-    // }
-    $(document).ready(function() {
+  // if($('.animate-text').is(":visible")){
+  //   alert("welcome");
+  // }
+  // else{
+  //   alert("No luck");
+  // }
+  $(document).ready(function () {
     // Function to check if an element is in the viewport
     function isElementInViewport(elem) {
-        var $elem = $(elem);
+      var $elem = $(elem);
 
-        // Get the position of the element
-        var elemTop = $elem.offset().top;
-        var elemBottom = elemTop + $elem.outerHeight();
+      // Get the position of the element
+      var elemTop = $elem.offset().top;
+      var elemBottom = elemTop + $elem.outerHeight();
 
-        // Get the viewport dimensions
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
+      // Get the viewport dimensions
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
 
-        // Check if the element is within the viewport
-        return (elemBottom >= viewportTop && elemTop <= viewportBottom);
+      // Check if the element is within the viewport
+      return elemBottom >= viewportTop && elemTop <= viewportBottom;
     }
 
     // Check if an element with class 'your-element-class' is in the viewport
-    $(window).scroll(function() {
-        if (isElementInViewport('.animate-text')) {
-           $('.animate-text').addClass('animation-forwards')
-        } 
+    $(window).scroll(function () {
+      if (isElementInViewport('.animate-text')) {
+        $('.animate-text').addClass('animation-forwards');
+      }
     });
-});
+  });
 </script>
 
 {% schema %}
