@@ -1,3 +1,7 @@
+{% comment %}
+  Custom Section which displays traetment section
+{% endcomment %}
+
 {{ 'custom-treatment.css' | asset_url | stylesheet_tag }}
 
 <div class="treatment-section">
@@ -13,36 +17,39 @@
           {% endif %}
         </div>
       {% endif %}
-      {% if block.type == 'question' or block.type == 'options' %}
-        <div class="treatment-bottom-container">
-          {% if block.type == 'question' and block.settings.questiontext != blank %}
-            <h1>{{ block.settings.questiontext }}</h1>
-          {% endif %}
+    {% endfor %}
+    <hr class="treatment-divider">
+    <div class="treatment-below-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'question' %}
+          <h1>{{ block.settings.questiontext }}</h1>
+        {% endif %}
+      {% endfor %}
+      <div class="treatment-main-below-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'options' %}
           <div class="treatment-options-container">
-            {% if block.type == 'options' %}
-              <div class="options-design treatment-options-unique-container">
-                {% if block.settings.optiontext != blank %}
-                  <p>{{ block.settings.optiontext }}</p>
-                {% endif %}
-                {% if block.settings.btn_url != blank %}
-                  <a href="{{ block.settings.btn_url }}">&lt;</a>
-                {% endif %}
-              </div>
+            {% if block.settings.optiontext != blank %}
+              <p>{{ block.settings.optiontext }}</p>
             {% endif %}
-            {% if block.type == 'lastcontainer' %}
-              <div class="options-design last-order">
-                {% if block.settings.lastcontainertext != blank %}
-                  <p>{{ block.settings.lastcontainertext }}</p>
-                {% endif %}
-                {% if block.settings.lastContainerURl != blank %}
-                  <a href="{{ block.settings.lastContainerURl }}">Reorder</a>
-                {% endif %}
-              </div>
+            {% if block.settings.btn_url != blank %}
+              <a href="{{ block.settings.btn_url }}">&lt;</a>
             {% endif %}
           </div>
+        {% endif %}
+        {% if block.type == 'lastcontainer' %}
+          <div class="last-container treatment-options-container">
+            {% if block.settings.lastcontainertext != blank %}
+              <p>{{ block.settings.lastcontainertext }}</p>
+            {% endif %}
+            {% if block.settings.lastContainerURl != blank %}
+              <a href="{{ block.settings.lastContainerURl }}">Reorder</a>
+            {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
         </div>
-      {% endif %}
-    {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -51,7 +58,7 @@
   "name": "Treatment Section",
   "tag": "section",
   "settings": [],
-  "max_blocks": 4,
+  "max_blocks": 7,
   "blocks": [
     {
       "name": "pageheading",
@@ -118,8 +125,7 @@
     {
       "name": "Treatment Section",
       "settings": {},
-      "blocks": [
-      ]
+      "blocks": []
     }
   ]
 }
