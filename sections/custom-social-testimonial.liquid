@@ -14,12 +14,12 @@
           {% for block in section.blocks %}
             {% if block.type == 'description' %}
               <div class="card-testimonial">
-                <div class="videoplayer">
+                {% comment %} <div class="videoplayer">
                   <span class="close-btn">{% render 'icon-close' %}</span>
                   <video id="popup_video" controls loop autoplay>
                     <source src="{{ block.settings.video |  video_tag }}">
                   </video>
-                </div>
+                </div> {% endcomment %}
 
                 <div class="video-container">
                   <div class="popup-container example"
