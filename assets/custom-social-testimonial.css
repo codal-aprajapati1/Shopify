@@ -5,6 +5,10 @@
   margin:100px auto;
 }
 
+.sub-testimonial-container{
+  padding:0px ;
+} 
+
 .button-container {
   position: absolute;
   width: 67vw;
@@ -20,10 +24,6 @@
   display: flex;
 }
 
-.example > img{
-  display: none;
-}
-
 /* .button-container button{
   padding: 20px;
   background: red;
@@ -34,6 +34,9 @@
 
 /* .button-container button:hover{
  
+
+
+
 
 
 

@@ -198,7 +198,6 @@
           "type": "blockdata",
           "settings": {
             "mega_menu_name": "CPAP Supplies",
-            "product_image": "shopify:\/\/shop_images\/cath5.jpg",
             "enter_product_title": "CPAP Supplies",
             "enter_product_description": "CPAP Supplies description"
           }
@@ -544,7 +543,6 @@
         "slide_eFwGiV": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/b2.webp"
           }
         },
         "range_3Pfgnk": {
@@ -913,6 +911,48 @@
       "settings": {
         "sect_heading": "Shop Our Best Sellers"
       }
+    },
+    "custom_text_banner_WQnfiW": {
+      "type": "custom-text-banner",
+      "blocks": {
+        "text_eUi9J6": {
+          "type": "text",
+          "settings": {
+            "bannertext": "Fast, free shipping \u2028on orders over $99",
+            "bannertextimage": "shopify:\/\/shop_images\/Shipping_Icon_8be21c72-e897-42c0-a9c2-3dd4ae3dcf6a.png"
+          }
+        },
+        "text_4qFzEw": {
+          "type": "text",
+          "settings": {
+            "bannertext": "Get the best price with our 100% Price Protection Guarantee",
+            "bannertextimage": "shopify:\/\/shop_images\/dollar-coin-svgrepo-com_1.webp"
+          }
+        },
+        "text_49eRbd": {
+          "type": "text",
+          "settings": {
+            "bannertext": "Discounted replacements \u2028with Subscribe & Save",
+            "bannertextimage": "shopify:\/\/shop_images\/Piggy_Bank_Icon_da40e3a4-c7d2-4def-9e62-5237f43a7bf4.png"
+          }
+        },
+        "text_YnLQXW": {
+          "type": "text",
+          "settings": {
+            "bannertext": "Try any CPAP mask \u2028 for 30 days, risk-free ",
+            "bannertextimage": "shopify:\/\/shop_images\/Mask_Icon_dc3d92d9-13ff-49fc-8ddd-005651cf497a.webp"
+          }
+        }
+      },
+      "block_order": [
+        "text_eUi9J6",
+        "text_4qFzEw",
+        "text_49eRbd",
+        "text_YnLQXW"
+      ],
+      "settings": {
+        "text": ""
+      }
     }
   },
   "order": [
@@ -929,6 +969,7 @@
     "custom_needs_collection_gy738R",
     "custom_social_proof_ipNrh9",
     "featured_collection_fqGbNN",
-    "custom_best_sellers_khPHgA"
+    "custom_best_sellers_khPHgA",
+    "custom_text_banner_WQnfiW"
   ]
 }
