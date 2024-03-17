@@ -325,9 +325,9 @@ svg {
 }
 
 .background-img-container .image-below-container .question-container {
-  max-width: 350px;
+  /* max-width: 350px; */
   display: flex;
-  padding: 0 30px;
+  padding: 0 0 0 30px;
   align-items: center;
 }
 .background-img-container .image-below-container .question-container p{
