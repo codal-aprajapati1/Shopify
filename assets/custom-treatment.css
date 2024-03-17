@@ -1,5 +1,4 @@
 .treatment-section{
-    background: url("https://cdn.shopify.com/s/files/1/0855/8706/7173/files/pexels-yulianto-poitier-1231365.jpg?v=1710420908") no-repeat center/cover ;
     color: white;
     padding: 48px 56px;
 }
@@ -10,10 +9,11 @@
     bottom: -20px;
     left: 0;
     width: 100%;
+    background: url("https://cdn.shopify.com/s/files/1/0855/8706/7173/files/pexels-yulianto-poitier-1231365.jpg?v=1710420908") no-repeat center/cover ;
     background: (green,linear-gradient(90deg, #AEFF92 27.15%, #BFF1FC 70.37%));
     filter: blur(30px);
     height: 60px;
-    z-index: 2;
+    opacity:0.2;
 }
 
 .treatment-section::after{
