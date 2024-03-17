@@ -312,7 +312,7 @@ svg {
 .background-img-container .image-below-container {
   /* position: absolute; */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   min-height: 140px;
   left:0;
   right:0;
