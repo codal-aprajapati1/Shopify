@@ -146,9 +146,14 @@ svg {
     z-index: 9999;
 }
 .main-search-cont .sub-search-cont{
+  position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 80px;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 
 .main-search-cont .suggestion-container{
