@@ -4,7 +4,7 @@
     padding: 48px 56px;
 }
 
-.treatment-section::before{
+/* .treatment-section::before{
     content: "";
     position: absolute;
     bottom: -20px;
@@ -14,9 +14,9 @@
     filter: blur(30px);
     height: 60px;
     z-index: 2;
-}
+} */
 
-.treatment-section::after{
+/* .treatment-section::after{
     content: "";
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@
     height: 100%;
     background: linear-gradient(0deg, #0000004d 0% 100%);
     z-index: 1;
-}
+} */
 
 .treatment-upper-container{
     /* margin-top: 48px; */

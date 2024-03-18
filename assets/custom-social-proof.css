@@ -146,8 +146,8 @@ background: #f6f5f0;
 
 .slider-container {
   margin-inline: auto;
-  width: 760.75px;
-  height: 669px;
+  max-width: 760.75px;
+  max-height: 669px;
 }
 .slider {
   height: 100%;
