@@ -147,9 +147,10 @@
         "blockdata_yj9AU3": {
           "type": "blockdata",
           "settings": {
-            "mega_menu_name": "",
-            "enter_product_title": "",
-            "enter_product_description": ""
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/db1.jpg",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
           }
         },
         "blockdata_XHywbc": {
