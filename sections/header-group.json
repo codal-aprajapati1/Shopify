@@ -91,11 +91,98 @@
       "settings": {
         "announcement": ""
       }
+    },
+    "custom_mega_menu_xXmegj": {
+      "type": "custom-mega-menu",
+      "blocks": {
+        "text_fKUJFk": {
+          "type": "text",
+          "settings": {
+            "logoimage": "shopify:\/\/shop_images\/logo.png"
+          }
+        },
+        "search_icon_r9VFQT": {
+          "type": "search-icon",
+          "settings": {
+            "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
+          }
+        },
+        "text1_arM9Yf": {
+          "type": "text1",
+          "settings": {
+            "buttontext": "Find My Solution"
+          }
+        },
+        "cartimage_jwgmyR": {
+          "type": "cartimage",
+          "settings": {
+          }
+        },
+        "navbarlinks_zUQtnM": {
+          "type": "navbarlinks",
+          "settings": {
+            "linklist": "mega-menu"
+          }
+        },
+        "first_block_rKctkg": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "shopify:\/\/collections\/cats"
+          }
+        },
+        "blockdata_RVeex9": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/cath4_d90379c5-b413-47f0-8aad-a1be3412d6c5.webp",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
+          }
+        },
+        "blockdata_yj9AU3": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/db1.jpg",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
+          }
+        },
+        "blockdata_XHywbc": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/cath2.webp",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
+          }
+        }
+      },
+      "block_order": [
+        "text_fKUJFk",
+        "search_icon_r9VFQT",
+        "text1_arM9Yf",
+        "cartimage_jwgmyR",
+        "navbarlinks_zUQtnM",
+        "first_block_rKctkg",
+        "blockdata_RVeex9",
+        "blockdata_yj9AU3",
+        "blockdata_XHywbc"
+      ],
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "custom_header_announcement_KiNbpd"
+    "custom_header_announcement_KiNbpd",
+    "custom_mega_menu_xXmegj"
   ]
 }
