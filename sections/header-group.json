@@ -156,9 +156,9 @@
         "blockdata_XHywbc": {
           "type": "blockdata",
           "settings": {
-            "mega_menu_name": "",
-            "enter_product_title": "",
-            "enter_product_description": ""
+            "mega_menu_name": "CPAP Masks",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
           }
         }
       },
