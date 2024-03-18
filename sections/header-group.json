@@ -157,6 +157,7 @@
           "type": "blockdata",
           "settings": {
             "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/cath2.webp",
             "enter_product_title": "CPAP Masks",
             "enter_product_description": "CPAP Masks Description"
           }
