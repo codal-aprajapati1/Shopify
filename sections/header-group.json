@@ -112,12 +112,37 @@
           "settings": {
             "buttontext": "Find My Solution"
           }
+        },
+        "cartimage_jwgmyR": {
+          "type": "cartimage",
+          "settings": {
+          }
+        },
+        "navbarlinks_zUQtnM": {
+          "type": "navbarlinks",
+          "settings": {
+            "linklist": "mega-menu"
+          }
+        },
+        "first_block_rKctkg": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "enter_product_title": "CPAP Masks",
+            "enter_product_description": "CPAP Masks Description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "shopify:\/\/collections\/cats"
+          }
         }
       },
       "block_order": [
         "text_fKUJFk",
         "search_icon_r9VFQT",
-        "text1_arM9Yf"
+        "text1_arM9Yf",
+        "cartimage_jwgmyR",
+        "navbarlinks_zUQtnM",
+        "first_block_rKctkg"
       ],
       "settings": {
         "header": ""
