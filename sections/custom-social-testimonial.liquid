@@ -14,19 +14,12 @@
           {% for block in section.blocks %}
             {% if block.type == 'description' %}
               <div class="card-testimonial">
-                {% comment %} <div class="videoplayer">
-                  <span class="close-btn">{% render 'icon-close' %}</span>
-                  <video id="popup_video" controls loop autoplay>
-                    <source src="{{ block.settings.video |  video_tag }}">
-                  </video>
-                </div> {% endcomment %}
-
                 <div class="video-container">
                   <div class="popup-container example"
                       data-rbox-autoplay="true"
                       data-rbox-controls="true"
-                      data-rbox-width="480"
-                      data-rbox-height="360"
+                      data-rbox-width="600"
+                      data-rbox-height="500"
                       data-rbox-video="{{ block.settings.video.sources[0].url }}">
                       {% render 'icon-youtube' -%}
                       <span>Watch Testimonial</span>
@@ -76,18 +69,9 @@
     $(document).on('click', '.popup-container', function () {
       $('.example').rbox({
         type: 'video',
+        disableScrolling: true
       });
     });
-
-    // $(document).on('click', '.popup-container', function () {
-    //   $(this).parents('.card').find('.videoplayer').addClass('active-player');
-    //   alert("");
-    // });
-
-    // $(document).on('click', '.close-btn', function () {
-    //   $('.videoplayer').removeClass('active-player');
-    //   $('#popup_video').trigger('pause').get(0).currentTime=0;
-    // });
   });
 </script>
 

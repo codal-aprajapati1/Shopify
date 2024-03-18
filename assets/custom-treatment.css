@@ -1,5 +1,7 @@
 .treatment-section{
-    background: url("https://cdn.shopify.com/s/files/1/0855/8706/7173/files/pexels-yulianto-poitier-1231365.jpg?v=1710420908") no-repeat center/cover ;
+    background: url("https://cdn.shopify.com/s/files/1/0855/8706/7173/files/Rectangle_280742.webp?v=1710748050") no-repeat  ;
+    background-size: cover;
+    background-position: top center;
     color: white;
     padding: 48px 56px;
 }
@@ -34,14 +36,21 @@
     max-width: 1168px;
     margin-inline: auto;
     text-align: center;
+    transform: translateY(-64px);
+    opacity: 0;
+    transition: all 0.6s ease;
 }
 
+.treatment-upper-active{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 .treatment-upper-container h1{
     font-family: Rand;
     font-size: 72px;
-    font-weight: 500;
     line-height: 78px;
+    font-weight: 500;
     letter-spacing: 0em;
     max-width: 1137px;
     margin-inline: auto;
@@ -61,11 +70,14 @@
 .treatment-below-container{
     max-width: 1166px;
     margin-inline: auto;
-    background-color:  #F6F5F0;
+    background-color: #f6f5f0;
     text-align: center;
     border-radius: 16px;
     padding: 32px;
     margin-top: 181px;
+    transform: translateY(48px);
+    opacity: 0;
+    transition: all 0.6s ease;
 
 }
 
@@ -77,8 +89,10 @@
 
 .treatment-below-container .treatment-main-below-container{
     display: flex;
+    justify-content: space-between;
     color: black;
     border-radius: 8px;
+    
 }
 
 .treatment-below-container h1{
@@ -86,18 +100,31 @@
     font-size: 40px;
     line-height: 46px;
     margin-bottom: 24px;
-
+    font-weight: 500;
 }
 
 .treatment-main-below-container .treatment-options-container{
-    margin-inline: 17px;
+    /* margin-inline: 17px; */
     width: calc(20% -33.5px);
     background-color: white;
     border-radius: 8px;
     padding: 24px 16px;
     max-width: 193px;
     max-height: 153px;
+    border: 1px solid white;
+    transition: all 0.2s ease;
+    
 }
+
+.treatment-active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.treatment-main-below-container .treatment-options-container:hover {
+    border: 1px solid #FF600A;
+}
+
 
 .treatment-main-below-container .treatment-options-container p{
     max-width: 161px;
@@ -111,11 +138,27 @@
 }
 .treatment-main-below-container .treatment-options-container a{
     color: black;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    border: 1px solid rgb(78, 75, 75);
-    padding: 9px 14px;
+    margin-inline: auto;
+    border: 1px  solid #c4c1c1 ;
+    padding: 16px 15px;
+}
+.treatment-main-below-container .treatment-options-container:hover a{
+    color: white;
+    background-color: #FF600A;
+    border: 1px  solid #FF600A ;
+    transition: all 0.3s ease;
+
 }
 
+
+.treatment-main-below-container .treatment-options-container a svg{
+    rotate: -90deg;
+}
 .treatment-main-below-container .last-container a{
     border: 1px solid #FF600A;
     padding: 9px 16px;

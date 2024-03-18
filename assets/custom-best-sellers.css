@@ -32,8 +32,9 @@
 
 .best-seller-slider {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
+  gap: 150px;
 }
 
 .best-seller-slider .slider-navbar{
@@ -143,8 +144,8 @@
 }
 
 .each-slide .product-image-cont {
-  width: 383px;
-  height: 366px;
+  /* width: 383px; */
+  /* height: 366px; */
   margin-inline: auto;
   display: flex;
   justify-content: center;

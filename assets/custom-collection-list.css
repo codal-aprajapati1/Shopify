@@ -101,6 +101,7 @@
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div:last-child .image-container img{
   margin-left: 160px;
+  scale: 1.5;
 }
 .main-collection-contianer .sub-container1 .upper-grid .upper-div:hover:last-child  img{
   transform: translateX(-40px);

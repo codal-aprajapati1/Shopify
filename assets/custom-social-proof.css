@@ -38,11 +38,11 @@ background: #f6f5f0;
     opacity: 0;
     font-size: 15rem;
     line-height: 19rem;
-    transform:translate3d(0px, 180px, 0px);
+    transform:translate3d(0px, 45px, 0px);
 }
 
 .animation-forwards{
- transform: translate3d(0px , -40px , 0px) !important;
+ transform: translate3d(0px , 0 , 0px) !important;
  opacity: 1 !important;
  transition: all 1.5s ease-in-out;
 }

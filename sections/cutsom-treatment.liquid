@@ -33,7 +33,7 @@
               <p>{{ block.settings.optiontext }}</p>
             {% endif %}
             {% if block.settings.btn_url != blank %}
-              <a href="{{ block.settings.btn_url }}">&lt;</a>
+              <a href="{{ block.settings.btn_url }}">{% render 'icon-caret' %}</a>
             {% endif %}
           </div>
         {% endif %}
@@ -52,6 +52,35 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  $(document).ready(function () {
+    // Function to check if an element is in the viewport
+    function isElementInViewport(elem) {
+      var $elem = $(elem);
+
+      // Get the position of the element
+      var elemTop = $elem.offset().top;
+      var elemBottom = elemTop + $elem.outerHeight();
+
+      // Get the viewport dimensions
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      // Check if the element is within the viewport
+      return elemBottom >= viewportTop && elemTop <= viewportBottom;
+    }
+
+    // Check if an element with class 'your-element-class' is in the viewport
+    $(window).scroll(function () {
+      if (isElementInViewport('.treatment-section')) {
+        $('.treatment-below-container').addClass('treatment-active');
+        $('.treatment-upper-container').addClass('treatment-upper-active');
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {

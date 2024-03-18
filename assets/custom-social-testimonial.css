@@ -172,6 +172,11 @@ display: none;
   line-height: 17px;
   padding: 10px 15px;
   border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.card-testimonial .below-text-data .bottom-img-btn a:hover{
+  background-color: #ffe9d0;
 }
 
 .card-testimonial .below-text-data .bottom-img-btn .image_container {

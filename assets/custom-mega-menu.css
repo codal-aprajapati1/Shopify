@@ -134,13 +134,16 @@ svg {
 }
 
 .main-search-cont{
-    height: 500px;
+    /* height: 500px; */
     background: var(--white);
     position:absolute;
     z-index: 1;
     width: 100%;
     display:none;
     margin-top: 83px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 .main-search-cont .sub-search-cont{
   display: flex;
@@ -290,7 +293,7 @@ svg {
 
 .background-img-container .image-data-cont .btn-container .first-btn:hover {
   border: 1px solid var(--orange);
-  background: var(--fadeorange);
+  background-color: #ffe9d0;
 }
 .background-img-container .image-data-cont .btn-container .second-btn {
   color: white;
