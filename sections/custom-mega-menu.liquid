@@ -74,14 +74,14 @@
 
         {% elsif block.type == 'text1' %}
           <div class="find-my-solution search-effect">
-            <a href="#" class="find-solution">{{ block.settings.buttontext }}</a>
+            <a href="#" class="find-solution">{{ block.settings.buttontext }}</a> 
           </div>
         {% elsif block.type == 'search-icon' %}
           <div class="search-bar">
             <form>
               <div class="form-container">
                 <img src="{{ block.settings.search-icon | image_url  }}" style="width:20px">
-                <input type="text" placeholder="     search">
+                <input type="text" placeholder="     search" id="myInput">
                 <div class="main-search-cont">
                   <div class="ful-width-search">
                     <div class="sub-search-cont page-width">
@@ -241,6 +241,15 @@
         $('.cart-btn a svg').removeClass('active-svg');
       });
   });
+</script>
+<script>
+  $(document).ready(function(){
+    $("input").keyup(function(){
+      const input = document.getElementById("myInput");
+      const inputValue = input.value;
+      console.log(inputValue);
+});
+  })
 </script>
 
 {% schema %}

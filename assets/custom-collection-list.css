@@ -178,7 +178,7 @@
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div .img-container2 img{
-  object-fit:fill;
+  object-fit:contain;
   border-radius:50%;
 }
 
