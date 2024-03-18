@@ -91,11 +91,43 @@
       "settings": {
         "announcement": ""
       }
+    },
+    "custom_mega_menu_xXmegj": {
+      "type": "custom-mega-menu",
+      "blocks": {
+        "text_fKUJFk": {
+          "type": "text",
+          "settings": {
+            "logoimage": "shopify:\/\/shop_images\/logo.png"
+          }
+        },
+        "search_icon_r9VFQT": {
+          "type": "search-icon",
+          "settings": {
+            "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
+          }
+        },
+        "text1_arM9Yf": {
+          "type": "text1",
+          "settings": {
+            "buttontext": "Find My Solution"
+          }
+        }
+      },
+      "block_order": [
+        "text_fKUJFk",
+        "search_icon_r9VFQT",
+        "text1_arM9Yf"
+      ],
+      "settings": {
+        "header": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "custom_header_announcement_KiNbpd"
+    "custom_header_announcement_KiNbpd",
+    "custom_mega_menu_xXmegj"
   ]
 }
