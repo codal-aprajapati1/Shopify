@@ -161,6 +161,20 @@
             "enter_product_title": "CPAP Masks",
             "enter_product_description": "CPAP Masks Description"
           }
+        },
+        "textsuggestion_B8HmVL": {
+          "type": "textsuggestion",
+          "settings": {
+            "question-heading": "Not sure where to start?Tell us where you are in your sleep journey and we will find what you need.",
+            "option1": "I’m not sure if I have sleep apnea",
+            "option1url": "#",
+            "option2": "I was diagnosed with sleep apnea",
+            "option2url": "#",
+            "option3": "I’m looking for the right machine",
+            "option3url": "#",
+            "option4": "I have a CPAP,  but I’m having issues",
+            "option4url": "#"
+          }
         }
       },
       "block_order": [
@@ -172,7 +186,8 @@
         "first_block_rKctkg",
         "blockdata_RVeex9",
         "blockdata_yj9AU3",
-        "blockdata_XHywbc"
+        "blockdata_XHywbc",
+        "textsuggestion_B8HmVL"
       ],
       "settings": {
         "header": ""

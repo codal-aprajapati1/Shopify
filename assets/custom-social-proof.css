@@ -371,6 +371,7 @@ display: none;
   .slider-container {
     min-width: 80%;
     min-height: 100%;
+    margin-top: 50px;
   }
   .animation-container {
     max-width: 300px;
@@ -456,4 +457,8 @@ display: none;
   /* display: flex; */
   justify-content: center;
 }
+.slider .slick-center .card{
+  transform: scale(1) !important;
+}
+
 }

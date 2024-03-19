@@ -2,7 +2,7 @@
 {{ 'custom-mega-menu.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 <div class="main-cont">
-  <div class="main-nav-container header header--middle-left header--mobile-center header--has-menu--has-account page-width">
+  <div class=" header header--middle-left header--mobile-center header--has-menu--has-account page-width main-nav-container">
     <nav class="mega-menu header__inline-menu">
       {% for block in section.blocks %}
         {% if block.type == 'text' %}
@@ -12,13 +12,16 @@
 
         {% elsif block.type == 'navbarlinks' %}
           <div class="navbar-container search-effect">
+            <div class="burger-container">
+              <span class="burger-bar">{% render 'icon-hamburger' %}</span>
+            </div>
             <ul>
               {% for link in block.settings.linklist.links %}
                 <li class="search-effect">
                   {% if link != blank %}
                     <a href="{{ link.url }}">
-                      {{- link.title -}}
-                      <span id="careticon"> {% render 'icon-caret' %}</span></a
+                      <span>{{- link.title -}}</span>
+                      <span class="careticon">{% render 'icon-caret' %}</span></a
                     >
                   {% endif %}
                   <div class="outer-div">
@@ -28,7 +31,7 @@
                         {% for block in section.blocks %}
                           {% if block.type == 'first_block' %}
                             {% if block.settings.mega_menu_name == link.title %}
-                              <div class="b1 grid-item">
+                              <div class="grid-item b1">
                                 <div class="image-container">
                                   <img
                                     src="{{ block.settings.product_image | image_url }}"
@@ -37,18 +40,20 @@
                                     width="100%"
                                   >
                                 </div>
-                                <h4>{{ block.settings.enter_product_title }}</h4>
-                                <p>{{ block.settings.enter_product_description }}</p>
-                                <a href="{{ block.settings.enter_button_url }}"
-                                  ><button type="submit" class="submit-btn">
-                                    {{ block.settings.enter_button_text }}
-                                  </button></a
-                                >
+                                <div class="mega-menu-first-block-data">
+                                  <h4>{{ block.settings.enter_product_title }}</h4>
+                                  <p>{{ block.settings.enter_product_description }}</p>
+                                  <a href="{{ block.settings.enter_button_url }}"
+                                    ><button type="submit" class="submit-btn">
+                                      {{ block.settings.enter_button_text }}
+                                    </button></a
+                                  >
+                                </div>
                               </div>
                             {% endif %}
                           {% elsif block.type == 'blockdata' %}
                             {% if block.settings.mega_menu_name == link.title %}
-                              <div class="b2 grid-item">
+                              <div class=" grid-item b2">
                                 <div class="image-container">
                                   <img
                                     src="{{ block.settings.product_image | image_url }}"
@@ -57,8 +62,10 @@
                                     width="100%"
                                   >
                                 </div>
-                                <h4>{{ block.settings.enter_product_title }}</h4>
-                                <p>{{ block.settings.enter_product_description }}</p>
+                                <div class="mega-menu-block-data-cont">
+                                  <h4>{{ block.settings.enter_product_title }}</h4>
+                                  <p>{{ block.settings.enter_product_description }}</p>
+                                </div>
                               </div>
                             {% endif %}
                           {% endif %}
@@ -69,7 +76,6 @@
                 </li>
               {% endfor %}
             </ul>
-            <span class="burger-bar">{% render 'icon-hamburger' %}</span>
           </div>
 
         {% elsif block.type == 'text1' %}
@@ -158,14 +164,14 @@
                 endif
               -%}
               <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
+              {%- if cart != empty -%}
+                <div class="cart-count-bubble">
+                  {%- if cart.item_count < 100 -%}
+                    <span aria-hidden="true">{{ cart.item_count }}</span>
+                  {%- endif -%}
+                  <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                </div>
+              {%- endif -%}
             </a>
           </div>
         {% endif %}
@@ -173,8 +179,6 @@
     </nav>
   </div>
 </div>
-
-
 
 <script>
   $(document).ready(function () {
@@ -187,6 +191,13 @@
         $('.navbar-container ul li a').addClass('active-only-text-black');
         $('.mega-menu .find-my-solution a').addClass('background-black');
         $('.cart-btn a svg').addClass('active-svg');
+
+        $(document).on('click','.burger-container', function(){
+          $('.mega-menu .navbar-container ul').addClass('navbar-ul-active');
+          $(document).on('click','.burger-container', function(){
+            $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
+          });
+        });
 
         $(document).on('click', 'input', function () {
           $('.search-effect').hide();
@@ -208,14 +219,15 @@
           });
         });
 
-        $(document).on('click', '.burger-bar', function () {
-          $('.mega-menu .navbar-container ul').addClass('convert-block');
-        });
+        // $(document).on('click', '.burger-bar', function () {
+        //   $('.mega-menu .navbar-container ul').addClass('convert-block');
+        // });
 
         $('.navbar-container ul li')
           .mouseenter(function () {
             $('.outer-div').removeClass('active');
             $(this).find('.outer-div').addClass('active');
+            $(this).find('.outer-div').addClass('outer-div-active');
             $(this).find('#rotate').css('transform', 'rotate(180deg)');
           })
           .mouseleave(function () {
@@ -230,6 +242,8 @@
         $(this).removeClass('active1');
         // $('.cart-btn svg').removeClass('active-text-black');
         $('.navbar-container ul li').find('.outer-div').removeClass('active');
+        $('.navbar-container ul li').find('.outer-div').removeClass('outer-div-active');
+
         $('.cart-btn a svg').removeClass('active-svg');
       });
   });

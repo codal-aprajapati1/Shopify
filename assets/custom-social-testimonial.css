@@ -24,29 +24,7 @@
   display: flex;
 }
 
-/* .button-container button{
-  padding: 20px;
-  background: red;
-  border: #b30000;
-  color: white;
-  cursor: pointer;
-} */
 
-/* .button-container button:hover{
- 
-
-
-
-
-
-
-  
-} */
-
-/* .prev-btn{
-  transform: rotate(180deg);
-}
- */
 
 .main-container .page-heading {
   width: 568px;
@@ -60,16 +38,6 @@
   line-height: 64px;
   font-weight: 500;
 }
-
-/* .carousel-container {
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
-  overflow-x: hidden;
-} */
-
 
 
 .slides-container .card-testimonial {
@@ -183,6 +151,11 @@ display: none;
   width: 100px;
   height: 100px;
 }
+
+.card-testimonial .below-text-data .bottom-img-btn .image_container img{
+  object-fit: contain;
+}
+
 
 @media screen and (max-width: 768px) {
   .main-container .page-heading {

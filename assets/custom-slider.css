@@ -99,3 +99,15 @@
   top:-10px;
   bottom:-10px;
 }
+
+@media screen and (max-width:375px){
+  .slider-wrapper .slide-button#prev-btn,.slider-wrapper .slide-button#next-btn{
+   display: none !important;
+ }
+ .container .slider-scrollbar{
+  width:80%;
+
+} 
+ 
+
+}

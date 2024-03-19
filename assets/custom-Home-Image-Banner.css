@@ -274,6 +274,12 @@
 }
 
 @media screen and (max-width: 375px){
+    .background-img-container .image-data-cont h1{
+        max-width: 275px;
+    }
+    .background-img-container .image-data-cont p{
+        max-width: 275px;
+    }
     .background-img-container .image-below-container .question-container{
         max-width: auto;
         display: flex;
