@@ -101,16 +101,16 @@
             "logoimage": "shopify:\/\/shop_images\/logo.png"
           }
         },
-        "search_icon_r9VFQT": {
-          "type": "search-icon",
-          "settings": {
-            "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
-          }
-        },
         "text1_arM9Yf": {
           "type": "text1",
           "settings": {
             "buttontext": "Find My Solution"
+          }
+        },
+        "search_icon_r9VFQT": {
+          "type": "search-icon",
+          "settings": {
+            "search-icon": "shopify:\/\/shop_images\/search-removebg-preview.png"
           }
         },
         "cartimage_jwgmyR": {
@@ -165,8 +165,8 @@
       },
       "block_order": [
         "text_fKUJFk",
-        "search_icon_r9VFQT",
         "text1_arM9Yf",
+        "search_icon_r9VFQT",
         "cartimage_jwgmyR",
         "navbarlinks_zUQtnM",
         "first_block_rKctkg",
