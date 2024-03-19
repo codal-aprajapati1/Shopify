@@ -1,6 +1,6 @@
 {{ 'custom-home-image-banner.css' |  asset_url |  stylesheet_tag }}
-
-
+<div class="Image-banner-container">
+<div class="page-width">
 <div class="background-img-container ">
   {% for block in section.blocks %}
     {% if block.type == 'background' %}
@@ -44,8 +44,8 @@
     {% endif %}
   {% endfor %}
 </div>
-
-
+</div>
+</div>
 {%  schema  %}  
 {
   "name": "Home-Imag-Banner",
