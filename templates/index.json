@@ -14,10 +14,28 @@
             "secondbuttontext": "CPAP All Supplies",
             "secondbuttonurl": "#"
           }
+        },
+        "textcontainer_FenMrj": {
+          "type": "textcontainer",
+          "settings": {
+            "question-heading": "Where are you in your sleep apnea journey?",
+            "option1": "I’m not sure if I have sleep apnea",
+            "option1url": "#",
+            "option2": "I was diagnosed with sleep apnea",
+            "option2url": "",
+            "option3": "I'm looking for the right machine",
+            "option3url": "#",
+            "option4": "I have a CPAP,  but I’m having issues",
+            "option4url": "#",
+            "option5": "Already a CPAP customer?",
+            "option5url": "#",
+            "buttontext": "Reorder"
+          }
         }
       },
       "block_order": [
-        "background_EwHphk"
+        "background_EwHphk",
+        "textcontainer_FenMrj"
       ],
       "settings": {
         "home": ""
