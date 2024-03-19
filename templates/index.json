@@ -7,12 +7,12 @@
           "type": "background",
           "settings": {
             "backgroundimage": "shopify:\/\/shop_images\/backgroundImage_65f70a0b-25f0-4ab1-a492-cbfc7d25a32d.jpg",
-            "imageheading": "",
-            "imagedescription": "",
-            "firstbuttontext": "",
-            "firstbuttonurl": "",
-            "secondbuttontext": "",
-            "secondbuttonurl": ""
+            "imageheading": "Guiding you back to healthy sleep",
+            "imagedescription": "We provide everything you need to confidently manage sleep apnea, from expert guidance to top-rated treatments and world-class support.",
+            "firstbuttontext": "Find My Solution",
+            "firstbuttonurl": "#",
+            "secondbuttontext": "CPAP All Supplies",
+            "secondbuttonurl": "#"
           }
         }
       },
