@@ -1,3 +1,6 @@
+{{ 'custom-home-image-banner.css' |  asset_url |  stylesheet_tag }}
+
+
 <div class="background-img-container ">
   {% for block in section.blocks %}
     {% if block.type == 'background' %}
