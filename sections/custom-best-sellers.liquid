@@ -87,7 +87,16 @@ $('.actual-slider-container').slick({
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    asNavFor: '.slider-navbar'
+    asNavFor: '.slider-navbar',
+    responsive: [
+      {
+        breakpoint:768,
+        settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 });
 
 

@@ -1,10 +1,10 @@
-{{ 'custom-home-image-banner.css' |  asset_url |  stylesheet_tag }}
+{{ 'custom-Home-Image-Banner.css' |  asset_url |  stylesheet_tag }}
 <div class="Image-banner-container">
 <div class="page-width">
 <div class="background-img-container ">
   {% for block in section.blocks %}
-    {% if block.type == 'background' %}
-      <img src="{{ block.settings.backgroundimage | image_url }}" width="100%" height="100%">
+ {% if block.type == 'background' %}
+      {% comment %} <img src="{{ block.settings.backgroundimage | image_url }}" width="100%" height="100%"> {% endcomment %}
       <div class="image-data-cont">
         <p class="img-heading" style="color:white">{{ block.settings.imageheading }}</p>
         <p class="img-description">{{ block.settings.imagedescription }}</p>
@@ -12,9 +12,9 @@
           <a href="{{ block.settings.firstbuttonurl}}" class="first-btn">{{ block.settings.firstbuttontext }}</a>
           <a href="{{ block.settings.secondbuttonurl }}" class="second-btn">{{ block.settings.secondbuttontext }}</a>
         </div>
-      </div>
+      </div> 
     {% elsif block.type == 'textcontainer' %}
-      <div class="blocks-container page-width">
+      <div class="blocks-container">
         <div class="image-below-container">
           <div class="question-container">
             <p>{{ block.settings['question-heading'] }}</p>
@@ -64,11 +64,6 @@
       "type": "background",
       "limit": 1,
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "backgroundimage",
-          "label": "Upload Background"
-        },
         {
           "type": "text",
           "id": "imageheading",

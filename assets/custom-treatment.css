@@ -91,8 +91,7 @@
     display: flex;
     justify-content: space-between;
     color: black;
-    border-radius: 8px;
-    
+    border-radius: 8px;  
 }
 
 .treatment-below-container h1{
@@ -134,7 +133,6 @@
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 16px;
-
 }
 .treatment-main-below-container .treatment-options-container a{
     color: black;
@@ -152,7 +150,6 @@
     background-color: #FF600A;
     border: 1px  solid #FF600A ;
     transition: all 0.3s ease;
-
 }
 
 
@@ -164,4 +161,87 @@
     padding: 9px 16px;
     border-radius: 28px;
 
+}
+
+@media screen and (max-width:768px) {
+    .treatment-section{
+        padding: 20px ;
+    }   
+    
+    .treatment-below-container{
+        background-color: white;
+        margin-bottom: 24px;
+        padding: 32px 24px 0 18px;
+    }
+    .treatment-main-below-container {
+        flex-direction: column;
+        width: 100%;
+        /* background-color: #fff; */
+
+    }
+    .treatment-main-below-container .treatment-options-container{
+        padding:10px 0;
+        border-radius: 0;
+        /* border: 1px solid ; */
+        border-bottom: 1px solid #EAEAEA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+    .treatment-main-below-container .treatment-options-container p{
+        max-width: 100%;
+    }
+    .treatment-main-below-container .treatment-options-container a{
+        margin-inline: 0;
+    }
+    .treatment-main-below-container .treatment-options-container:hover {
+    border: none;
+    border-bottom: 1px solid #FF600A;
+    }
+
+    .treatment-main-below-container .treatment-options-container:hover a{
+        border-bottom: 1px  solid #FF600A ;
+    }
+    .treatment-main-below-container .last-container{
+    border: none;
+    }
+
+}
+@media screen and (max-width:375px) {
+ 
+    .treatment-upper-container{
+        padding-top: 20px;
+       
+    }
+    .treatment-upper-container h1{
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+ 
+    .treatment-below-container{
+        padding: 24px;
+        margin-top: 0;
+        border-radius: 8px;
+    }
+    .treatment-below-container h1{
+       
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .treatment-main-below-container .treatment-options-container{
+        padding:10px 0;
+        border-radius: 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 292px;
+        min-height: 54px;
+    }
+    .treatment-main-below-container .treatment-options-container p{
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 100%;
+    }
 }
