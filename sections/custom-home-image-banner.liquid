@@ -1,0 +1,233 @@
+<div class="background-img-container ">
+  {% for block in section.blocks %}
+    {% if block.type == 'background' %}
+      <img src="{{ block.settings.backgroundimage | image_url }}" width="100%" height="100%">
+      <div class="image-data-cont">
+        <p class="img-heading" style="color:white">{{ block.settings.imageheading }}</p>
+        <p class="img-description">{{ block.settings.imagedescription }}</p>
+        <div class="btn-container">
+          <a href="{{ block.settings.firstbuttonurl}}" class="first-btn">{{ block.settings.firstbuttontext }}</a>
+          <a href="{{ block.settings.secondbuttonurl }}" class="second-btn">{{ block.settings.secondbuttontext }}</a>
+        </div>
+      </div>
+    {% elsif block.type == 'textcontainer' %}
+      <div class="blocks-container page-width">
+        <div class="image-below-container">
+          <div class="question-container">
+            <p>{{ block.settings['question-heading'] }}</p>
+          </div>
+          <div class="options">
+            <p>{{ block.settings.option1 }}</p>
+            <a href="{{ block.settings.option1url }}">&gt;</a>
+          </div>
+          <div class="options">
+            <p>{{ block.settings.option2 }}</p>
+            <a href="{{ block.settings.option2url }}">&gt;</a>
+          </div>
+          <div class="options">
+            <p>{{ block.settings.option3 }}</p>
+            <a href="{{ block.settings.option3url }}">&gt;</a>
+          </div>
+          <div class="options">
+            <p>{{ block.settings.option4 }}</p>
+            <a href="{{ block.settings.option4url }}">&gt;</a>
+          </div>
+          <div class="options last-option">
+            <p>{{ block.settings.option5 }}</p>
+            <a href="{{ block.settings.option5url }}">Reorder</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+{%  schema  %}  
+{
+  "name": "Home-Imag-Banner",
+  "settings": [
+    {
+      "id": "home",
+      "label": "Navbar",
+      "type": "text"
+    }
+  ],
+  "max_blocks": 5,
+
+  "blocks": [
+    {
+      "name": "backgroundimage",
+      "type": "background",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "backgroundimage",
+          "label": "Upload Background"
+        },
+        {
+          "type": "text",
+          "id": "imageheading",
+          "label": "Enter Image Heading"
+        },
+        {
+          "type": "text",
+          "id": "imagedescription",
+          "label": "Enter Image Description"
+        },
+        {
+          "type": "text",
+          "id": "firstbuttontext",
+          "label": "First Button Text"
+        },
+        {
+          "type": "url",
+          "id": "firstbuttonurl",
+          "label": "Enter First Button URL"
+        },
+        {
+          "type": "text",
+          "id": "secondbuttontext",
+          "label": "First Button Text"
+        },
+        {
+          "type": "url",
+          "id": "secondbuttonurl",
+          "label": "Enter Second Button URL"
+        }
+      ]
+    },
+    {
+      "name": "ImagebelowContainer",
+      "type": "textcontainer",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question-heading",
+          "label": "Enter the Question"
+        },
+        {
+          "type": "text",
+          "id": "option1",
+          "label": "Enter First option Value"
+        },
+        {
+          "type": "url",
+          "id": "option1url",
+          "label": "Enter First option URL"
+        },
+        {
+          "type": "text",
+          "id": "option2",
+          "label": "Enter Second option Value"
+        },
+        {
+          "type": "url",
+          "id": "option2url",
+          "label": "Enter Second option URL"
+        },
+        {
+          "type": "text",
+          "id": "option3",
+          "label": "Enter Third option Value"
+        },
+        {
+          "type": "url",
+          "id": "option3url",
+          "label": "Enter Third option URL"
+        },
+        {
+          "type": "text",
+          "id": "option4",
+          "label": "Enter Fourth option Value"
+        },
+        {
+          "type": "url",
+          "id": "option4url",
+          "label": "Enter Fourth option URL"
+        },
+        {
+          "type": "text",
+          "id": "option5",
+          "label": "Enter Fifth option Value"
+        },
+        {
+          "type": "url",
+          "id": "option5url",
+          "label": "Enter Fourth option URL"
+        },
+        {
+          "type": "text",
+          "id": "buttontext",
+          "label": "Enter Fifth button Value"
+        }
+      ]
+    },
+    {
+      "name": "SuggestionBelowContainer",
+      "type": "textsuggestion",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question-heading",
+          "label": "Enter the Question"
+        },
+        {
+          "type": "text",
+          "id": "option1",
+          "label": "Enter First option Value"
+        },
+        {
+          "type": "url",
+          "id": "option1url",
+          "label": "Enter First option URL"
+        },
+        {
+          "type": "text",
+          "id": "option2",
+          "label": "Enter Second option Value"
+        },
+        {
+          "type": "url",
+          "id": "option2url",
+          "label": "Enter Second option URL"
+        },
+        {
+          "type": "text",
+          "id": "option3",
+          "label": "Enter Third option Value"
+        },
+        {
+          "type": "url",
+          "id": "option3url",
+          "label": "Enter Third option URL"
+        },
+        {
+          "type": "text",
+          "id": "option4",
+          "label": "Enter Fourth option Value"
+        },
+        {
+          "type": "url",
+          "id": "option4url",
+          "label": "Enter Fourth option URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home-Image-Banner",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "background"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
