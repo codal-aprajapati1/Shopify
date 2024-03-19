@@ -1,5 +1,46 @@
 {
   "sections": {
+    "custom_home_image_banner_PUx6jQ": {
+      "type": "custom-home-image-banner",
+      "blocks": {
+        "background_EwHphk": {
+          "type": "background",
+          "settings": {
+            "backgroundimage": "shopify:\/\/shop_images\/backgroundImage_65f70a0b-25f0-4ab1-a492-cbfc7d25a32d.jpg",
+            "imageheading": "Guiding you back to healthy sleep",
+            "imagedescription": "We provide everything you need to confidently manage sleep apnea, from expert guidance to top-rated treatments and world-class support.",
+            "firstbuttontext": "Find My Solution",
+            "firstbuttonurl": "#",
+            "secondbuttontext": "CPAP All Supplies",
+            "secondbuttonurl": "#"
+          }
+        },
+        "textcontainer_FenMrj": {
+          "type": "textcontainer",
+          "settings": {
+            "question-heading": "Where are you in your sleep apnea journey?",
+            "option1": "I’m not sure if I have sleep apnea",
+            "option1url": "#",
+            "option2": "I was diagnosed with sleep apnea",
+            "option2url": "",
+            "option3": "I'm looking for the right machine",
+            "option3url": "#",
+            "option4": "I have a CPAP,  but I’m having issues",
+            "option4url": "#",
+            "option5": "Already a CPAP customer?",
+            "option5url": "#",
+            "buttontext": "Reorder"
+          }
+        }
+      },
+      "block_order": [
+        "background_EwHphk",
+        "textcontainer_FenMrj"
+      ],
+      "settings": {
+        "home": ""
+      }
+    },
     "custom_mega_menu_nPQydY": {
       "type": "custom-mega-menu",
       "blocks": {
@@ -1021,6 +1062,7 @@
     }
   },
   "order": [
+    "custom_home_image_banner_PUx6jQ",
     "custom_mega_menu_nPQydY",
     "custom_category_AwWGLr",
     "featured_collection_AaeP7H",
