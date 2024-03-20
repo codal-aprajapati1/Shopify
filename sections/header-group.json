@@ -267,6 +267,17 @@
             "enter_product_title": "CPAP Machines",
             "enter_product_description": "CPAP Machines  Description"
           }
+        },
+        "first_block_QF4Q7i": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/mask_6.webp",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies Description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "#"
+          }
         }
       },
       "block_order": [
@@ -289,7 +300,8 @@
         "blockdata_t8ky6M",
         "blockdata_mRijHB",
         "blockdata_PkQjNf",
-        "blockdata_KdXRL8"
+        "blockdata_KdXRL8",
+        "first_block_QF4Q7i"
       ],
       "settings": {
         "header": ""
