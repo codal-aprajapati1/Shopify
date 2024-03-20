@@ -74,6 +74,15 @@
                               </div>
                             {% endif %}
                           {% endif %}
+                          {% if block.type == 'lastblock' %}
+                            <div class="grid-item b2">
+                              <div class="mega-menu-block-data-cont">
+                                  <h4>{{ block.settings.latsblocktitle }}</h4>
+                                  <p>{{ block.settings.latsblockdescription }}</p>
+                                  <a href="{{ block.settings.latsblockurl }}">{%  render 'icon-caret' %}</a>
+                                </div>
+                            </div>
+                          {% endif %}
                         {% endfor %}
                       </div>
                     </div>
@@ -408,6 +417,28 @@
           "type": "text",
           "id": "enter_product_description",
           "label": "Enter Product Description"
+        }
+      ]
+    },
+    {
+      "name": "lastblock",
+      "type": "lastblock",
+      "settings": [
+        {
+          "type": "text",
+          "id": "latsblocktitle",
+          "label": "Enter the Title"
+        },
+        {
+          "type": "text",
+          "id": "latsblockdescription",
+          "label": "Enter the Description"
+        }
+        ,
+        {
+          "type": "url",
+          "id": "latsblockurl",
+          "label": "Enter the button url"
         }
       ]
     },
