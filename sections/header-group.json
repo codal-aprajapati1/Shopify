@@ -341,6 +341,15 @@
             "enter_product_title": "CPAP Supplies",
             "enter_product_description": "CPAP Supplies Description"
           }
+        },
+        "blockdata_UT3cn7": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "product_image": "shopify:\/\/shop_images\/mask_6.webp",
+            "enter_product_title": "CPAP Supplies",
+            "enter_product_description": "CPAP Supplies Description"
+          }
         }
       },
       "block_order": [
@@ -371,7 +380,8 @@
         "blockdata_pFU6C8",
         "blockdata_Bk6DqU",
         "blockdata_XfDWHL",
-        "blockdata_TBdgdx"
+        "blockdata_TBdgdx",
+        "blockdata_UT3cn7"
       ],
       "settings": {
         "header": ""
