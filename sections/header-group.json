@@ -184,6 +184,15 @@
             "option4": "I have a CPAP,  but I’m having issues",
             "option4url": "#"
           }
+        },
+        "blockdata_CFADDr": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "enter_product_title": "CPAP MasksCPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
+          }
         }
       },
       "block_order": [
@@ -197,7 +206,8 @@
         "blockdata_nqe4kK",
         "blockdata_yj9AU3",
         "blockdata_XHywbc",
-        "textsuggestion_B8HmVL"
+        "textsuggestion_B8HmVL",
+        "blockdata_CFADDr"
       ],
       "settings": {
         "header": ""
