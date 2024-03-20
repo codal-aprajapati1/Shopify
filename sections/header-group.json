@@ -397,6 +397,15 @@
             "enter_product_title": "CPAP Accessories",
             "enter_product_description": "CPAP Accessories Description"
           }
+        },
+        "blockdata_EzXG7i": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "product_image": "shopify:\/\/shop_images\/air11664909783-removebg-preview.png",
+            "enter_product_title": "CPAP Accessories",
+            "enter_product_description": "CPAP Accessories"
+          }
         }
       },
       "block_order": [
@@ -433,7 +442,8 @@
         "blockdata_raFR6x",
         "blockdata_pWaQdn",
         "blockdata_3c4kBN",
-        "blockdata_tEgwFm"
+        "blockdata_tEgwFm",
+        "blockdata_EzXG7i"
       ],
       "settings": {
         "header": ""
