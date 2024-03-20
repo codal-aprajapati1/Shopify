@@ -406,6 +406,17 @@
             "enter_product_title": "CPAP Accessories",
             "enter_product_description": "CPAP Accessories"
           }
+        },
+        "first_block_qzbJzP": {
+          "type": "first_block",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "product_image": "shopify:\/\/shop_images\/aircurve-10-resmed-angled-front-generic-removebg-preview.png",
+            "enter_product_title": "CPAP Home Sleep Test",
+            "enter_product_description": "CPAP Home Sleep Test Description",
+            "enter_button_text": "Learn More",
+            "enter_button_url": "#"
+          }
         }
       },
       "block_order": [
@@ -443,7 +454,8 @@
         "blockdata_pWaQdn",
         "blockdata_3c4kBN",
         "blockdata_tEgwFm",
-        "blockdata_EzXG7i"
+        "blockdata_EzXG7i",
+        "first_block_qzbJzP"
       ],
       "settings": {
         "header": ""
