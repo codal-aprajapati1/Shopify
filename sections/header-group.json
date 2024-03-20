@@ -162,6 +162,15 @@
             "enter_product_description": "CPAP Masks Description"
           }
         },
+        "blockdata_CFADDr": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Masks",
+            "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
+            "enter_product_title": "CPAP MasksCPAP Masks",
+            "enter_product_description": "CPAP Masks Description"
+          }
+        },
         "blockdata_XHywbc": {
           "type": "blockdata",
           "settings": {
@@ -185,12 +194,12 @@
             "option4url": "#"
           }
         },
-        "blockdata_CFADDr": {
+        "blockdata_FchzKh": {
           "type": "blockdata",
           "settings": {
             "mega_menu_name": "CPAP Masks",
             "product_image": "shopify:\/\/shop_images\/women_glasses.jpg",
-            "enter_product_title": "CPAP MasksCPAP Masks",
+            "enter_product_title": "CPAP Masks",
             "enter_product_description": "CPAP Masks Description"
           }
         }
@@ -205,9 +214,10 @@
         "blockdata_RVeex9",
         "blockdata_nqe4kK",
         "blockdata_yj9AU3",
+        "blockdata_CFADDr",
         "blockdata_XHywbc",
         "textsuggestion_B8HmVL",
-        "blockdata_CFADDr"
+        "blockdata_FchzKh"
       ],
       "settings": {
         "header": ""
