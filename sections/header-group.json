@@ -207,6 +207,7 @@
           "type": "first_block",
           "settings": {
             "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/1.webp",
             "enter_product_title": "CPAP Machines",
             "enter_product_description": "CPAP Machines Description",
             "enter_button_text": "Learn More",
