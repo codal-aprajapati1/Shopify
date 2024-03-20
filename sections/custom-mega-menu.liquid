@@ -17,7 +17,7 @@
         {% elsif block.type == 'navbarlinks' %}
           <div class="navbar-container search-effect">
             <div class="burger-container" style="position: relative;">
-              <span class="burger-bar">{% render 'icon-hamburger' %}</span>
+              <span class="burger-bar burger-active">{% render 'icon-hamburger' %}</span>
               <span class="burger-bar nav-close">{% render 'icon-close' %}</span>
             </div>
             <ul>
@@ -33,59 +33,70 @@
                     <div class="page-width">
                       {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
                       <div class="grid-cont">
-                        {% for block in section.blocks %}
-                          {% if block.type == 'first_block' %}
-                            {% if block.settings.mega_menu_name == link.title %}
-                              <div class="grid-item b1">
-                                <div class="image-container">
-                                  <img
-                                    src="{{ block.settings.product_image | image_url }}"
-                                    alt="img to be displayed here"
-                                    height="100%"
-                                    width="100%"
-                                  >
+                        <div class="mega-menu-left-cont">
+                          {% for block in section.blocks %}
+                            {% if block.type == 'first_block' %}
+                              {% if block.settings.mega_menu_name == link.title %}
+                                <div class="grid-item b1">
+                                  <div class="image-container">
+                                    <img
+                                      src="{{ block.settings.product_image | image_url }}"
+                                      alt="img to be displayed here"
+                                      height="100%"
+                                      width="100%"
+                                    >
+                                  </div>
+                                  <div class="mega-menu-first-block-data">
+                                    <h4>{{ block.settings.enter_product_title }}</h4>
+                                    <p>{{ block.settings.enter_product_description }}</p>
+                                    <a href="{{ block.settings.enter_button_url }}"
+                                      ><button type="submit" class="submit-btn">
+                                        {{ block.settings.enter_button_text }}
+                                      </button></a
+                                    >
+                                  </div>
                                 </div>
-                                <div class="mega-menu-first-block-data">
-                                  <h4>{{ block.settings.enter_product_title }}</h4>
-                                  <p>{{ block.settings.enter_product_description }}</p>
-                                  <a href="{{ block.settings.enter_button_url }}"
-                                    ><button type="submit" class="submit-btn">
-                                      {{ block.settings.enter_button_text }}
-                                    </button></a
-                                  >
-                                </div>
-                              </div>
+                              {% endif %}
                             {% endif %}
-                          {% elsif block.type == 'blockdata' %}
-                            {% if block.settings.mega_menu_name == link.title %}
-                              <div class=" grid-item b2">
-                                <div class="image-container">
-                                  <img
-                                    src="{{ block.settings.product_image | image_url }}"
-                                    alt="img to be displayed here"
-                                    height="100%"
-                                    width="100%"
-                                  >
+                          {% endfor %}
+                        </div>
+                        <div class="mega-menu-right-container">
+                          {% for block in section.blocks %}
+                            {% if block.type == 'blockdata' %}
+                              {% if block.settings.mega_menu_name == link.title %}
+                                <div class=" grid-item b2">
+                                  <div class="image-container">
+                                    <img
+                                      src="{{ block.settings.product_image | image_url }}"
+                                      alt="img to be displayed here"
+                                      height="100%"
+                                      width="100%"
+                                    >
+                                  </div>
+                                  <div class="mega-menu-block-data-cont">
+                                    <h4>{{ block.settings.enter_product_title }}</h4>
+                                    <p>{{ block.settings.enter_product_description }}</p>
+                                  </div>
                                 </div>
-                                <div class="mega-menu-block-data-cont">
-                                  <h4>{{ block.settings.enter_product_title }}</h4>
-                                  <p>{{ block.settings.enter_product_description }}</p>
-                                </div>
-                              </div>
+                              {% endif %}
                             {% endif %}
-                          {% endif %}
-                          {% if block.type == 'lastblock' %}
-                            {% if block.settings.mega_menu_name == link.title %}
-                            <div class="grid-item b2">
-                              <div class="mega-menu-block-data-cont">
-                                  <h4>{{ block.settings.latsblocktitle }}</h4>
-                                  <p>{{ block.settings.latsblockdescription }}</p>
-                                  <a href="{{ block.settings.latsblockurl }}">{%  render 'icon-caret' %}</a>
+                          {% endfor %}
+                          {% for block in section.blocks %}
+                            {% if block.type == 'lastblock' %}
+                              {% if block.settings.mega_menu_name == link.title %}
+                                <div class="grid-item b2 last-block">
+                                  <div class="mega-menu-block-data-cont">
+                                    <h4>{{ block.settings.latsblocktitle }}</h4>
+                                    <p>{{ block.settings.latsblockdescription }}</p>
+                                    <a href="{{ block.settings.latsblockurl }}" class="block-icon">
+                                      {%- render 'icon-caret' -%}
+                                    </a>
+                                  </div>
                                 </div>
-                            </div>
+                              {% endif %}
                             {% endif %}
-                          {% endif %}
-                        {% endfor %}
+                          {% endfor %}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -98,8 +109,14 @@
                   <span>Questions? Call us toll-free <strong>1-800-356-5221</strong></span>
                 </a>
                 <div class="res-action-nav">
-                  <a href="#">{%  render 'icon-play' %} <span>My Favourites</span> </a>
-                  <a href="#">{% render 'icon-close' %} <span>Sign In</span></a>
+                  <a href="#">
+                    {%- render 'icon-play' %}
+                    <span>My Favourites</span>
+                  </a>
+                  <a href="#">
+                    {%- render 'icon-close' %}
+                    <span>Sign In</span></a
+                  >
                 </div>
               </div>
             </ul>
@@ -207,9 +224,15 @@
   </div>
 </div>
 
+
+
+
+
 <script>
   $(document).ready(function () {
     // alert();
+    $('.nav-close').hide();
+    
     $('.main-cont')
       .mouseenter(function () {
         $(this).addClass('active1');
@@ -218,11 +241,16 @@
         $('.navbar-container ul li a').addClass('active-only-text-black');
         $('.mega-menu .find-my-solution a').addClass('background-black');
         $('.cart-btn a svg').addClass('active-svg');
-
         $(document).on('click', '.burger-container', function () {
+          $('.nav-close').show();
+          $('.burger-active').hide();
+          $(this).find('svg').addClass('active-svg');
           $('.mega-menu .navbar-container ul').addClass('navbar-ul-active');
+
           $(document).on('click', '.burger-container', function () {
+            $('.nav-close').hide();
             $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
+            $('.burger-active').show();
           });
         });
 
@@ -440,8 +468,7 @@
           "type": "text",
           "id": "latsblockdescription",
           "label": "Enter the Description"
-        }
-        ,
+        },
         {
           "type": "url",
           "id": "latsblockurl",
