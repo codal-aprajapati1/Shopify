@@ -412,6 +412,9 @@ svg {
 .mega-menu  .burger-bar svg{
   width: 20px;
 }
+.mega-menu .find-my-solution-responsive{
+  display: none;
+}
 
 
 
@@ -483,6 +486,8 @@ svg {
     flex-direction: column;
     gap: 20px;
   }
+
+
 
   .find-my-solution-responsive .find-solution {
     margin-inline: auto !important;

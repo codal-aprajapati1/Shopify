@@ -16,8 +16,9 @@
 
         {% elsif block.type == 'navbarlinks' %}
           <div class="navbar-container search-effect">
-            <div class="burger-container">
+            <div class="burger-container" style="position: relative;">
               <span class="burger-bar">{% render 'icon-hamburger' %}</span>
+              <span class="burger-bar nav-close">{% render 'icon-close' %}</span>
             </div>
             <ul>
               {% for link in block.settings.linklist.links %}
@@ -87,7 +88,7 @@
                 </a>
                 <div class="res-action-nav">
                   <a href="#">{%  render 'icon-play' %} <span>My Favourites</span> </a>
-                  <a href="#">{% render 'icon-tumblr' %} <span>Sign In</span></a>
+                  <a href="#">{% render 'icon-close' %} <span>Sign In</span></a>
                 </div>
               </div>
             </ul>
