@@ -249,6 +249,15 @@
             "enter_product_title": "CPAP Machines",
             "enter_product_description": "CPAP Machines  Description"
           }
+        },
+        "blockdata_PkQjNf": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/1.webp",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines  Description"
+          }
         }
       },
       "block_order": [
@@ -269,7 +278,8 @@
         "blockdata_3mUmig",
         "blockdata_4BtUdx",
         "blockdata_t8ky6M",
-        "blockdata_mRijHB"
+        "blockdata_mRijHB",
+        "blockdata_PkQjNf"
       ],
       "settings": {
         "header": ""
