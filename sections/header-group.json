@@ -213,6 +213,15 @@
             "enter_button_text": "Learn More",
             "enter_button_url": "#"
           }
+        },
+        "blockdata_3mUmig": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "product_image": "shopify:\/\/shop_images\/1.webp",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines Description"
+          }
         }
       },
       "block_order": [
@@ -229,7 +238,8 @@
         "blockdata_FchzKh",
         "blockdata_XHywbc",
         "textsuggestion_B8HmVL",
-        "first_block_fNXPCP"
+        "first_block_fNXPCP",
+        "blockdata_3mUmig"
       ],
       "settings": {
         "header": ""
