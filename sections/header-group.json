@@ -194,7 +194,7 @@
           "settings": {
             "mega_menu_name": "CPAP Masks",
             "latsblocktitle": "CPAP Masks",
-            "latsblockdescription": "CPAP Masks Description",
+            "latsblockdescription": "Shop all CPAP Masks",
             "latsblockurl": "#"
           }
         },
@@ -275,6 +275,15 @@
             "product_image": "shopify:\/\/shop_images\/1.webp",
             "enter_product_title": "CPAP Machines",
             "enter_product_description": "CPAP Machines  Description"
+          }
+        },
+        "lastblock_CErcQk": {
+          "type": "lastblock",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "latsblocktitle": "CPAP Machines",
+            "latsblockdescription": "Shop all CPAP Machines",
+            "latsblockurl": "#"
           }
         },
         "first_block_QF4Q7i": {
@@ -360,6 +369,15 @@
             "enter_product_description": "CPAP Supplies Description"
           }
         },
+        "lastblock_wm4T3w": {
+          "type": "lastblock",
+          "settings": {
+            "mega_menu_name": "CPAP Supplies",
+            "latsblocktitle": "CPAP Supplies",
+            "latsblockdescription": "Shop all CPAP Supplies",
+            "latsblockurl": "#"
+          }
+        },
         "first_block_hi46yq": {
           "type": "first_block",
           "settings": {
@@ -416,6 +434,15 @@
             "enter_product_description": "CPAP Accessories"
           }
         },
+        "lastblock_KDbkKX": {
+          "type": "lastblock",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "latsblocktitle": "CPAP Accessories",
+            "latsblockdescription": "Shop all CPAP Accessories",
+            "latsblockurl": "#"
+          }
+        },
         "first_block_qzbJzP": {
           "type": "first_block",
           "settings": {
@@ -462,6 +489,15 @@
             "enter_product_title": "CPAP Home Sleep Test",
             "enter_product_description": "CPAP Home Sleep Test Description"
           }
+        },
+        "lastblock_DwhQCp": {
+          "type": "lastblock",
+          "settings": {
+            "mega_menu_name": "CPAP Home Sleep Test",
+            "latsblocktitle": "CPAP Home Sleep Test",
+            "latsblockdescription": "Shop All CPAP Home Sleep Test  Products",
+            "latsblockurl": "#"
+          }
         }
       },
       "block_order": [
@@ -486,6 +522,7 @@
         "blockdata_mRijHB",
         "blockdata_PkQjNf",
         "blockdata_KdXRL8",
+        "lastblock_CErcQk",
         "first_block_QF4Q7i",
         "blockdata_KwjfMd",
         "blockdata_RGdHmL",
@@ -495,17 +532,20 @@
         "blockdata_XfDWHL",
         "blockdata_TBdgdx",
         "blockdata_UT3cn7",
+        "lastblock_wm4T3w",
         "first_block_hi46yq",
         "blockdata_raFR6x",
         "blockdata_pWaQdn",
         "blockdata_3c4kBN",
         "blockdata_tEgwFm",
         "blockdata_EzXG7i",
+        "lastblock_KDbkKX",
         "first_block_qzbJzP",
         "blockdata_qykCnn",
         "blockdata_wAwbRY",
         "blockdata_nYCgiy",
-        "blockdata_4J3bVT"
+        "blockdata_4J3bVT",
+        "lastblock_DwhQCp"
       ],
       "settings": {
         "header": ""
