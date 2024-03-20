@@ -222,6 +222,14 @@
             "enter_product_title": "CPAP Machines",
             "enter_product_description": "CPAP Machines Description"
           }
+        },
+        "blockdata_4BtUdx": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "CPAP Machines",
+            "enter_product_title": "CPAP Machines",
+            "enter_product_description": "CPAP Machines  Description"
+          }
         }
       },
       "block_order": [
@@ -239,7 +247,8 @@
         "blockdata_XHywbc",
         "textsuggestion_B8HmVL",
         "first_block_fNXPCP",
-        "blockdata_3mUmig"
+        "blockdata_3mUmig",
+        "blockdata_4BtUdx"
       ],
       "settings": {
         "header": ""
