@@ -434,6 +434,15 @@
             "enter_product_description": "CPAP Accessories"
           }
         },
+        "lastblock_KDbkKX": {
+          "type": "lastblock",
+          "settings": {
+            "mega_menu_name": "CPAP Accessories",
+            "latsblocktitle": "CPAP Accessories",
+            "latsblockdescription": "CPAP Accessories Description",
+            "latsblockurl": "#"
+          }
+        },
         "first_block_qzbJzP": {
           "type": "first_block",
           "settings": {
@@ -521,6 +530,7 @@
         "blockdata_3c4kBN",
         "blockdata_tEgwFm",
         "blockdata_EzXG7i",
+        "lastblock_KDbkKX",
         "first_block_qzbJzP",
         "blockdata_qykCnn",
         "blockdata_wAwbRY",
