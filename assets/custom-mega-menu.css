@@ -477,6 +477,35 @@ svg {
   .navbar-ul-active{
     display: flex !important ;
   }
+  
+  .mega-menu .find-my-solution-responsive{
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .find-my-solution-responsive .find-solution {
+    margin-inline: auto !important;
+    width: 70% !important;
+    text-align: center !important;
+    color: black !important;
+    border: none;
+  }
+
+  .find-my-solution-responsive a:nth-child(2) {
+    margin-inline: auto;
+    background: none;
+    color: black;
+  } 
+  .res-action-nav{
+    text-align: center;
+  }
+  .res-action-nav a{
+    background: none;
+    border: none !important;
+    color: black !important;
+  }
+
   .mega-menu .navbar-container ul li a{
     width: 100%;
     color: #000000;
@@ -502,6 +531,9 @@ svg {
     grid-template-columns: 1fr;
   }
 
+  .signup{
+    display: none;
+  }
 
   .grid-cont  .b2 .image-container{
     width: 72px;

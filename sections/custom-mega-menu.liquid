@@ -1,6 +1,8 @@
-{% comment %} {% section 'custom-header-announcement' %}} 
-header header--middle-left header--mobile-center header--has-menu--has-account
-header__inline-menu{% endcomment %}
+{% comment %}
+  {% section 'custom-header-announcement' %}}
+  header header--middle-left header--mobile-center header--has-menu--has-account
+  header__inline-menu
+{% endcomment %}
 {{ 'custom-mega-menu.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 <div class="main-cont">
@@ -77,6 +79,17 @@ header__inline-menu{% endcomment %}
                   </div>
                 </li>
               {% endfor %}
+              <div class="find-my-solution-responsive">
+                <a href="#" class="find-solution">Find My Solution</a>
+                <a href="tel: +1-800-356-5221" class="first-link">
+                  {%- render 'icon-share' %}
+                  <span>Questions? Call us toll-free <strong>1-800-356-5221</strong></span>
+                </a>
+                <div class="res-action-nav">
+                  <a href="#">{%  render 'icon-play' %} <span>My Favourites</span> </a>
+                  <a href="#">{% render 'icon-tumblr' %} <span>Sign In</span></a>
+                </div>
+              </div>
             </ul>
           </div>
 
@@ -194,9 +207,9 @@ header__inline-menu{% endcomment %}
         $('.mega-menu .find-my-solution a').addClass('background-black');
         $('.cart-btn a svg').addClass('active-svg');
 
-        $(document).on('click','.burger-container', function(){
+        $(document).on('click', '.burger-container', function () {
           $('.mega-menu .navbar-container ul').addClass('navbar-ul-active');
-          $(document).on('click','.burger-container', function(){
+          $(document).on('click', '.burger-container', function () {
             $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
           });
         });
