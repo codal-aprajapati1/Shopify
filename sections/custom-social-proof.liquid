@@ -63,7 +63,7 @@
                   <source src="{{ block.settings.slider_video | video_tag }}">
                 </video> {% endcomment %}
                 <div class="video">
-                  {{ block.settings.slider_video | video_tag: autoplay:true, loop: true, muted:true, controls:true }}
+                  {{ block.settings.slider_video | video_tag: autoplay:true, loop: true, muted:true, controls:true , id: "slider-video-social" }}
                 </div>
                 <img src="{{ block.settings.slider_video.preview_image |  image_url  }}" alt="videoimage" width="100%" height="100%">
               </div>
