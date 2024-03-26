@@ -338,6 +338,9 @@ svg {
   color: var(--white);
 }
 
+.active-svg-header{
+  fill: white;
+}
 .active-only-text-black {
   color: var(--black);
 }
