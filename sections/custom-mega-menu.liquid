@@ -33,7 +33,7 @@
                     <div class="page-width">
                       {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
                       <div class="grid-cont">
-                        <span>{% render 'icon-caret' %} {{ link.title }} </span>
+                        <span class=responsive-title-close>{% render 'icon-caret' %} {{ link.title }} </span>
                         <div class="mega-menu-left-cont">
                           {% for block in section.blocks %}
                             {% if block.type == 'first_block' %}
