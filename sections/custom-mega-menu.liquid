@@ -32,6 +32,10 @@
                   <div class="outer-div">
                     <div class="page-width">
                       {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
+                      <span class="responsive-title-close">
+                          {%- render 'icon-caret' %}
+                          {{ link.title }}
+                        </span>
                       <div class="grid-cont">
                         <div class="mega-menu-left-cont">
                           {% for block in section.blocks %}
@@ -279,6 +283,9 @@
             $(this).find('.outer-div').addClass('active');
             $(this).find('.outer-div').addClass('outer-div-active');
             $(this).find('#rotate').css('transform', 'rotate(180deg)');
+            $(document).on('click', 'responsive-title-close', function(){
+              $(this).parentsUntil('.outer-div').removeClass('outer-div-active');
+            })
           })
           .mouseleave(function () {
             $(this).find('#rotate').css('transform', 'rotate(0deg)');
