@@ -251,8 +251,9 @@
 
           $(document).on('click', '.burger-container', function () {
             $('.nav-close').hide();
-            $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
             $('.burger-active').show();
+            $(this).find('svg').removeClass('active-svg');
+            $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
           });
         });
 
