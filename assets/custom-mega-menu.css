@@ -316,6 +316,7 @@
 
 .active-svg{
   color:var(--black);
+  fill: black;
 }
 
 .active-text-white {
