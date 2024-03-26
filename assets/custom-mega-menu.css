@@ -690,6 +690,10 @@
     justify-content:space-between;
     align-items:center;
   }
+  .main-search-cont .sub-search-cont .recommend-cont svg{
+    color:black;
+    width:40px;
+  }
   
 }
 
