@@ -557,7 +557,7 @@
     width:10px;
   }
   
-  .main-search-cont .ful-width-search{
+  .main-search-cont{
     transform:translateY(100%);
     transition:all 0.5s ease-in-out;
   }
