@@ -155,6 +155,9 @@
   background: white;
   right: 0;
   min-height: 400px;
+
+
+  
 }
 .main-search-cont .sub-search-cont{
   position: fixed;
@@ -556,7 +559,13 @@
   
   .main-search-cont .ful-width-search{
     transform:translateY(100%);
+    transition:all 0.5s ease-in-out;
   }
+
+  .search-height-effect{
+    transform:translateY(0);
+  }
+  
   .navbar-ul-active{
     display: flex !important ;
   }
