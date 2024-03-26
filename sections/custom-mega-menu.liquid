@@ -286,12 +286,10 @@
             
             $(document).on('click', '.responsive-title-close', function(){
               $(this).parents('.outer-div').removeClass('outer-div-active');
-              $(this).parents('.outer-div').removeClass('active');
-              $(this).parents('.outer-div').find('#rotate').css('transform', 'rotate(0deg)');
             });
           })
           .mouseleave(function () {
-            
+            $(this).find('#rotate').css('transform', 'rotate(0deg)');
           });
       })
       .mouseleave(function () {
