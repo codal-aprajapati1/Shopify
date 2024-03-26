@@ -244,8 +244,9 @@
           $('.burger-active').hide();
           $(this).find('svg').addClass('active-svg');
           $('.mega-menu .navbar-container ul').addClass('navbar-ul-active');
+          
 
-          $(document).on('click', '.burger-container', function () {
+          $(document).on('click', '.responsive-title-close', function () {
             $('.nav-close').hide();
             $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
             $('.burger-active').show();
