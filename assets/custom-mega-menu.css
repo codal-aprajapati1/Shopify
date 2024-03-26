@@ -345,7 +345,9 @@ svg {
   color: var(--black);
 }
 
-
+.responsive-title-close{
+  display:none;
+}
 
 .grid-cont {
   display: flex;
@@ -541,6 +543,10 @@ svg {
     order: 7;
     margin-right: 0;
     position: relative;
+  }
+  .responsive-title-close{
+    display:block;
+    margin: 0 10px 
   }
   .mega-menu .navbar-container ul{
     position: fixed;
