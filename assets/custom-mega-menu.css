@@ -686,6 +686,10 @@
   .responsive-recommend{
     display:block;
   }
+  .main-search-cont .sub-search-cont .recommend-cont{
+    justify-content:space-between;
+    align-items:center;
+  }
   
 }
 
