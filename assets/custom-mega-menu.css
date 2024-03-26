@@ -554,8 +554,8 @@
     width:10px;
   }
   
-  .mega-menu .navbar-container ul{
-
+  .main-search-cont .ful-width-search{
+    transform:translateY(100%);
   }
   .navbar-ul-active{
     display: flex !important ;
