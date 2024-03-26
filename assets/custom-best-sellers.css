@@ -156,10 +156,11 @@
   animation-direction: alternate;  
   animation-iteration-count: infinite;
   transition: all 0.3s ease;
+}
+.actual-slider-container .each-slide .product-image-cont img{
   width: 75%;
   object-fit:contain
 }
-
 .fade-effect{
   position:absolute;
   color: radial-gradient(white,white,white,grey);
