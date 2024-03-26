@@ -16,12 +16,12 @@
         </div>
       {% elsif block.type == "text2" %}
         <div class="add-fav">
-          {%  render 'icon-render' %}
+          {%  render 'icon-heart' %}
           {{ block.settings['add-fav'] }}
         </div>
       {% elsif block.type == "text3" %}
         <div class="signup">
-        <img src="{{ block.settings.signimage | image_url }}" style="width: 20px;">
+        {%  render 'icon-user' %}
           {{ block.settings.signin }}
         </div>
       {% endif %}
