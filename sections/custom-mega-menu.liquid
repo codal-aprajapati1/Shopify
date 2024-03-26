@@ -282,10 +282,11 @@
             $('.outer-div').removeClass('active');
             $(this).find('.outer-div').addClass('active');
             $(this).find('.outer-div').addClass('outer-div-active');
-            $(this).find('#rotate').css('transform', 'rotate(-90deg)');
+            // $(this).find('#rotate').css('transform', 'rotate(-90deg)');
             
             $(document).on('click', '.responsive-title-close', function(){
               $(this).parents('.outer-div').removeClass('outer-div-active');
+              $(this).parents('.outer-div').removeClass('active');
             });
           })
           .mouseleave(function () {
