@@ -330,8 +330,8 @@ svg {
 }
 
 .active-text-white {
-  color: var(--white);
-  background: var(--black);
+  color: var(--white) !important;
+  /* background: var(--black); */
 }
 
 .active-only-text-white {
