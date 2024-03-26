@@ -673,7 +673,11 @@
     flex-direction: column;
     justify-content: center;
   }
-
+  .main-search-cont .ful-width-search{
+    transform:translateY(100%);
+  }
+  
+  
 }
 
 
