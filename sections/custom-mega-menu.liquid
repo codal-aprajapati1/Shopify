@@ -245,6 +245,7 @@
         $('.burger-container svg').addClass('active-svg');
         
         $(document).on('click', '.burger-container', function () {
+          $('.main-cont').addClass('active1');
           $('.burger-active').hide();
           $('.nav-close').show();
           $(this).find('svg').addClass('active-svg');
