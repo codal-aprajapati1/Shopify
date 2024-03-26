@@ -683,6 +683,9 @@
   .main-search-cont .sub-search-cont .recommend-cont .display-row{
     display:none;
   }
+  .responsive-recommend{
+    display:block;
+  }
   
 }
 
