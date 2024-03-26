@@ -557,14 +557,7 @@
     width:10px;
   }
   
-  .main-search-cont{
-    transform:translateY(100%);
-    transition:all 0.5s ease-in-out;
-  }
-
-  .search-height-effect{
-    transform:translateY(0);
-  }
+ 
   
   .navbar-ul-active{
     display: flex !important ;
@@ -675,8 +668,12 @@
   }
   .main-search-cont .ful-width-search{
     transform:translateY(100%);
+    transition:all 0.5s ease-in-out;
   }
-  
+
+  .search-height-effect{
+    transform:translateY(0) !important;
+  }
   
 }
 
