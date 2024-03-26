@@ -492,7 +492,7 @@
   display:none;
   border-radius:50%;
   border:1px solid grey;
-  transform:rotate(90deg);
+  transform:rotate(-90deg);
 }
 
 @media screen and (max-width: 1372px){
