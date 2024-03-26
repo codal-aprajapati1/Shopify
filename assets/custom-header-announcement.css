@@ -32,6 +32,7 @@
 
 .announcement-bar  .customer-care svg, .add-fav svg, .signup svg{
   width:15px;
+  padding-inline:5px;
 }
 .customer-care a{
   color: inherit;
