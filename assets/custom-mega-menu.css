@@ -551,8 +551,9 @@ svg {
 
   .outer-div .responsive-title-close svg{
     transform:rotate(90deg) !important;
-    margin: 5px 15px 5px 0; 
+    margin: 3px 5px; 
   }
+  
   .mega-menu .navbar-container ul{
     position: fixed;
     margin-top: 27px;
