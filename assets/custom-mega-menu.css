@@ -524,6 +524,11 @@
 }
 
 @media  screen and (max-width: 1034px) {
+  .main-cont{
+    display:flex;
+    align-items:center;
+    height:100px;
+  }
   .mega-menu .navbar-container ul{
     order: 5;
     display: none;
