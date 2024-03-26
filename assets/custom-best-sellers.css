@@ -144,8 +144,6 @@
 }
 
 .each-slide .product-image-cont {
-  /* width: 383px; */
-  /* height: 366px; */
   margin-inline: auto;
   display: flex;
   justify-content: center;
@@ -158,6 +156,7 @@
   animation-direction: alternate;  
   animation-iteration-count: infinite;
   transition: all 0.3s ease;
+  width: 75%;
 }
 
 .fade-effect{
@@ -174,11 +173,6 @@
     to { transform: translate3d(0, -50px, 0);}   
 }
 
-.actual-slider-container .slick-slide .each-slide .product-image-cont img{
-  transition: all 0.3s ease;
-  width: 100%;
-  height: auto;
-} 
 
 .actual-slider-container .slick-center .each-slide .product-image-cont img{
   /* transform:scale(1.5)  !important; */
