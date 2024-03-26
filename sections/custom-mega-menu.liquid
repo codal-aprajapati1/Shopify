@@ -252,6 +252,7 @@
 
         $(document).on('click', 'input', function () {
           $('.search-effect').hide();
+          $('.main-cont').addClass('active1');
           $('.logo-container').addClass('logo-hide');
           $('.search-bar').addClass('adjust-margin');
           $('.mega-menu .search-bar form input').addClass('slideeffect');
@@ -260,6 +261,7 @@
           $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
           $(document).on('click', '.close-btn', function () {
             $('.search-effect').show();
+            $('.main-cont').removeClass('active1');
             $('.logo-container').removeClass('logo-hide');
             $('.main-search-cont').css('display', 'none');
             $('.mega-menu .search-bar form input').removeClass('slideeffect');
@@ -290,7 +292,6 @@
         // $('.cart-btn svg').removeClass('active-text-black');
         $('.navbar-container ul li').find('.outer-div').removeClass('active');
         $('.navbar-container ul li').find('.outer-div').removeClass('outer-div-active');
-
         $('.cart-btn a svg').removeClass('active-svg');
       });
   });
