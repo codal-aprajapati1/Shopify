@@ -606,6 +606,7 @@
     background: white;
     transform: translateX(100%);
     overflow-y: scroll;
+    transition: all 0.3s; 
   }
   .outer-div-active{
     transform: translateX(0);
