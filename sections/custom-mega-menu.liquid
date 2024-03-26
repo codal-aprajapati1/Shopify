@@ -24,7 +24,7 @@
               {% for link in block.settings.linklist.links %}
                 <li class="search-effect">
                   {% if link != blank %}
-                    <a href="{{ link.url }}">
+                    <a href="javascript:void(0)">
                       <span>{{- link.title -}}</span>
                       <span class="careticon">{% render 'icon-caret' %}</span></a
                     >
