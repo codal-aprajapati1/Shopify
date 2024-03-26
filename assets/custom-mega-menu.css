@@ -545,6 +545,7 @@
   }
   .logo-container {
     margin-right: auto;
+    display:none;
   }
   .slideeffect {
   width: 100% !important;
