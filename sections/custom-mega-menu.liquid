@@ -273,7 +273,7 @@
           $('.close-btn').css('display', 'flex');
           $('.main-search-cont').css('display', 'block');
           $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
-          $('.ful-width-search').addClass('search-height-effect');
+          $('.main-search-cont').addClass('search-height-effect');
           $(document).on('click', '.close-btn', function () {
             $('.search-effect').show();
             // $('.main-cont').removeClass('active1');
@@ -284,7 +284,7 @@
             $('.search-bar').removeClass('adjust-margin');
             // $('.findmy');
             $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
-            $('.ful-width-search').removeClass('search-height-effect');
+            $('.main-search-cont').removeClass('search-height-effect');
           });
         });
 
