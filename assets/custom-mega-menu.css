@@ -519,6 +519,16 @@
   .mega-menu .navbar-container ul{
     order: 5;
     display: none;
+    position: fixed;
+    margin-top: 27px;
+    z-index: 99999;
+    left: 0;
+    color: black;
+    background: white;
+    right: 0; 
+    overflow-y: scroll;
+    height: 100vh;
+    flex-direction: column;
   }
   .logo-container {
     margin-right: auto;
@@ -545,17 +555,7 @@
   }
   
   .mega-menu .navbar-container ul{
-    position: fixed;
-    margin-top: 27px;
-    z-index: 99999;
-    left: 0;
-    color: black;
-    background: white;
-    right: 0; 
-    overflow-y: scroll;
-    height: 100vh;
-    display: none;
-    flex-direction: column;
+
   }
   .navbar-ul-active{
     display: flex !important ;
