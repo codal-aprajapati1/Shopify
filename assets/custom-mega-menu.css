@@ -457,7 +457,6 @@ svg {
 }
 
 .grid-item .block-icon svg{
-  /* width: 40px; */
   transform: rotate(-90deg) !important;
 }
 
