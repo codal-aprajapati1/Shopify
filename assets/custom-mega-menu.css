@@ -546,6 +546,9 @@
   .logo-container {
     margin-right: auto;
   }
+  .slideeffect {
+  width: 100% !important;
+}
   .mega-menu .burger-container{
     order: 6;
     display: block;
