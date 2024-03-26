@@ -126,7 +126,7 @@
 }
 
 .actual-slider-container .slick-prev , .actual-slider-container .slick-next{
-  z-index: 999 !important;
+  z-index: 3 !important;
 }
 
 .actual-slider-container .slick-prev{
