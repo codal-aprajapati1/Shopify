@@ -546,7 +546,7 @@ svg {
   }
   .responsive-title-close{
     display:block;
-    margin: 0 10px 
+    margin:8px 0px; 
   }
 
   .outer-div .responsive-title-close svg{
