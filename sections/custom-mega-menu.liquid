@@ -284,7 +284,7 @@
             $(this).find('.outer-div').addClass('outer-div-active');
             $(this).find('#rotate').css('transform', 'rotate(180deg)');
             $(document).on('click', 'responsive-title-close', function(){
-              $(this).parent('.outer-div').removeClass('outer-div-active');
+              $(this).parents('.outer-div').removeClass('outer-div-active');
             })
           })
           .mouseleave(function () {
