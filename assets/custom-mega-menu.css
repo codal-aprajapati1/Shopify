@@ -538,8 +538,9 @@
   }
   
   .outer-div .responsive-title-close svg{
-    transform:rotate(-90deg) !important;
+    transform:rotate(90deg) !important;
     margin: 3px 5px; 
+    width:10px;
   }
   
   .mega-menu .navbar-container ul{
