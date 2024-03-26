@@ -65,7 +65,7 @@
                 <div class="video">
                  {{ block.settings.slider_video | video_tag: autoplay:true, loop: true, muted:true, id: "slider-video-social", 
                     data-rbox-autoplay: "true", data-rbox-controls: "true", data-rbox-width: "480", data-rbox-height: "360", 
-                  data-rbox-video: block.settings.slider_video.sources[0].url | json}}
+                  data-rbox-video: block.settings.slider_video.sources[0].url }}
                 </div>
                 <img src="{{ block.settings.slider_video.preview_image |  image_url  }}" alt="videoimage" width="100%" height="100%">
               </div>
