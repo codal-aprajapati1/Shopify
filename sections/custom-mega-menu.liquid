@@ -29,13 +29,14 @@
                       <span class="careticon">{% render 'icon-caret' %}</span></a
                     >
                   {% endif %}
-                  <div class="outer-div">
-                    <div class="page-width">
-                      {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
-                      <span class="responsive-title-close">
+                  <span class="responsive-title-close">
                           {%- render 'icon-caret' %}
                           {{ link.title }}
                         </span>
+                  <div class="outer-div">
+                    <div class="page-width">
+                      {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
+                      
                       <div class="grid-cont">
                         <div class="mega-menu-left-cont">
                           {% for block in section.blocks %}
