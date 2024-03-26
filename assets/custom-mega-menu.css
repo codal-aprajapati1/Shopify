@@ -339,11 +339,13 @@ svg {
 }
 
 .active-svg-header{
-  fill: white;
+  fill: white !important;
 }
 .active-only-text-black {
   color: var(--black);
 }
+
+
 
 .grid-cont {
   display: flex;
