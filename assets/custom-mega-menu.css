@@ -690,7 +690,7 @@
     justify-content:space-between;
     align-items:center;
   }
-  .main-search-cont .sub-search-cont .recommend-cont svg{
+  .main-search-cont .sub-search-cont .recommend-cont a svg{
     color:black;
     width:40px;
   }
