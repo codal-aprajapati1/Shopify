@@ -489,15 +489,6 @@
             "enter_product_title": "CPAP Home Sleep Test",
             "enter_product_description": "CPAP Home Sleep Test Description"
           }
-        },
-        "lastblock_DwhQCp": {
-          "type": "lastblock",
-          "settings": {
-            "mega_menu_name": "CPAP Home Sleep Test",
-            "latsblocktitle": "CPAP Home Sleep Test",
-            "latsblockdescription": "Shop All CPAP Home Sleep Test  Products",
-            "latsblockurl": "#"
-          }
         }
       },
       "block_order": [
@@ -544,8 +535,7 @@
         "blockdata_qykCnn",
         "blockdata_wAwbRY",
         "blockdata_nYCgiy",
-        "blockdata_4J3bVT",
-        "lastblock_DwhQCp"
+        "blockdata_4J3bVT"
       ],
       "settings": {
         "header": ""
