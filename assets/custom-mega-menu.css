@@ -15,6 +15,11 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.background-white{
+  background: white;
+}
+
+
 .mega-menu {
   display: flex;
   align-items: center;
@@ -56,6 +61,11 @@
 
 .mega-menu .navbar-container ul li a svg {
   width: 10px;
+}
+
+.mega-menu > .navbar-container>ul>li:hover>a>svg{
+  transform: rotate(180deg);
+
 }
 
 .rotate {
@@ -174,7 +184,8 @@
   display:flex;
   flex-direction:column;
   justify-content:center;
-  align-items:center;
+  /* align-items:center; */
+  text-align: center;
 }
 
 .main-search-cont .sub-search-cont .recommend-cont{
@@ -264,13 +275,28 @@
   color: var(--white);
 }
 
-
-
-
-
 .main-search-cont .suggestion-container ul{
   list-style:none;
   text-align:center;
+}
+
+.suggestion-container ul li{
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.suggestion-container ul li a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.suggestion-container ul li:hover a span{
+  /* justify-content: space-between; */
+  margin-right: 5px;
+  transition: all 0.3s;
 }
 
 .main-search-cont .sub-search-cont .recommend-cont .display-row{
@@ -290,6 +316,10 @@
   color: var(--white);
   font-weight: 900;
   border: 1px solid var(--white);
+}
+
+.active-solution-btn{
+  background: black;
 }
 
 
@@ -317,10 +347,13 @@
   background: var(--white);
 }
 
+
 .active-svg{
   color:var(--black);
   fill: black;
 }
+
+
 
 .active-text-white {
   color: var(--white) ;
@@ -525,7 +558,7 @@
 
 @media  screen and (max-width: 1034px) {
   .main-cont{
-    display:flex;
+    /* display:flex; */
     align-items:center;
     height:100px;
   }
@@ -545,7 +578,7 @@
   }
   .logo-container {
     margin-right: auto;
-    display:none;
+    /* display:none; */
   }
   .slideeffect {
   width: 100% !important;
@@ -570,8 +603,6 @@
     margin: 3px 5px; 
     width:10px;
   }
-  
- 
   
   .navbar-ul-active{
     display: flex !important ;
@@ -646,6 +677,7 @@
   }
   .grid-cont .mega-menu-left-cont{
     width: 100%;
+    margin: 15px 0;
   }
 
   
@@ -715,6 +747,7 @@
     max-width: 100%;
     font-size:14px;
     line-height:17px;
+    padding: 20px 15px;
   }
   
 }

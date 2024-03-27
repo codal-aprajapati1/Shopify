@@ -161,7 +161,26 @@
     border: 1px solid #FF600A;
     padding: 9px 16px;
     border-radius: 28px;
+}
 
+@media screen and (max-width:1024px) {
+    .treatment-section{
+        padding: 20px 20px;
+    }
+
+    .treatment-container{
+        padding: 20px;
+    }
+
+    .treatment-below-container .treatment-main-below-container{
+        gap: 12px;
+        
+    }
+    
+    .treatment-main-below-container .treatment-options-container {
+        max-height: 100%;
+        padding: 15px 10px !important;
+    }
 }
 
 @media screen and (max-width:768px) {

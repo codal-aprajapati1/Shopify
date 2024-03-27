@@ -33,9 +33,9 @@
                     <div class="page-width">
                       {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
                       <span class="responsive-title-close">
-                          {%- render 'icon-caret' %}
-                          {{ link.title }}
-                        </span>
+                        {%- render 'icon-caret' %}
+                        {{ link.title }}
+                      </span>
                       <div class="grid-cont">
                         <div class="mega-menu-left-cont">
                           {% for block in section.blocks %}
@@ -158,11 +158,21 @@
                         <div class="suggestion-container">
                           <h1>Popular Search Terms</h1>
                           <ul>
-                            <li>AirMini <span>&gt;</span></li>
-                            <li>AirSense10 <span>&gt;</span></li>
-                            <li>ResMed <span>&gt;</span></li>
-                            <li>AirFit <span>&gt;</span></li>
-                            <li>CPAP Mask <span>&gt;</span></li>
+                            <li>
+                              <a href="/search?q=AirMini"><span>AirMini</span> {% render 'icon-right-caret' %}</a>
+                            </li>
+                            <li>
+                              <a href="/search?q=AirSense10"><span>AirSense10</span> {% render 'icon-right-caret' %}</a>
+                            </li>
+                            <li>
+                              <a href="/search?q=ResMed"><span>ResMed</span> {% render 'icon-right-caret' %}</a>
+                            </li>
+                            <li>
+                              <a href="/search?q=AirFit"><span>AirFit</span> {% render 'icon-right-caret' %}</a>
+                            </li>
+                            <li>
+                              <a href="/search?q= CPAP Mask "><span>CPAP Mask</span> {% render 'icon-right-caret' %}</a>
+                            </li>
                           </ul>
                         </div>
                         <div class="recommend-cont">
@@ -230,6 +240,52 @@
 </div>
 
 <script>
+  var template = '{{ request.page_type }}';
+  var sticky = document.querySelector('.main-cont');
+  var announcement = document.querySelector('.announcement-container');
+  var announcement_text = document.querySelector('.announcement-bar');
+  var announcement_svg = document.querySelector('.announcement-bar svg');
+  var nav_text = document.querySelector('.navbar-container ul li a');
+  var my_solution = document.querySelector('.mega-menu .find-my-solution a');
+  var cart_svg = document.querySelector('.cart-btn a svg');
+  if (template != 'index') {
+    // sticky.style.background = 'black';
+  } else {
+    window.onscroll = function () {
+      if (window.scrollY > 150) {
+        sticky.classList.add('background-white');
+        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
+          li.classList.add('black-text');
+        });
+        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
+          a.classList.add('active-only-text-black');
+        });
+        my_solution.classList.add('background-black');
+        cart_svg.classList.add('active-svg');
+        announcement.classList.add('active-text-white');
+        announcement_text.classList.add('active-text-white');
+        announcement_svg.classList.add('active-svg');
+
+      } 
+      else {
+        sticky.classList.remove('background-white');
+        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
+          li.classList.remove('black-text');
+        });
+        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
+          a.classList.remove('active-only-text-black');
+        });
+        my_solution.classList.remove('background-black');
+        announcement.classList.remove('active-text-white');
+        announcement_text.classList.remove('active-text-white');
+        announcement_svg.classList.remove('active-svg');
+
+      }
+    };
+  }
+</script>
+
+<script>
   $(document).ready(function () {
     // alert();
     $('.nav-close').hide();
@@ -244,7 +300,7 @@
         $('.mega-menu .find-my-solution a').addClass('background-black');
         $('.cart-btn a svg').addClass('active-svg');
         $('.burger-container svg').addClass('active-svg');
-        
+
         $(document).on('click', '.burger-container', function () {
           $('.main-cont').addClass('active1');
           $('.burger-active').hide();
@@ -259,8 +315,8 @@
             $('.cart-btn a svg').removeClass('active-svg');
             $('.main-cont').removeClass('active1');
             $('.announcement-container').removeClass('active-text-white');
-           $('.announcement-bar').removeClass('active-text-white');
-           $('.announcement-bar svg').removeClass('active-svg-header');
+            $('.announcement-bar').removeClass('active-text-white');
+            $('.announcement-bar svg').removeClass('active-svg-header');
             $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
           });
         });
@@ -294,8 +350,9 @@
             $('.outer-div').removeClass('active');
             $(this).find('.outer-div').addClass('active');
             $(this).find('.outer-div').addClass('outer-div-active');
-            
-            $(document).on('click', '.responsive-title-close', function(){
+            $(this).find('#rotate').css('transform', 'rotate(180deg)');
+
+            $(document).on('click', '.responsive-title-close', function () {
               $(this).parents('.outer-div').removeClass('outer-div-active');
               $(this).parents('.outer-div').removeClass('active');
             });
@@ -316,18 +373,7 @@
         $('.navbar-container ul li').find('.outer-div').removeClass('outer-div-active');
         $('.cart-btn a svg').removeClass('active-svg');
         $('.burger-container svg').removeClass('active-svg');
-        
       });
-  });
-</script>
-<script>
-  $(document).ready(function () {
-    $('input').keyup(function () {
-      $('main-search-cont').hide();
-      const input = document.getElementById('myInput');
-      const inputValue = input.value;
-      console.log(inputValue);
-    });
   });
 </script>
 

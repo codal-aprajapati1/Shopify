@@ -5,7 +5,7 @@
   --grey : #c2c0be; 
   --fadeorange : #ffa27a;
   --bold : 900; 
-  --collection-back:#ece9d9;
+  --collection-back:#f6f5f0;
   ;
 }
 
@@ -57,11 +57,11 @@
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  /* justify-content: flex-end; */
   padding: 39px 20px 39.5px;
   text-align:center;
   background: var(--collection-back);
   border-radius:14px;
+  border: 1px solid transparent;
   transition: 0.3s ease;
   overflow: hidden;
 }
@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 182px;
+  max-width: 100%;
   margin-inline: auto;
 }
 
@@ -117,6 +117,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
+  margin-bottom: 10px;
 }
 
 .main-collection-contianer .sub-container1 .upper-grid .upper-div a{
@@ -130,6 +131,9 @@
   transition: 0.3s ease;
   font-size: 14px;
   line-height: 17px;
+  border: 1px solid transparent;
+  z-index: 1;
+  width: 150px;
 }
 
 
@@ -151,7 +155,7 @@
   /* margin: 10px 0; */
   padding: 16px;
   border-radius:8px;
-  border:1px solid var(--grey);
+  border:1px solid transparent;
   transition: 0.3s ease;
 }
 
@@ -173,13 +177,14 @@
   width:75px;
   height:75px;
   border-radius:50%;
-  border:1px solid var(--grey);
+  border:1px solid transparent;
   overflow: hidden;
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div .img-container2 img{
   object-fit:contain;
   border-radius:50%;
+  background-color: white;
 }
 
 
@@ -192,7 +197,7 @@
 
 .main-collection-contianer .sub-container1 .last-grid .each-div a{
   text-decoration:none;
-  font-weight: var(--bold);
+  font-weight: 700;
   padding:9px 16px;
   border:none;
   border-radius:20px;
@@ -201,6 +206,8 @@
   transition: 0.3s ease;
   font-size: 14px;
   line-height: 17px;
+  border: 1px solid transparent;
+
 }
 
 .main-collection-contianer .sub-container1 .last-grid .each-div a:hover , .main-collection-contianer .sub-container1 .upper-grid .upper-div a:hover {
@@ -227,12 +234,28 @@
 
 .main-collection-contianer .sub-container1 .last-grid .last-div a{
   text-decoration:none;
-  padding:5px 20px;
-  border:0.7px solid var(--grey);
+  padding:9px 16px;
+  border:1px solid var(--grey);
   border-radius:20px;
-  font-weight:900;
+  font-weight:700;
   background-color:var(--white);
   color:var(--black);
+}
+
+@media screen and (max-width:1024px){
+  .main-collection-contianer .sub-container1 .upper-grid .upper-div{
+    flex-basis: calc(50% - 18px);
+  }
+  .main-collection-contianer .sub-container1 .last-grid .each-div{
+    flex-wrap: wrap;
+    flex-basis: calc(33.33% - 15px);
+    gap: 20px;
+    padding-bottom: 20px;
+
+  }
+  .main-collection-contianer .sub-container1 .last-grid{
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width:768px){
@@ -352,9 +375,6 @@
     border-radius: 14px;
     height: 72px;
     transition: 0.3s ease;
-  }
-  .main-collection-contianer .sub-container1 .last-grid .each-div p{
-
   }
 
   .main-collection-contianer .sub-container1 .last-grid .each-div a{

@@ -169,7 +169,7 @@
 
 @keyframes bouncingBallAnimation{  
     from { transform: translate3d(0, 0, 0);}  
-    to { transform: translate3d(0, -50px, 0);}   
+    to { transform: translate3d(0, -22px, 0);}   
 }
 
 .slider-container1 .info-container {
@@ -274,8 +274,8 @@
     max-width: 100%;
   }
   .best-seller-container .Page-headig-container p {
-    font-size: 5rem;
-    line-height: 8rem;
+    font-size: 4rem;
+    line-height: 46px;
 }
 .best-seller-slider .slider-navbar p{
   font-size: 14px;
@@ -287,14 +287,16 @@
   font-size: 32px;
   line-height: 40px;
 }
+.actual-slider-container .slick-center .each-slide .product-image-cont img{
+  animation:none;  
+  /* animation-direction: alternate;  
+  animation-iteration-count: infinite;
+  transition: all 0.3s ease; */
+}
 
 .slider-container1 .info-container .description-container p{
   font-size: 16px;
   line-height: 24px;
 }
-
-
-
-
 
 }

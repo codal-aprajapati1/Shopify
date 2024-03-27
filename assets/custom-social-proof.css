@@ -252,7 +252,7 @@ display: none;
 
 .slider .slick-prev {
   left: 120px !important;
-  z-index: 5;
+  z-index: 2;
 }
 
 .slider .slick-next {
@@ -358,7 +358,7 @@ display: none;
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .section-container {
     display: block;
     padding-inline: 10px;

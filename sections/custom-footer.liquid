@@ -29,7 +29,7 @@
   {% for block in section.blocks %}
     {% if block.type == 'navigation1' %}
       <div class="footer-column first-col accordion">
-        <h3 class="accordion-header">{{ block.settings.linklist.title }}</h3> 
+        <p class="accordion-header">{{ block.settings.linklist.title }}</p> 
         <ul class="activeList accordion-content">
           {% for link in block.settings.linklist.links %}
             <li class="item"><a href="{{ link.url }}">{{ link.title }}</a></li>
@@ -38,7 +38,7 @@
       </div>
     {% elsif block.type == 'navigation2' %}
       <div class="footer-column left-nav last-col accordion">
-        <h3 class="accordion-header">{{ block.settings.linklist.title }}</h3> 
+        <p class="accordion-header">{{ block.settings.linklist.title }}</p> 
         <ul class="accordion-content">
           {% for link in block.settings.linklist.links %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
@@ -47,7 +47,7 @@
       </div>
     {% elsif block.type == 'navigation3' %}
       <div class="footer-column right-nav last-col accordion">
-        <h3 class="accordion-header">{{ block.settings.linklist.title }}</h3> 
+        <p class="accordion-header">{{ block.settings.linklist.title }}</p> 
         <ul class="accordion-content">
           
           {% for link in block.settings.linklist.links %}

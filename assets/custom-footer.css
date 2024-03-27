@@ -17,26 +17,25 @@
 .upper{
   padding:10px 5px;
   display: flex;
-  justify-content:space-around;
+  /* justify-content:space-around; */
   width:100%;
   border-bottom: 2px solid grey;
   color: white;
-  
 }
 
 
 
 .upper .left-cont{
-  width:50%;
+  width:100%;
   display:flex;
-  text-align:center;
-  justify-content:space-around;
+  /* text-align:center; */
+  /* justify-content:space-around; */
   align-items:center;
 }
 
 .logo-cont{
-  width:15%;
-  margin-top:1%;
+  width: 66px;
+  height: 66px;
   display:flex;
   align-content:center;
 }
@@ -46,12 +45,15 @@
 }
 
 .offer-cont{
-  width:50%;
+  margin-left: 48px;
+  max-width:400px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 
 .upper .right-cont {
-  width:50%;
+  width:100%;
   display:flex;
   justify-content:flex-end;
   align-items:center
@@ -96,7 +98,7 @@
 }
 
 .middle {
-  padding:15px 30px;
+  padding:30px 15px;
   border-bottom:2px solid grey;
 }
 
@@ -104,38 +106,37 @@
   display:flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  font-size:1.1rem;
-  
+  /* font-size:1.1rem; */
 }
+
 .activeList{
   column-count:2;
   column-gap:10px;
-  
 }
 
 .item:nth-child(6n){
   break-after: page;
 }
 
-.left-nav{
-  /* display:flex; */
-}
 .footer-column span img{
   color:white;
 }
-.footer-column h3{
+.footer-column p{
   color: white;
   border-bottom:3px solid white;
-  padding-bottom:1rem;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
 }
 .footer-column li {
   padding-top: 1rem;
   list-style-type:none;
 }
-.footer-column a{
+.footer-column ul li a{
   text-decoration: none;
   color: white;
-  
+  font-size: 14px;
+  line-height: 17px;
 }
 
 @media screen and (max-width: 830px){
@@ -148,7 +149,7 @@
 
 .bottom{
   display:flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content:space-between;
   padding: 10px 8px;
   font-size:1.2rem;
@@ -161,12 +162,22 @@
 
 }
 
-.footer-bottom li,a{
+.footer-bottom li,a {
   color: white;
   list-style-type:none;
   text-decoration:none;
   padding-inline:3px;
 }
+
+.footer-bottom li a ,.copyright-cont p{
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer-column ul li a:hover, .footer-bottom li a:hover{
+  opacity: 0.7;
+}
+
 
 @media screen and (max-width: 532px){
   .middle .footer-top{
