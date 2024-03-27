@@ -29,10 +29,15 @@
   display:flex;
   align-items:center;
 }
+
+.announcement-bar  .customer-care svg, .add-fav svg, .signup svg{
+  width:15px;
+  margin-inline:5px;
+}
 .customer-care a{
   color: inherit;
-
 }
+
 .announcement-bar  img{
   margin-inline:5px;
 }

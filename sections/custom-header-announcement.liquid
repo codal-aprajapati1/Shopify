@@ -11,17 +11,17 @@
         </div>
       {% elsif block.type == "text1" %}
         <div class="customer-care">
-          <img src="{{ block.settings.call-image | image_url}}" style="width:20px">{{ block.settings.helplinetext }} 
+          {% render 'icon-headphone' %}{{ block.settings.helplinetext }} 
           <a href="tel: {{ block.settings.contactnum }}">{{ block.settings.contactnum }}</a>
         </div>
       {% elsif block.type == "text2" %}
         <div class="add-fav">
-          <img src="{{ block.settings.heart-image | img_url }}" style="width: 20px">
+          {%  render 'icon-heart' %}
           {{ block.settings['add-fav'] }}
         </div>
       {% elsif block.type == "text3" %}
         <div class="signup">
-        <img src="{{ block.settings.signimage | image_url }}" style="width: 20px;">
+        {%  render 'icon-user' %}
           {{ block.settings.signin }}
         </div>
       {% endif %}

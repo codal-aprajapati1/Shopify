@@ -155,6 +155,7 @@
 
 .treatment-main-below-container .treatment-options-container a svg{
     rotate: -90deg;
+  width:10px;
 }
 .treatment-main-below-container .last-container a{
     border: 1px solid #FF600A;

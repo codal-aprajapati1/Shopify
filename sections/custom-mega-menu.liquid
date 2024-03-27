@@ -24,7 +24,7 @@
               {% for link in block.settings.linklist.links %}
                 <li class="search-effect">
                   {% if link != blank %}
-                    <a href="{{ link.url }}">
+                    <a href="javascript:void(0)">
                       <span>{{- link.title -}}</span>
                       <span class="careticon">{% render 'icon-caret' %}</span></a
                     >
@@ -32,6 +32,10 @@
                   <div class="outer-div">
                     <div class="page-width">
                       {% comment %} <a><span>{{- link.title | escape -}}</span></a> {% endcomment %}
+                      <span class="responsive-title-close">
+                          {%- render 'icon-caret' %}
+                          {{ link.title }}
+                        </span>
                       <div class="grid-cont">
                         <div class="mega-menu-left-cont">
                           {% for block in section.blocks %}
@@ -167,6 +171,7 @@
                               <div class="quest">
                                 {{ block.settings['question-heading'] }}
                               </div>
+                              <a href="/Collections/" class="responsive-recommend">{% render 'icon-caret' %}</a>
                               <div class="display-row">
                                 <div class="suggest">
                                   <p>{{ block.settings.option1 }}</p>
@@ -224,66 +229,76 @@
   </div>
 </div>
 
-
-
-
-
 <script>
   $(document).ready(function () {
     // alert();
     $('.nav-close').hide();
-    
+
     $('.main-cont')
       .mouseenter(function () {
         $(this).addClass('active1');
         $('.announcement-container').addClass('active-text-white');
         $('.announcement-bar').addClass('active-text-white');
+        $('.announcement-bar svg').addClass('active-svg-header');
         $('.navbar-container ul li a').addClass('active-only-text-black');
         $('.mega-menu .find-my-solution a').addClass('background-black');
         $('.cart-btn a svg').addClass('active-svg');
+        $('.burger-container svg').addClass('active-svg');
+        
         $(document).on('click', '.burger-container', function () {
-          $('.nav-close').show();
+          $('.main-cont').addClass('active1');
           $('.burger-active').hide();
+          $('.nav-close').show();
           $(this).find('svg').addClass('active-svg');
           $('.mega-menu .navbar-container ul').addClass('navbar-ul-active');
 
           $(document).on('click', '.burger-container', function () {
             $('.nav-close').hide();
-            $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
             $('.burger-active').show();
+            $(this).find('svg').removeClass('active-svg');
+            $('.cart-btn a svg').removeClass('active-svg');
+            $('.main-cont').removeClass('active1');
+            $('.announcement-container').removeClass('active-text-white');
+           $('.announcement-bar').removeClass('active-text-white');
+           $('.announcement-bar svg').removeClass('active-svg-header');
+            $('.mega-menu .navbar-container ul').removeClass('navbar-ul-active');
           });
         });
 
         $(document).on('click', 'input', function () {
           $('.search-effect').hide();
+          // $('.main-cont').addClass('active1');
           $('.logo-container').addClass('logo-hide');
           $('.search-bar').addClass('adjust-margin');
           $('.mega-menu .search-bar form input').addClass('slideeffect');
           $('.close-btn').css('display', 'flex');
           $('.main-search-cont').css('display', 'block');
           $('.main-search-cont .sub-search-cont .recommend-cont').addClass('recommend-cont-active');
+          $('.main-search-cont .ful-width-search').addClass('search-height-effect');
           $(document).on('click', '.close-btn', function () {
             $('.search-effect').show();
+            // $('.main-cont').removeClass('active1');
             $('.logo-container').removeClass('logo-hide');
             $('.main-search-cont').css('display', 'none');
             $('.mega-menu .search-bar form input').removeClass('slideeffect');
             $('.close-btn').css('display', 'none');
             $('.search-bar').removeClass('adjust-margin');
-            $('.findmy');
+            // $('.findmy');
             $('.main-search-cont .sub-search-cont .recommend-cont').removeClass('recommend-cont-active');
+            $('.main-search-cont .ful-width-search').removeClass('search-height-effect');
           });
         });
-
-        // $(document).on('click', '.burger-bar', function () {
-        //   $('.mega-menu .navbar-container ul').addClass('convert-block');
-        // });
 
         $('.navbar-container ul li')
           .mouseenter(function () {
             $('.outer-div').removeClass('active');
             $(this).find('.outer-div').addClass('active');
             $(this).find('.outer-div').addClass('outer-div-active');
-            $(this).find('#rotate').css('transform', 'rotate(180deg)');
+            
+            $(document).on('click', '.responsive-title-close', function(){
+              $(this).parents('.outer-div').removeClass('outer-div-active');
+              $(this).parents('.outer-div').removeClass('active');
+            });
           })
           .mouseleave(function () {
             $(this).find('#rotate').css('transform', 'rotate(0deg)');
@@ -293,13 +308,15 @@
         $('.announcement-bar').removeClass('active-text-white');
         $('.mega-menu .find-my-solution a').removeClass('background-black');
         $('.announcement-container').removeClass('active-text-white');
+        $('.announcement-bar svg').removeClass('active-svg-header');
         $('.navbar-container ul li a').removeClass('active-only-text-black');
         $(this).removeClass('active1');
         // $('.cart-btn svg').removeClass('active-text-black');
         $('.navbar-container ul li').find('.outer-div').removeClass('active');
         $('.navbar-container ul li').find('.outer-div').removeClass('outer-div-active');
-
         $('.cart-btn a svg').removeClass('active-svg');
+        $('.burger-container svg').removeClass('active-svg');
+        
       });
   });
 </script>
