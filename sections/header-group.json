@@ -498,6 +498,46 @@
             "latsblockdescription": "Shop All CPAP Home Sleep Test  Products",
             "latsblockurl": "#"
           }
+        },
+        "blockdata_VqWLDM": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "",
+            "enter_product_title": "",
+            "enter_product_description": ""
+          }
+        },
+        "blockdata_rYTTQJ": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "",
+            "enter_product_title": "",
+            "enter_product_description": ""
+          }
+        },
+        "blockdata_AQdDUp": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "",
+            "enter_product_title": "",
+            "enter_product_description": ""
+          }
+        },
+        "blockdata_twGbJD": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "",
+            "enter_product_title": "",
+            "enter_product_description": ""
+          }
+        },
+        "blockdata_YhgYBt": {
+          "type": "blockdata",
+          "settings": {
+            "mega_menu_name": "",
+            "enter_product_title": "",
+            "enter_product_description": ""
+          }
         }
       },
       "block_order": [
@@ -545,7 +585,12 @@
         "blockdata_wAwbRY",
         "blockdata_nYCgiy",
         "blockdata_4J3bVT",
-        "lastblock_DwhQCp"
+        "lastblock_DwhQCp",
+        "blockdata_VqWLDM",
+        "blockdata_rYTTQJ",
+        "blockdata_AQdDUp",
+        "blockdata_twGbJD",
+        "blockdata_YhgYBt"
       ],
       "settings": {
         "header": ""
