@@ -364,6 +364,10 @@
   color: var(--white);
 }
 
+.announcement-svg{
+  fill:white
+}
+
 .active-svg-header{
   fill: white !important;
 }

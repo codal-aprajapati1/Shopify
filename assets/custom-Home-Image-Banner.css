@@ -60,7 +60,7 @@
     color: black;
     font-weight: 900;
     text-decoration: none;
-    transition: 1s ease;
+    transition:all 0.3s ease;
 }
 
 .background-img-container .image-data-cont .btn-container .first-btn:hover {
@@ -74,7 +74,7 @@
     font-weight: 900;
     background: none;
     border: 1px solid white;
-    transition: 1s ease;
+    transition: all 0.3s ease;
 }
 
 .background-img-container .image-data-cont .btn-container .second-btn:hover {
@@ -126,7 +126,7 @@
     max-width: 170px;
     padding: 17px 13px;
     border-left: 1.5px solid var(--button-border);
-    transition: 1s ease;
+    transition:all 0.3s ease;
 }
 
 .background-img-container .image-below-container .options p {
@@ -146,7 +146,7 @@
     color: var(--black);
     text-decoration: none;
     border: 0.7px solid var(--button-border);
-    transition: 1s ease;
+    transition:all 0.3s ease;
 }
 
 .background-img-container .image-below-container .options:hover a {
@@ -243,7 +243,7 @@
         padding: 17px 13px;
         font-weight: 700;
         border-left: 1.5px solid var(--button-border);
-        transition: 1s ease;
+        transition:all 0.3s ease;
     }
 
     .background-img-container .image-below-container .question-container {

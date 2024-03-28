@@ -264,6 +264,24 @@ display: none;
   font-size: 45px !important;
 }
 
+.social-popup{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  gap: 14px;
+  padding: 20px;
+  margin: -70px 0 0 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-popup svg{
+  z-index: 3;
+  color: red;
+  width: 30px;
+}
+
+
 
 @media screen and (max-width: 1330px) {
   .proof-card {
