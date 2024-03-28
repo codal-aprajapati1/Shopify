@@ -151,7 +151,7 @@
 
 .background-img-container .image-below-container .options:hover a {
     border: 1px solid var(--orange);
-    background: var(--fadeorange);
+    background: #ffe9d0;
     color: var(--white);
 }
 

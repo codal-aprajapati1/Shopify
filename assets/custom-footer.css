@@ -180,7 +180,11 @@
   opacity: 0.7;
 }
 
-
+@media screen and (max-width: 768px){
+  .upper{
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 532px){
   .middle .footer-top{
     display:block;
@@ -196,6 +200,10 @@
     text-align:left;
     
   }
+  .upper .left-cont .offer-cont{
+    margin-left: 0;
+    max-width: 100%;
+  }
   .upper .right-cont{
     display:flex;
     width:100%;
@@ -204,12 +212,12 @@
     
   }
   .upper .right-cont form input{
-    width:300px;
+    width:100%;
     display:flex;
     
   }
   .upper .right-cont form button{
-  margin-left:223px; 
+  margin-left:70%; 
   }
   .bottom{
     display:block;
