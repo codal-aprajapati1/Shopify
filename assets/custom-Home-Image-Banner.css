@@ -61,6 +61,7 @@
     font-weight: 900;
     text-decoration: none;
     transition:all 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .background-img-container .image-data-cont .btn-container .first-btn:hover {
