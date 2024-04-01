@@ -1,6 +1,4 @@
-.collection_title{
-  margin:150px 0 2rem 0;
-}
+
 @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
     flex: 0 0 100%;
@@ -31,6 +29,9 @@
   .collection .loading-overlay {
     left: 0;
   }
+  .collection_title{
+  margin:150px 0 2rem 0;
+}
 }
 
 .collection .loading-overlay {
