@@ -221,6 +221,7 @@
     },
     "featured_collection_qYYBJW": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -281,6 +282,7 @@
         "featured_collection_bKUBRi",
         "featured_collection_j33iT6"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
