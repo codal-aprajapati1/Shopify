@@ -2114,6 +2114,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   bottom: 0.8rem;
   left: 2.2rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
+  top:0;
+  right:0;
 }
 
 /* utility-bar */
