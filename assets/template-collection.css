@@ -29,8 +29,8 @@
   .collection .loading-overlay {
     left: 0;
   }
-  .collection_title{
-  margin:150px 0 2rem 0;
+  .collection__title{
+  margin:150px 0 2rem 0 !important;
 }
 }
 
