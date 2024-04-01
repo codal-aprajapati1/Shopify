@@ -1,0 +1,12 @@
+<div class="collection-cart">
+    {% for variant in product.variants %}
+        <input type="hidden" id="variantgetid" value="{{ variant.id }}">
+    {% endfor %}
+    <button type="button" name="add" id="collection-cart-{{ product.id }}">Add Cart</button>
+</div>
+
+<script>
+    $(document).on('click','#collection-cart-{{ product.id }}', function(){
+        alert("ok");
+    })
+</script>
