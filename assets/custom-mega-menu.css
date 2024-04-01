@@ -91,6 +91,8 @@
   order: 4;
   display: flex;
   margin-inline: 10px;
+  position: relative;
+
 }
 
 .cart-btn a svg {
