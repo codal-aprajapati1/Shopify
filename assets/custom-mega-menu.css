@@ -98,7 +98,7 @@
 .cart-btn a svg {
   width: 43px;
   margin-bottom: -10px;
-  border:1px solid var(--grey);
+  border:1px solid white;
   border-radius: 50%;
 }
 
@@ -355,7 +355,11 @@
   fill: black;
 }
 
-
+.cart-active-svg{
+  border: 1px solid black !important;
+  color:var(--black);
+  fill: black;
+}
 
 .active-text-white {
   color: var(--white) ;

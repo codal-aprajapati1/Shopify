@@ -254,7 +254,7 @@
     {{ 'font.css' |  asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer ></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -286,18 +286,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% comment %} {%  theme-check-disable ParserBlockingJavaScript %} {% endcomment %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"  defer></script>
     {% comment %} {%  theme-check-enable ParserBlockingJavaScript %} {% endcomment %}
 
 
     
     
-    <script>
+    <script >
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
@@ -320,7 +320,7 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-    {% section 'custom-product-section' %}
+    {% comment %} {% section 'custom-product-section' %} {% endcomment %}
     {% sections 'footer-group' %}
      {% comment %} {%  section 'custom-social-testimonial' %} {% endcomment %}
 
@@ -376,52 +376,9 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" ></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
     <script src="{{ 'jquery-rbox.js' |  asset_url }}" defer></script>
-    <script>
-  var template = '{{ request.page_type }}';
-  var sticky = document.querySelector('.main-cont');
-  var announcement = document.querySelector('.announcement-container');
-  var announcement_text = document.querySelector('.announcement-bar');
-  var announcement_svg = document.querySelector('.announcement-bar svg');
-  var nav_text = document.querySelector('.navbar-container ul li a');
-  var my_solution = document.querySelector('.mega-menu .find-my-solution a');
-  var cart_svg = document.querySelector('.cart-btn a svg');
-  if (template != 'index') {
     
-  } else {
-    window.onscroll = function () {
-      if (window.scrollY > 150) {
-        sticky.classList.add('background-white');
-        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
-          li.classList.add('black-text');
-        });
-        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
-          a.classList.add('active-only-text-black');
-        });
-        my_solution.classList.add('background-black');
-        cart_svg.classList.add('active-svg');
-        announcement_svg.classList.add('active-svg-header');
-        announcement.classList.add('active-text-white');
-        announcement_text.classList.add('active-text-white');
-      } 
-      else {
-        sticky.classList.remove('background-white');
-        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
-          li.classList.remove('black-text');
-        });
-        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
-          a.classList.remove('active-only-text-black');
-        });
-        my_solution.classList.remove('background-black');
-        cart_svg.classList.remove('active-svg');
-        announcement_svg.classList.remove('active-svg-header');
-        announcement.classList.remove('active-text-white');
-        announcement_text.classList.remove('active-text-white');
-      }
-    };
-  }
-</script>
   </body>
 </html>
