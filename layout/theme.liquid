@@ -379,5 +379,49 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" ></script>
     {%- endif -%}
     <script src="{{ 'jquery-rbox.js' |  asset_url }}" defer></script>
+    <script>
+  var template = '{{ request.page_type }}';
+  var sticky = document.querySelector('.main-cont');
+  var announcement = document.querySelector('.announcement-container');
+  var announcement_text = document.querySelector('.announcement-bar');
+  var announcement_svg = document.querySelector('.announcement-bar svg');
+  var nav_text = document.querySelector('.navbar-container ul li a');
+  var my_solution = document.querySelector('.mega-menu .find-my-solution a');
+  var cart_svg = document.querySelector('.cart-btn a svg');
+  if (template != 'index') {
+    
+  } else {
+    window.onscroll = function () {
+      if (window.scrollY > 150) {
+        sticky.classList.add('background-white');
+        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
+          li.classList.add('black-text');
+        });
+        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
+          a.classList.add('active-only-text-black');
+        });
+        my_solution.classList.add('background-black');
+        cart_svg.classList.add('active-svg');
+        announcement_svg.classList.add('active-svg-header');
+        announcement.classList.add('active-text-white');
+        announcement_text.classList.add('active-text-white');
+      } 
+      else {
+        sticky.classList.remove('background-white');
+        sticky.querySelectorAll('.navbar-container > ul > li > a').forEach(function (li) {
+          li.classList.remove('black-text');
+        });
+        sticky.querySelectorAll('.navbar-container ul li a').forEach(function (a) {
+          a.classList.remove('active-only-text-black');
+        });
+        my_solution.classList.remove('background-black');
+        cart_svg.classList.remove('active-svg');
+        announcement_svg.classList.remove('active-svg-header');
+        announcement.classList.remove('active-text-white');
+        announcement_text.classList.remove('active-text-white');
+      }
+    };
+  }
+</script>
   </body>
 </html>
