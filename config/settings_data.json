@@ -33,14 +33,14 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "standard",
-    "card_image_padding": 0,
+    "card_style": "card",
+    "card_image_padding": 6,
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 6,
-    "card_shadow_opacity": 0,
+    "card_shadow_opacity": 40,
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": 4,
     "card_shadow_blur": 5,
@@ -648,13 +648,6 @@
 
     ],
     "blocks": {
-      "1793219247286972479": {
-        "type": "shopify:\/\/apps\/searchpie-seo-speed\/blocks\/sb-snippets\/29f6c508-9bb9-4e93-9f98-b637b62f3552",
-        "disabled": false,
-        "settings": {
-          "review_app": "spr"
-        }
-      },
       "15683396631634586217": {
         "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
@@ -696,8 +689,15 @@
       },
       "11532412952436166569": {
         "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1793219247286972479": {
+        "type": "shopify:\/\/apps\/searchpie-seo-speed\/blocks\/sb-snippets\/29f6c508-9bb9-4e93-9f98-b637b62f3552",
         "disabled": true,
         "settings": {
+          "review_app": "spr"
         }
       }
     },
