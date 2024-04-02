@@ -1,12 +1,103 @@
-<div class="collection-cart">
+<style>
+  .cartapi {
+    display: flex;
+  }
+  .collection-cart,
+  .update-cart {
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 20px;
+  }
+  .collection-cart > button,
+  .update-cart > button {
+    padding: 9px 16px;
+    border-radius: 12px 19px 12px 19px;
+    border: 1px solid transparent;
+    background: rgb(245, 245, 31);
+  }
+  .collection-cart > button:hover,
+  .update-cart > button:hover {
+    border: 1px solid grey;
+    background: rgb(225, 226, 128);
+    cursor: pointer;
+  }
+  .sldoutbtn {
+    cursor: no-drop;
+  }
+</style>
+{% assign available = product.selected_or_first_available_variant.available %}
+
+<div class="cartapi">
+  <div class="collection-cart">
     {% for variant in product.variants %}
-        <input type="hidden" id="variantgetid" value="{{ variant.id }}">
+      <input type="hidden" id="variantgetid" value="{{ variant.id }}">
     {% endfor %}
-    <button type="button" name="add" id="collection-cart-{{ product.id }}">Add Cart</button>
+    <button type="button" name="add" id="collection-cart-{{ product.id }}">
+      {% if available == true %}
+        <span class="addbtn">Add Cart</span>
+      {% else %}
+        <span class="sldoutbtn">Sold Out</span>
+      {% endif %}
+    </button>
+  </div>
+
+  <div class="update-cart">
+    {% for variant in product.variants %}
+      <input type="hidden" id="variantgetid1" value="{{ variant.id }}">
+    {% endfor %}
+    <button type="button" name="update" id="update-cart-{{ product.id }}">Update cart</button>
+  </div>
 </div>
 
 <script>
-    $(document).on('click','#collection-cart-{{ product.id }}', function(){
-        alert("ok");
+  $(document).on('click', '#collection-cart-{{ product.id }}', function () {
+    let getvariantid = $(this).parents('.collection-cart').find('#variantgetid').val();
+
+    let formobj = {
+      quantity: 1,
+      id: getvariantid,
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      cache: false,
+      data: formobj,
+      dataType: 'json',
+      success: function (data) {
+        console.log('success');
+        console.log(data);
+        $('.cart-count-bubble').click();
+      },
+      error: function (xhr, ajaxOption, thrownError) {
+        console.log('error');
+      },
+    });
+  });
+</script>
+
+<script>
+  $(document).on('click', '#update-cart-{{ product.id }}', function () {
+    let getvariantid1 = $(this).parents('.update-cart').find('#variantgetid1').val();
+
+    let updates = {
+        [getvariantid1] : 10
+    };
+
+    fetch(window.Shopify.routes.root + 'cart/update.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ updates }),
     })
+      .then((response) => {
+        return response.json();
+        $('.cart-count-bubble').click();
+
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
 </script>
