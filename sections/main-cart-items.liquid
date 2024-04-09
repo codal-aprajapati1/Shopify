@@ -447,8 +447,113 @@
         {{ 'accessibility.loading' | t }}
       </p>
     </form>
+    <div class="cart-Api">
+      <div class="update-cart">
+          {%- for item in cart.items -%}
+            <input type="hidden" id="variantgetid" value="{{ item.variant.id }}">
+          {% endfor %}
+          <button type="button">Update Cart</button>
+        </div>
+        <div class="change-cart">
+          {%- for item in cart.items -%}
+            <input type="hidden" id="variantgetid" value="{{ item.variant.id }}">
+          {% endfor %}
+          <button type="button">Change Cart</button>
+        </div>
+        <div class="clear-cart">
+          <button type="button">Clear Your Cart</button>
+        </div>
+      </div>
   </div>
 </cart-items>
+
+<style>
+  .cart-Api {
+    display: flex;
+  }
+  .cart-Api button {
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .cart-Api button:hover {
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  $(document).on('click', '.update-cart > button', function () {
+   let getvariantid = $(this).parent('.update-cart').find("#variantgetid").val();
+   console.log(getvariantid);
+    let updates = {
+      // [getvariantid]: 20
+    };
+
+    fetch(window.Shopify.routes.root + 'cart/update.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ updates : [10,20,30,30] }),
+    })
+      .then((response) => {
+        location.reload();
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
+</script>
+
+<script>
+  $(document).on('click', '.change-cart > button', function () {
+   let getvariantid = $(this).parent('.change-cart').find("#variantgetid").val();
+  //  console.log(getvariantid);
+    let changes = {
+      'line' : 3,
+      'quantity' : 5,
+      'properties' : { 'gift_wrap': true }
+    };
+
+    fetch(window.Shopify.routes.root + 'cart/change.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify( changes ),
+    })
+      .then((response) => {
+        location.reload();
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
+</script>
+
+<script>
+    $(document).on('click', '.clear-cart > button', function () {
+   let getvariantid = $(this).parent('.clear-cart').find("#variantgetid").val();
+   console.log(getvariantid);
+
+    fetch(window.Shopify.routes.root + 'cart/clear.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+      .then((response) => {
+        location.reload();
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
+</script>
+
 
 {% schema %}
 {
