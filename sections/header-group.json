@@ -46,52 +46,6 @@
         "padding_bottom": 20
       }
     },
-    "custom_header_announcement_KiNbpd": {
-      "type": "custom-header-announcement",
-      "blocks": {
-        "text_igKTBr": {
-          "type": "text",
-          "settings": {
-            "offer-image": "shopify:\/\/shop_images\/s_logo.png",
-            "signup-offer": "Sign up to be a CPAP.com VIP for 20% off your order"
-          }
-        },
-        "text1_3WUcjT": {
-          "type": "text1",
-          "settings": {
-            "call-image": "shopify:\/\/shop_images\/65cb4dcd32b6e4000f27615d.png",
-            "helplinetext": "Questions : Call us toll-free",
-            "contactnum": "1-800-356-5221"
-          }
-        },
-        "text2_nwzErW": {
-          "type": "text2",
-          "settings": {
-            "heart-image": "shopify:\/\/shop_images\/transparent_heart.png",
-            "add-fav": "My favourites"
-          }
-        },
-        "text3_CQTQVc": {
-          "type": "text3",
-          "settings": {
-            "signimage": "shopify:\/\/shop_images\/signup.png",
-            "signin": "Sign In"
-          }
-        }
-      },
-      "block_order": [
-        "text_igKTBr",
-        "text1_3WUcjT",
-        "text2_nwzErW",
-        "text3_CQTQVc"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "announcement": ""
-      }
-    },
     "custom_mega_menu_xXmegj": {
       "type": "custom-mega-menu",
       "blocks": {
@@ -540,12 +494,58 @@
       "settings": {
         "header": ""
       }
+    },
+    "custom_header_announcement_KiNbpd": {
+      "type": "custom-header-announcement",
+      "blocks": {
+        "text_igKTBr": {
+          "type": "text",
+          "settings": {
+            "offer-image": "shopify:\/\/shop_images\/s_logo.png",
+            "signup-offer": "Sign up to be a CPAP.com VIP for 20% off your order"
+          }
+        },
+        "text1_3WUcjT": {
+          "type": "text1",
+          "settings": {
+            "call-image": "shopify:\/\/shop_images\/65cb4dcd32b6e4000f27615d.png",
+            "helplinetext": "Questions : Call us toll-free",
+            "contactnum": "1-800-356-5221"
+          }
+        },
+        "text2_nwzErW": {
+          "type": "text2",
+          "settings": {
+            "heart-image": "shopify:\/\/shop_images\/transparent_heart.png",
+            "add-fav": "My favourites"
+          }
+        },
+        "text3_CQTQVc": {
+          "type": "text3",
+          "settings": {
+            "signimage": "shopify:\/\/shop_images\/signup.png",
+            "signin": "Sign In"
+          }
+        }
+      },
+      "block_order": [
+        "text_igKTBr",
+        "text1_3WUcjT",
+        "text2_nwzErW",
+        "text3_CQTQVc"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "announcement": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "custom_header_announcement_KiNbpd",
-    "custom_mega_menu_xXmegj"
+    "custom_mega_menu_xXmegj",
+    "custom_header_announcement_KiNbpd"
   ]
 }
