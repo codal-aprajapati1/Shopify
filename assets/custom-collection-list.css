@@ -324,7 +324,7 @@
     transition: 0.3s ease;
   }
    .main-collection-contianer .sub-container1 .last-grid .each-div a{
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 17px;
     font-weight: 700;
     padding: 9px 16px;
