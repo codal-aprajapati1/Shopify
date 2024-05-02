@@ -186,7 +186,7 @@
         max-height: 698px;
     }
     .background-img-container .image-data-cont {
-        transform:translate(0%, -50%);
+        transform:translate(0%, -50%) !important;
     }
 
     .background-img-container .image-data-cont h1 {
