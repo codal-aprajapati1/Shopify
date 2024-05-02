@@ -302,6 +302,13 @@
 
 }
 
+@media screen and (max-width:425px){
+  
+.sub-container1{
+  padding: 0 20px;
+}
+}
+
 @media screen and (max-width:375px){
   .main-collection-contianer{
     /* margin-top:600px; */
