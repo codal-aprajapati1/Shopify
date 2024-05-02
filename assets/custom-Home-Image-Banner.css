@@ -234,17 +234,9 @@
     }
 
     .background-img-container .image-below-container .options {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        font-size: 1.5rem;
-        max-width: 100%;
-        padding: 17px 13px;
-        font-weight: 700;
-        border-left: 1.5px solid var(--button-border);
-        transition:all 0.3s ease;
+        border-left: unset;
+        border-top: 1.5px solid var(--button-border);
+        
     }
 
     .background-img-container .image-below-container .question-container {
