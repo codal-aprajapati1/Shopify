@@ -275,6 +275,9 @@
 }
 
 @media screen and (max-width: 375px){
+  .background-img-container .image-data-cont{
+    transform:unset;
+  }
     .background-img-container .image-data-cont h1{
         max-width: 275px;
     }
