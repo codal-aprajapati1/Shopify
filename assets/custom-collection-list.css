@@ -310,6 +310,7 @@
       .main-collection-contianer .sub-container1 .upper-grid .upper-div{
         flex-basis:180px;
         max-height:200px;
+        min-height:unset;
       }
 }
 
