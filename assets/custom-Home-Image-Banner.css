@@ -277,6 +277,7 @@
 @media screen and (max-width: 375px){
   .background-img-container .image-data-cont{
     transform:translate(0,-50%);
+    left: unset;
   }
     .background-img-container .image-data-cont h1{
         max-width: 275px;
