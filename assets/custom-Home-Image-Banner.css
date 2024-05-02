@@ -279,7 +279,7 @@
 @media screen and (max-width: 425px){
     .background-img-container .image-data-cont{
     transform:translate(0,-50%);
-    left: 2;
+    left: unset;
   }
 }
 
