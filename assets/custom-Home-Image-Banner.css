@@ -186,9 +186,8 @@
         max-height: 698px;
     }
     .background-img-container .image-data-cont {
-        top: unset;
-        transform:unset;
-        left:unset;
+        /* top: unset; */
+        transform:translate(-50%, -50%);;
     }
 
     .background-img-container .image-data-cont h1 {
