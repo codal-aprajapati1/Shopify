@@ -96,7 +96,7 @@
     right: 0;
     margin-inline: auto;
     transform: translateY(-50%);
-    /* transform: translate(-50%, -50%); */
+
     background-color: #fff;
     top: 94%;
     border-radius: 9px;
@@ -186,8 +186,7 @@
         max-height: 698px;
     }
     .background-img-container .image-data-cont {
-        /* top: unset; */
-        transform:translate(0%, -50%);;
+        transform:translate(0%, -50%);
     }
 
     .background-img-container .image-data-cont h1 {
