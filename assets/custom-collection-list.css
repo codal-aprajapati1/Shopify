@@ -328,7 +328,7 @@
     line-height:24px;
   }
    .main-collection-contianer .sub-container1 .last-grid .each-div a{
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 17px;
     font-weight: 700;
     padding: 9px 16px;
