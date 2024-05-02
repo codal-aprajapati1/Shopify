@@ -234,9 +234,17 @@
     }
 
     .background-img-container .image-below-container .options {
-        border-left: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding: 17px 13px;
+        font-weight: 700;
         border-top: 1.5px solid var(--button-border);
-        
+        transition:all 0.3s ease;
     }
 
     .background-img-container .image-below-container .question-container {
@@ -269,7 +277,7 @@
 @media screen and (max-width: 425px){
     .background-img-container .image-data-cont{
     transform:translate(0,-50%);
-    left: 5%;
+    left: 2;
   }
 }
 
