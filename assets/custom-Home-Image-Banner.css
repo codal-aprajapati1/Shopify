@@ -219,6 +219,8 @@
 
     .background-img-container .image-data-cont {
         top: 50%;
+      left:unset;
+      transform:translate(0,50%);
     }
 
     .background-img-container .image-below-container {
