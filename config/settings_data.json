@@ -699,6 +699,13 @@
         "settings": {
           "review_app": "spr"
         }
+      },
+      "c055b416-29e4-4b77-927e-1e233db0f3f5": {
+        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd-ssr\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+          "templateId": "GbZhRnMrhA"
+        }
       }
     },
     "color_schemes": {
