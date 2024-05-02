@@ -187,7 +187,7 @@
     }
     .background-img-container .image-data-cont {
         /* top: unset; */
-        transform:translate(-50%, -50%);;
+        transform:translate(0%, -50%);;
     }
 
     .background-img-container .image-data-cont h1 {
